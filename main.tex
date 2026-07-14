@@ -1,0 +1,114 @@
+% ======================================================
+% TÀI LIỆU: Nhóm-PA1-ProductResearch
+% Môn: CSC13112 - UI/UX Design
+% Nội dung: Khảo sát & so sánh 2 nền tảng OTT thể thao
+%           (VTVPrime vs FPTPlay) dựa trên nguyên tắc HCI
+% Tác giả: Nhóm [Tên nhóm]
+% Ngày tạo: Tháng 7/2026
+% ======================================================
+
+% --- Định dạng tài liệu ---
+% article: tài liệu ngắn (PA, báo cáo), không phân chương (chapter)
+% 12pt: cỡ chữ gốc 12pt (đọc dễ chịu trên A4)
+% a4paper: khổ giấy A4 (210mm x 297mm)
+\documentclass[12pt,a4paper]{article}
+
+% ===================== PACKAGES =====================
+% --- Gói hỗ trợ mã hóa và ngôn ngữ ---
+\usepackage[utf8]{inputenc}  % Hỗ trợ mã hóa UTF-8 (tiếng Việt, ký hiệu đặc biệt)
+\usepackage[T1]{fontenc}     % Bảng mã font T1 - hiển thị dấu tiếng Việt đúng cách
+\usepackage[vietnamese]{babel} % Hỗ trợ ngôn ngữ tiếng Việt (phân cách từ, font)
+
+% --- Gói hỗ trợ bố cục và trình bày ---
+\usepackage{graphicx}   % Chèn ảnh (\includegraphics)
+\usepackage{booktabs}   % Bảng đẹp hơn với \toprule, \midrule, \bottomrule
+\usepackage{tabularx}   % Bảng tự động giãn cột theo \textwidth (cột X co giãn)
+\usepackage{hyperref}   % Liên kết siêu văn bản (\url, \href), đánh số chương mục
+\usepackage{enumitem}   % Tùy chỉnh danh sách (enumerate, itemize) - spacing, bullet style
+\usepackage{geometry}   % Đặt lề trang (left, right, top, bottom)
+\usepackage{xcolor}     % Hỗ trợ màu sắc (dùng trong hyperref, text color)
+\usepackage{titlesec}   % Tùy chỉnh định dạng tiêu đề section
+\usepackage{fancyhdr}   % Header/footer tùy chỉnh (trang tiêu, trang cuối)
+\usepackage{amssymb}    % Ký hiệu toán học mở rộng (dùng cho Fitts's Law)
+\usepackage{pifont}     % Ký hiệu tròn số (\ding{172}=①, \ding{173}=②, \ding{174}=③)
+
+% --- Thiết lập lề trang ---
+% Lề 2.5cm các cạnh: chuẩn cho báo cáo học thuật A4
+% left/right: lề trái/phải | top/bottom: lề trên/dưới
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+% --- Fix fancyhdr: headheight phải đủ lớn cho header ---
+\setlength{\headheight}{13.6pt}  % Mặc định 12pt quá nhỏ, fancyhdr yêu cầu ≥ 13.6pt
+
+% --- Cài đặt hyperlink ---
+% colorlinks=true: bật màu cho liên kết (thay vì khung viền)
+% linkcolor: màu liên kết nội bộ (mục lục, section)
+% urlcolor: màu liên kết URL bên ngoài
+% citecolor: màu trích dẫn tài liệu tham khảo
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!70!black,   % Xanh đậm 70% + đen 30%
+    urlcolor=blue!70!black,   % Đồng bộ với linkcolor
+    citecolor=black            % Trích dẫn màu đen (trang trọng)
+}
+
+% ===================== HEADER / FOOTER =====================
+% fancyhdr: tạo header/footer tùy chỉnh cho tất cả trang
+\pagestyle{fancy}         % Kích hoạt chế độ fancy page style
+\fancyhf{}                % Xóa tất cả header/footer mặc định
+\fancyhead[L]{\small CSC13112 – User Interface Design}   % Header trái: tên môn + mã PA
+\fancyhead[R]{\small Project Assignment 1} % Header phải: tên bài nghiên cứu
+\fancyfoot[C]{\thepage}                        % Footer giữa: số trang
+\renewcommand{\headrulewidth}{0.4pt}           % Đường kẻ ngang dưới header (0.4pt mảnh)
+
+% ===================== TITLE (TIÊU ĐỀ) =====================
+% \title: tiêu đề chính của tài liệu
+\title{\textbf{Project Assignment 1}}
+
+% ======================================================
+% BẮT ĐẦU NỘI DUNG TÀI LIỆU
+% ======================================================
+\begin{document}        % Bắt đầu nội dung tài liệu
+
+\maketitle              % Hiển thị title đã khai báo ở trên
+\thispagestyle{fancy}   % Trang đầu dùng fancy style (có header/footer)
+\tableofcontents        % Tự động tạo mục lục từ các \section, \subsection
+\newpage                % Ngắt trang - mục lục ở trang riêng
+
+% ======================================================
+%         0. THÔNG TIN NHÓM
+% ======================================================
+\section{Thông tin nhóm}
+
+\textbf{Nhóm:} Nhóm 9
+
+% --- Bảng danh sách thành viên ---
+% tabular: bảng cơ bản |l|l| = 2 cột trái, có viền
+% \hline: đường kẻ ngang
+% \textbf{}: in đậm
+\bigskip               % Tạo khoảng trắng lớn trước bảng
+\begin{center}         % Căn giữa bảng
+\begin{tabular}{|l|l|} % 2 cột trái, có viền '|' hai bên
+\hline                 % Đường kẻ ngang trên cùng
+\textbf{Thành viên} & \textbf{MSSV} \\  % Hàng tiêu đề
+\hline
+Phan Thị Hương Xuân & 23127147 \\   % Điền tên và MSSV thành viên
+\hline
+Bùi Đức Đạt & 23127337 \\
+\hline
+Huỳnh Lê Khôi & 23127068 \\
+\hline
+Nguyễn Tuấn Minh & 22127271 \\
+\hline
+\end{tabular}          % Kết thúc bảng
+\end{center}           % Kết thúc căn giữa
+\bigskip
+
+% ======================================================
+%          IMPORT NỘI DUNG PRODUCT RESEARCH
+% ======================================================
+% Nội dung chi tiết được tách ra file sections/product-research/product-research.tex
+% Bao gồm: Giới thiệu, Phân tích VTVPrime, FPTPlay, Tổng hợp
+\input{sections/product-research/product-research.tex}
+
+\end{document}

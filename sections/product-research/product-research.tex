@@ -1,0 +1,710 @@
+% ======================================================
+%         1. GIỚI THIỆU (INTRODUCTION)
+% ======================================================
+% \section{}: tiêu đề cấp 1, tự động đánh số
+% Mục này giới thiệu bối cảnh và lý do chọn đề tài
+\section{Giới thiệu}
+
+Năm 2026 là năm diễn ra \textbf{World Cup 2026} và \textbf{ASIAD 2026}. Nhu cầu xem thể thao trực tuyến tăng cao. Nhóm chọn khảo sát 2 nền tảng xem thể thao trực tuyến phổ biến tại Việt Nam: \textbf{VTVPrime} và \textbf{FPTPlay}.
+\bigskip
+
+% ======================================================
+%          2. SẢN PHẨM 1: VTVPRIME
+% ======================================================
+% Mục này phân tích chi tiết sản phẩm VTVPrime
+% \section{}: tiêu đề cấp 1 (sản phẩm)
+% \subsection{}: tiêu đề cấp 2 (tên, domain, use case...)
+\section{Sản phẩm 1: VTVPrime}
+
+% --- 2.1 Tên sản phẩm & Domain ---
+% Bảng thông tin tổng quan về VTVPrime
+% tabularx với cột X: tự động giãn cột theo \textwidth
+\subsection{Tên sản phẩm \& Domain}
+
+% Bảng thông tin tổng quan sản phẩm
+% |l|X|: cột trái cố định + cột phải co giãn tự động
+\begin{center}
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\textbf{Thông tin} & \textbf{Chi tiết} \\
+\hline
+\textbf{Tên sản phẩm} & VTVPrime \\
+\hline
+\textbf{Domain} & \textbf{Nền tảng OTT (Over-The-Top) --- Truyền hình \& Giải trí trực tuyến, trọng tâm là thể thao.} \\
+\hline
+\textbf{Nền tảng} & Web (\url{https://vtvprime.vn}), Mobile (iOS/Android) \\
+\hline
+\textbf{Nhà phát hành} & Đài Truyền hình Việt Nam (VTV) --- qua VTVcab \\
+\hline
+\end{tabularx}          % Kết thúc bảng tabularx
+\end{center}
+
+\medskip\noindent\textbf{Phân tích Domain theo 3 khía cạnh:}
+
+\bigskip
+\begin{center}
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\textbf{Khía cạnh} & \textbf{Giải thích} \\
+\hline
+\textbf{\ding{172} Sản phẩm làm về cái gì?} & VTVPrime là ứng dụng OTT do VTVcab phát hành, cung cấp nội dung: tường thuật thể thao trực tiếp, kênh truyền hình trực tuyến, phim và chương trình giải trí theo yêu cầu. Trọng tâm là thể thao trực tiếp (Champions League, World Cup 2026, LaLiga, Serie A, bóng chuyền). Ngoài ra còn có phim, chương trình TV và tin tức. Tích hợp hơn 120 kênh truyền hình trong nước và quốc tế. \\
+\hline
+\textbf{\ding{173} Dùng trong hoàn cảnh nào?} & Người dùng thường thức khuya hoặc dậy sớm để xem trực tiếp World Cup 2026 (vì giải đấu tổ chức tại Mỹ --- Canada --- Mexico, chênh lệch múi giờ so với Việt Nam). Ban ngày, họ xem lại highlight hoặc tin tức thể thao trên đường đi làm, trong giờ nghỉ. Lúc rảnh rỗi, họ xem phim hoặc chương trình giải trí. Thiết bị dùng được: TV thông minh, laptop, máy tính bảng, điện thoại. \\
+\hline
+\textbf{\ding{174} Quy tắc trong lĩnh vực đó?} & Mọi ứng dụng xem thể thao trực tuyến đều phải đáp ứng 5 yêu cầu: (1) \textbf{Trận đấu đang diễn ra phải mở được ngay} --- càng ít thao tác càng tốt; (2) \textbf{Nút điều khiển phải tự ẩn khi xem} --- để không che mất hình, chỉ hiện ra khi người dùng chạm vào màn hình; (3) \textbf{Tỉ số, thời gian và tên đội luôn hiển thị} --- ở một góc màn hình trong suốt trận đấu; (4) \textbf{Lịch thi đấu phải rõ ràng} --- ghi chính xác ngày, giờ, đội đấu, vì thể thao chỉ diễn ra theo khung giờ cố định; (5) \textbf{Phân biệt rõ trạng thái trận đấu} --- người dùng cần biết ngay trận nào đang Live, trận nào sắp diễn ra, trận nào đã kết thúc. \\
+\hline
+\end{tabularx}
+\end{center}
+
+% --- 2.2 Đối tượng người dùng ---
+% Phân khúc hóa người dùng theo hành vi và bối cảnh
+% 5 phân khúc: A (cứng), B (sự kiện), C (cầu may), D (catch-up), E (phụ trợ)
+\subsection{Đối tượng người dùng}
+
+Dựa trên hành vi và bối cảnh sử dụng, người dùng VTVPrime có thể chia thành 5 phân khúc:
+
+% --- Bảng phân khúc người dùng ---
+% |c|l|X|X|: 4 cột (số STT, tên phân khúc, hành vi, tác động UI)
+% \small: cỡ chữ nhỏ hơn để bảng vừa trang
+\bigskip
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{|c|l|X|X|}
+\hline
+\textbf{\#} & \textbf{Phân khúc} & \textbf{Hành vi \& Bối cảnh} & \textbf{Tác động đến UI} \\
+\hline
+\textbf{A} & \textbf{Dân thể thao ``cứng''} & Xem live hàng tuần, biết rõ lịch giải đấu, theo dõi nhiều môn. Tần suất cao, thời gian xem dài ($\geq$ 90 phút). & Cần dashboard cá nhân hóa, bookmark đội/giải yêu thích, shortcut vào Live. \\
+\hline
+\textbf{B} & \textbf{Khán giả theo sự kiện (event-driven)} & Không xem thể thao thường xuyên, nhưng xem World Cup/ASIAD vì tính chất sự kiện xã hội. Không rành về app, dễ choáng. & Cần onboarding nhanh, ưu tiên nội dung World Cup ngay trang chủ, hạn chế menu phức tạp. \\
+\hline
+\textbf{C} & \textbf{Người xem ``cầu may''} & Mở app không có ý định trước, lướt xem có gì hay thì xem. & Cần gợi ý nổi bật, phân loại rõ ràng, preview nội dung (trailer, mô tả). \\
+\hline
+\textbf{D} & \textbf{Người xem lại (catch-up)} & Bận không xem live, sau đó tìm highlight hoặc xem lại. & Cần highlight được đẩy lên đầu, tìm kiếm theo đội/giải, lưu tiến trình xem. \\
+\hline
+\textbf{E} & \textbf{Người dùng phụ trợ} & Dùng app chủ yếu xem phim/TV, thỉnh thoảng mới xem thể thao. & Cần tab thể thao riêng, không lẫn với giải trí --- tránh divided attention. \\
+\hline
+\end{tabularx}
+\end{center}
+
+\medskip\noindent\textit{Nhận xét:} 5 phân khúc này khác nhau về \textbf{mức độ quen thuộc với app}, \textbf{mục tiêu khi mở app} (goal-directed vs exploratory), và \textbf{bối cảnh sử dụng} (xem live vs catch-up vs lướt). Mỗi phân khúc đặt ra yêu cầu khác nhau cho các thành phần UI: bố cục trang chủ, hệ thống điều hướng, tìm kiếm, tính năng cá nhân hóa và feedback.
+
+% --- 2.3 Core Use Cases ---
+% Mô tả 3 trường hợp sử dụng chính của VTVPrime
+% UC1: Xem live | UC2: Highlight | UC3: Tìm kiếm
+\subsection{Core Use Cases}
+
+% ---- UC1: Xem trực tiếp một trận đấu ----
+% \subsubsection{}: tiêu đề cấp 3 (chi tiết nhất)
+% Mô tả bối cảnh, các bước tương tác, ưu/nhược điểm HCI
+\subsubsection{UC1: Xem trực tiếp một trận đấu}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\textbf{Khía cạnh} & \textbf{Mô tả} \\
+\hline
+\textbf{Ở đâu?} & Tại nhà hoặc bất cứ đâu có Internet (có thể dùng Wi-Fi hoặc 4G/5G) \\
+\hline
+\textbf{Khi nào?} & Trước hoặc ngay khi trận đấu bắt đầu \\
+\hline
+\textbf{Tư thế người dùng} & Ngồi hoặc nằm trên ghế, sofa, giường trước TV/màn hình lớn. Thời gian theo dõi kéo dài (90 phút cho bóng đá). \\
+\hline
+\textbf{Thiết bị} & Laptop, điện thoại thông minh, máy tính bảng \\
+\hline
+\end{tabularx}
+\end{center}
+
+\medskip\noindent\textbf{Các bước tương tác:}
+\begin{enumerate}[leftmargin=2em]
+  \item Truy cập VTVPrime trên trình duyệt/app.
+  \item Đăng nhập tài khoản (nếu cần).
+  \item Tại trang chủ, banner trận đấu trực tiếp hiển thị nổi bật $\rightarrow$ chọn ``Xem ngay''.
+  \item Xem trận đấu, sử dụng các điều khiển: tạm dừng, âm lượng, phóng to/thu nhỏ, chọn chất lượng, xem bình luận.
+\end{enumerate}
+
+\medskip\noindent\textit{Ưu điểm cụ thể (dựa trên HCI):} [Ví dụ chi tiết --- concrete, không chung chung]
+
+\medskip\noindent\textit{Nhược điểm cụ thể (dựa trên HCI):} [Ví dụ chi tiết --- concrete, không chung chung]
+
+% ---- UC2 ----
+\subsubsection{UC2: Tìm lại Highlight + video ngắn của trận đấu}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\textbf{Khía cạnh} & \textbf{Mô tả} \\
+\hline
+\textbf{Ở đâu?} & Tại nhà, trên phương tiện di chuyển, bất cứ đâu có Internet \\
+\hline
+\textbf{Khi nào?} & Sau khi trận đấu kết thúc (xem lại do bận hoặc xem bỏ dỡ) \\
+\hline
+\textbf{Tư thế người dùng} & Ngồi, nằm hoặc đứng --- linh hoạt hơn UC1 vì thời gian xem ngắn hơn \\
+\hline
+\textbf{Thiết bị} & Laptop, điện thoại thông minh \\
+\hline
+\end{tabularx}
+\end{center}
+
+\medskip\noindent\textbf{Các bước tương tác:}
+\begin{enumerate}[leftmargin=2em]
+  \item Truy cập VTVPrime $\rightarrow$ chọn ``Tin nhanh''.
+  \item Chọn mục ``World Cup'' hoặc môn thể thao mong muốn.
+  \item Duyệt danh sách Highlight/tin tức $\rightarrow$ chọn video.
+\end{enumerate}
+
+\medskip\noindent\textit{Ưu điểm cụ thể (dựa trên HCI):} [Ví dụ chi tiết]
+
+\medskip\noindent\textit{Nhược điểm cụ thể (dựa trên HCI):} [Ví dụ chi tiết]
+
+% ---- UC3 ----
+\subsubsection{UC3: Tìm kiếm thông tin thể thao}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\textbf{Khía cạnh} & \textbf{Mô tả} \\
+\hline
+\textbf{Ở đâu?} & Bất cứ đâu có Internet \\
+\hline
+\textbf{Khi nào?} & Bất kỳ lúc nào có nhu cầu tra cứu (trước, trong, sau trận đấu) \\
+\hline
+\textbf{Tư thế người dùng} & Đa dạng: nằm, ngồi, đi --- thao tác nhanh, thời gian ngắn \\
+\hline
+\textbf{Thiết bị} & Điện thoại thông minh (chủ yếu), laptop \\
+\hline
+\end{tabularx}
+\end{center}
+
+\medskip\noindent\textbf{Các bước tương tác:}
+\begin{enumerate}[leftmargin=2em]
+  \item Mở VTVPrime $\rightarrow$ chọn biểu tượng kính lúp (tìm kiếm).
+  \item Gõ từ khóa (tên đội bóng, giải đấu, cầu thủ,\ldots).
+  \item Enter $\rightarrow$ danh sách kết quả hiện ra $\rightarrow$ chọn bài viết phù hợp.
+\end{enumerate}
+
+\medskip\noindent\textit{Ưu điểm cụ thể (dựa trên HCI):} [Ví dụ chi tiết]
+
+\medskip\noindent\textit{Nhược điểm cụ thể (dựa trên HCI):} [Ví dụ chi tiết]
+
+% --- 2.4 Phân tích ưu điểm dựa trên HCI ---
+% Mỗi \subsubsection tương ứng 1 nguyên tắc HCI:
+% Recognition & Recall, Learnability, Memorability, Capabilities (Fitts),
+% Error Prevention, Visibility, Affordances, Consistency, Mental Model
+\subsection{Phân tích ưu điểm dựa trên HCI}
+
+\subsubsection{Recognition \& Recall}
+\textbf{Hiện trạng:} [Mô tả cụ thể giao diện đang làm tốt điều gì]\\
+\textbf{Phân tích HCI:} [Giải thích theo lý thuyết recognition vs recall --- người dùng nhận ra ngay chức năng, không cần nhớ]\\
+\textbf{Ví dụ cụ thể:} [Tình huống thực tế --- ví dụ: banner trận đấu lớn $\rightarrow$ người dùng nhìn là biết đang có trận live $\rightarrow$ click ``Xem ngay'' --- đây là recognition]
+
+\subsubsection{Learnability}
+\textbf{Hiện trạng:} Giao diện giống các nền tảng lớn (YouTube, Netflix).\\
+\textbf{Phân tích HCI:} External consistency --- người dùng đã quen với các platform khác $\rightarrow$ dễ học, không cần đào tạo lại.\\
+\textbf{Ví dụ cụ thể:} [Mô tả một người dùng lần đầu dùng VTVPrime, đã từng xem YouTube $\rightarrow$ biết ngay cách dùng]
+
+\subsubsection{Memorability}
+\textbf{Hiện trạng:} [Mô tả]\\
+\textbf{Phân tích HCI:} [Giải thích]\\
+\textbf{Ví dụ cụ thể:} [Tình huống]
+
+\subsubsection{Capabilities (Fitts's Law)}
+\textbf{Hiện trạng:} Banner trận đấu có kích thước lớn, chiếm phần lớn màn hình.\\
+\textbf{Phân tích HCI:} Theo Fitts's Law ($t = a + b \log_2(d/s + 1)$), banner lớn ($s$ lớn) $\rightarrow$ thời gian di chuyển và click chuột giảm $\rightarrow$ giảm workload cho người dùng.\\
+\textbf{Ví dụ cụ thể:} [Mô tả kích thước banner, khoảng cách từ vị trí người dùng hay click tới banner $\rightarrow$ phân tích thời gian phản hồi]
+
+\subsubsection{Error Prevention}
+\textbf{Hiện trạng:} [Mô tả]\\
+\textbf{Phân tích HCI:} [Giải thích]\\
+\textbf{Ví dụ cụ thể:} [Tình huống]
+
+\subsubsection{Visibility}
+\textbf{Hiện trạng:} [Mô tả --- trạng thái hệ thống có hiển thị rõ không? Ví dụ: trận đấu đang Live có được đánh dấu rõ trên giao diện không?]\\
+\textbf{Phân tích HCI:} Theo nguyên tắc Visibility, hệ thống cần thể hiện trạng thái và khả năng tương tác để người dùng biết --- nếu thiếu, người dùng phải suy đoán.\\
+\textbf{Ví dụ cụ thể:} [Tình huống]
+
+\subsubsection{Affordances}
+\textbf{Hiện trạng:} [Mô tả --- các phần tử UI có gợi ý cách tương tác không? Ví dụ: banner trận đấu có cho thấy có thể click được không?]\\
+\textbf{Phân tích HCI:} Affordance là thuộc tính thiết kế giúp người dùng biết cách dùng mà không cần hướng dẫn --- nút nổi lên cho thấy có thể nhấn, thanh trượt cho thấy có thể kéo.\\
+\textbf{Ví dụ cụ thể:} [Tình huống]
+
+\subsubsection{Consistency}
+\textbf{Hiện trạng:} [Mô tả --- icon, thuật ngữ, bố cục có đồng nhất giữa các màn hình không?]\\
+\textbf{Phân tích HCI:} Internal consistency giúp giảm cognitive load --- người dùng không phải học lại cách dùng khi chuyển màn hình. External consistency (giống Netflix, YouTube) giúp tận dụng kinh nghiệm có sẵn.\\
+\textbf{Ví dụ cụ thể:} [Tình huống]
+
+\subsubsection{Mental Model}
+\textbf{Hiện trạng:} [Mô tả --- cách bố trí nội dung có khớp với kỳ vọng từ các OTT khác không? Ví dụ: người dùng kỳ vọng live match ở banner chính, highlight ở tab riêng?]\\
+\textbf{Phân tích HCI:} Người dùng xây dựng mental model từ kinh nghiệm quá khứ --- nếu giao diện đi ngược mental model, họ sẽ mắc lỗi hoặc mất thời gian học lại.\\
+\textbf{Ví dụ cụ thể:} [Tình huống]
+
+% --- 2.5 Phân tích nhược điểm dựa trên HCI ---
+% Liệt kê các vấn đề HCI cụ thể:
+% Error (lỗi thiết kế), Inconsistency, Efficiency, Capabilities,
+% Divided Attention, Feedback
+% Mỗi mục: Hiện trạng -> Phân tích HCI -> Ví dụ -> Đề xuất khắc phục
+\subsection{Phân tích nhược điểm dựa trên HCI}
+
+\subsubsection{Error --- Lỗi do thiết kế}
+\textbf{Hiện trạng:} [Mô tả lỗi cụ thể --- ví dụ: nút/vùng chạm quá gần nhau dẫn đến click nhầm]\\
+\textbf{Phân tích HCI:} [Liên hệ Fitts's Law, error prevention]\\
+\textbf{Ví dụ cụ thể:} [Mô tả tình huống người dùng gặp lỗi]\\
+\textbf{Đề xuất hướng khắc phục:} [Ý tưởng sơ bộ]
+
+\subsubsection{Inconsistency --- Thiếu nhất quán}
+\textbf{Hiện trạng:} Các mục ``Đề xuất'', ``Nổi bật'', ``Thể thao'', ``Phim mới'' trên trang chủ đều có format giống hệt nhau: tiêu đề trắng + danh sách thumbnail. Không có sự khác biệt trực quan để phân biệt ý nghĩa từng mục --- người dùng phải đọc từng tiêu đề mới biết đang ở đâu.\\
+\textbf{Phân tích HCI:} Internal consistency bị vi phạm --- các thành phần khác nhau về chức năng cần được thiết kế khác nhau để phản ánh đúng vai trò. Khi mọi thứ trông giống nhau, người dùng không thể ưu tiên xử lý thông tin, phải scan toàn bộ $\rightarrow$ tăng cognitive load.\\
+\textbf{Ví dụ cụ thể:} Giả sử người dùng muốn tìm trận đá gần đây nhất. Cả mục ``Đề xuất'' (gợi ý cá nhân), ``Nổi bật'' (hot trend), ``Thể thao'' (trận đấu) đều là dãy thumbnail giống nhau $\rightarrow$ phải đọc chữ mới phân biệt được.\\
+\textbf{Đề xuất hướng khắc phục:} Thiết kế section header khác biệt: icon + màu sắc + kích thước chữ riêng cho từng loại mục. Ví dụ: mục ``Thể thao'' dùng icon bóng đá + nền tối, mục ``Phim mới'' dùng icon film + nền sáng.
+
+\subsubsection{Efficiency --- Tốn nhiều thao tác cuộn (Motor Load)}
+\textbf{Hiện trạng:} Trang chủ VTVPrime dùng cơ chế cuộn vô tận (infinite scroll), tự động load thêm nội dung khi kéo đến cuối. Tuy nhiên không có nút ``Go to top'' --- mỗi lần muốn quay lên đầu trang, người dùng phải cuộn thủ công qua hàng loạt mục đã xem. Nếu đang ở cuối trang, thao tác cuộn lên rất tốn thời gian và công sức. Việc phải lướt qua hàng chục mục cùng lúc cũng buộc người dùng phải scan và ghi nhớ vị trí nội dung --- cử động mắt và tay nhiều.\\
+\textbf{Phân tích HCI:} Theo Fitts's Law, khoảng cách ($d$) càng lớn thì thời gian tương tác càng lâu --- cuộn từ cuối lên đầu trang là distance cực đại. Ngoài ra, infinite scroll không có điểm dừng khiến người dùng mất phương hướng, không biết mình đang ở đâu trong không gian nội dung --- vi phạm nguyên tắc Visibility.\\
+\textbf{Ví dụ cụ thể:} Người dùng lướt đến mục thứ 20 (ví dụ ``Học Nhanh --- Nhớ Sâu''), thấy không hứng thú, muốn quay lại mục ``Phim Hoạt Hình Mới'' đã thấy lúc đầu $\rightarrow$ phải cuộn tay hoặc lăn chuột rất nhiều để lên lại. Nếu không nhớ vị trí, họ phải vừa cuộn vừa scan lại từ đầu.\\
+\textbf{Đề xuất hướng khắc phục:} Thêm nút ``Go to top'' dạng floating (xuất hiện khi scroll xuống một ngưỡng nhất định). Hoặc chuyển sang cơ chế phân trang (pagination) để người dùng có điểm đánh dấu và dễ quay lại.
+
+\subsubsection{Capabilities --- Không tối ưu cho người thuận tay trái}
+\textbf{Hiện trạng:} [Mô tả --- nút/khu vực tương tác chính nằm bên phải màn hình, không thuận cho người dùng tay trái]\\
+\textbf{Phân tích HCI:} Reachability --- vùng tương tác chính nằm ngoài vùng với tay thoải mái của người thuận tay trái.\\
+\textbf{Ví dụ cụ thể:} [Mô tả]\\
+\textbf{Đề xuất hướng khắc phục:} [Ý tưởng sơ bộ]
+
+\subsubsection{Divided Attention --- Phân tán sự chú ý}
+\textbf{Hiện trạng:} [Mô tả --- ví dụ: phần ``Chương trình truyền hình'' chen ngang nội dung thể thao]\\
+\textbf{Phân tích HCI:} Divided attention --- người dùng phải xử lý nhiều luồng thông tin không liên quan cùng lúc $\rightarrow$ tăng cognitive load.\\
+\textbf{Ví dụ cụ thể:} [Mô tả]\\
+\textbf{Đề xuất hướng khắc phục:} [Ý tưởng sơ bộ]
+
+\subsubsection{Feedback --- Thiếu phản hồi}
+\textbf{Hiện trạng:} Khi cuộn đến cuối cùng của nội dung trên trang chủ, không có dòng text hay dấu hiệu nào cho biết ``đã hết nội dung'' hoặc ``không còn gì để hiển thị''. Hệ thống chỉ đơn giản là dừng load --- người dùng không biết là do đã hết nội dung thật hay do mạng lag/đang load tiếp.\\
+\textbf{Phân tích HCI:} Theo nguyên tắc Feedback, hệ thống cần phản hồi trạng thái sau mỗi hành động của người dùng. Khi thiếu feedback ở trạng thái cuối trang, người dùng rơi vào tình trạng uncertainty --- không biết nên chờ thêm hay đã hết, dẫn đến hành vi chờ đợi vô ích hoặc tưởng app bị lỗi.\\
+\textbf{Ví dụ cụ thể:} Người dùng cuộn đến cuối trang chủ, trang dừng load. Họ chờ 5--10 giây vì nghĩ mạng chậm, nhưng thực tế không còn gì nữa. Sau vài lần như vậy họ mới hiểu ra, nhưng mỗi lần vẫn phải mất thời gian ``đoán'' trạng thái hệ thống.\\
+\textbf{Đề xuất hướng khắc phục:} Thêm dòng text như ``Đã hiển thị tất cả nội dung'' hoặc một icon ở cuối trang. Hoặc chuyển sang phân trang (pagination) với số trang rõ ràng.
+
+% --- 2.6 Các kiểu người dùng & bối cảnh phát sinh khó khăn ---
+% Phân tích 6 tình huống:
+% 2.6.1: Người dùng mới vs Power user
+% 2.6.2: Mobile vs Desktop
+% 2.6.3: Kết nối Internet chậm
+% 2.6.4: Người dùng nước ngoài
+% 2.6.5: Môi trường ánh sáng mạnh
+% 2.6.6: Multi-task (xem nhiều trận cùng lúc)
+\subsection{Các kiểu người dùng \& bối cảnh phát sinh khó khăn}
+
+\textit{Yêu cầu:} Xem xét các kiểu người dùng khác nhau và các bối cảnh có thể gây khó khăn/cản trở với giao diện hiện tại.
+
+\subsubsection{2.6.1~Người dùng mới (First-time user) vs Người dùng quen thuộc (Power user)}
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{|l|X|X|}
+\hline
+\textbf{Khía cạnh} & \textbf{Người dùng mới} & \textbf{Người dùng quen thuộc} \\
+\hline
+\textbf{Đặc điểm} & Chưa từng dùng VTVPrime hoặc các nền tảng OTT trước đây & Đã dùng lâu năm, quen thuộc với mọi chức năng \\
+\hline
+\textbf{Khó khăn dự kiến} & [Mô tả --- ví dụ: không biết chức năng ``Tin nhanh'' để tìm highlight, phải mò mẫm] & [Mô tả --- ví dụ: phải qua nhiều bước để truy cập tính năng hay dùng] \\
+\hline
+\textbf{Bối cảnh cụ thể} & [Tình huống thực tế] & [Tình huống thực tế] \\
+\hline
+\textbf{Phân tích HCI} & [Ví dụ: Learnability --- giao diện có trực quan để người mới tự học không?] & [Ví dụ: Efficiency --- power user có thể thao tác nhanh không, hay bị chậm bởi UI?] \\
+\hline
+\end{tabularx}
+\end{center}
+
+\subsubsection{2.6.2~Người dùng xem trên thiết bị di động (Mobile) vs Desktop}
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{|l|X|X|}
+\hline
+\textbf{Khía cạnh} & \textbf{Mobile} & \textbf{Desktop} \\
+\hline
+\textbf{Bối cảnh} & Xem khi đang di chuyển (trên xe bus, tàu điện), nằm trên giường, chờ đợi & Xem tại bàn làm việc, phòng khách --- màn hình lớn, kết nối ổn định \\
+\hline
+\textbf{Khó khăn dự kiến} & [Mô tả --- ví dụ: nút điều khiển quá nhỏ trên màn hình điện thoại, khó thao tác khi đi lại] & [Mô tả --- ví dụ: bố cục giãn cách xa, phải di chuyển chuột nhiều] \\
+\hline
+\textbf{Phân tích HCI} & [Fitts's Law --- size nhỏ $\rightarrow$ thời gian tương tác lâu. Reachability --- vùng chạm xa tầm tay] & [Fitts's Law --- distance xa $\rightarrow$ lâu hơn] \\
+\hline
+\end{tabularx}
+\end{center}
+
+\subsubsection{2.6.3~Người dùng ở khu vực có kết nối Internet chậm / không ổn định}
+\begin{itemize}[leftmargin=2em]
+  \item \textbf{Bối cảnh:} Ở vùng nông thôn, vùng sâu vùng xa, hoặc khi di chuyển (xe lửa, tàu).
+  \item \textbf{Khó khăn dự kiến:} [Mô tả --- ví dụ: video bị buffer kéo dài, ảnh/video không load, người dùng không biết là do Internet hay do app]
+  \item \textbf{Phân tích HCI:} [Feedback --- hệ thống không thông báo trạng thái loading/lỗi kết nối $\rightarrow$ người dùng confused]
+  \item \textbf{Bối cảnh cụ thể:} [Tình huống thực tế]
+\end{itemize}
+
+\subsubsection{2.6.4~Người dùng nước ngoài / người không rành tiếng Việt}
+\begin{itemize}[leftmargin=2em]
+  \item \textbf{Bối cảnh:} Người nước ngoài sinh sống tại Việt Nam muốn theo dõi World Cup 2026.
+  \item \textbf{Khó khăn dự kiến:} Tra cứu bằng tên đội bóng tiếng Anh (ví dụ: ``Portugal'') $\rightarrow$ không có đề xuất. Giao diện hoàn toàn bằng tiếng Việt.
+  \item \textbf{Phân tích HCI:} Recognition bị giảm --- người dùng không nhận ra từ khóa tìm kiếm do ngôn ngữ không khớp.
+  \item \textbf{Bối cảnh cụ thể:} [Tình huống thực tế]
+\end{itemize}
+
+\subsubsection{2.6.5~Người dùng sử dụng trong môi trường ánh sáng mạnh (ngoài trời, ban ngày)}
+\begin{itemize}[leftmargin=2em]
+  \item \textbf{Bối cảnh:} Xem trận đấu ngoài trời (quán cà phê vỉa hè, công viên, màn hình ngoài trời).
+  \item \textbf{Khó khăn dự kiến:} [Mô tả --- ví dụ: độ tương phản thấp, chữ/nút quá nhỏ không đọc được, banner bị chói]
+  \item \textbf{Phân tích HCI:} [Visibility --- thông tin không còn nhìn thấy được trong điều kiện ánh sáng mạnh. Affordance mất tác dụng]
+  \item \textbf{Bối cảnh cụ thể:} [Tình huống thực tế]
+\end{itemize}
+
+\subsubsection{2.6.6~Người dùng có nhu cầu xem cùng lúc nhiều trận đấu (Multi-task)}
+\begin{itemize}[leftmargin=2em]
+  \item \textbf{Bối cảnh:} Các giải đấu lớn (World Cup, ASIAD) diễn ra cùng giờ. Người dùng muốn theo dõi nhiều trận cùng lúc.
+  \item \textbf{Khó khăn dự kiến:} [Mô tả --- ví dụ: không có tính năng multi-view/picture-in-picture, phải chuyển qua lại giữa các tab]
+  \item \textbf{Phân tích HCI:} [Divided attention --- phải chuyển đổi liên tục gây cognitive load. Efficiency giảm]
+  \item \textbf{Bối cảnh cụ thể:} [Tình huống thực tế]
+\end{itemize}
+
+\bigskip
+% ======================================================
+%          3. SẢN PHẨM 2: FPTPLAY
+% ======================================================
+% Cấu trúc tương tự section 2 (VTVPrime) để dễ so sánh
+% Bao gồm: Domain, Đối tượng, Use Cases, Phân tích HCI, Kiểu người dùng
+\section{Sản phẩm 2: FPTPlay}
+
+% --- 3.1 Tên sản phẩm & Domain ---
+% Bảng thông tin tổng quan về FPTPlay
+\subsection{Tên sản phẩm \& Domain}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\textbf{Thông tin} & \textbf{Chi tiết} \\
+\hline
+\textbf{Tên sản phẩm} & FPTPlay \\
+\hline
+\textbf{Domain} & \textbf{Nền tảng OTT (Over-The-Top) --- Truyền hình, phim ảnh \& thể thao trực tuyến.} \\
+\hline
+\textbf{Nền tảng} & Web (\url{https://fptplay.vn/}), Mobile (iOS/Android) \\
+\hline
+\textbf{Nhà phát hành} & FPT Telecom \\
+\hline
+\end{tabularx}
+\end{center}
+
+\medskip\noindent\textbf{Phân tích Domain theo 3 khía cạnh:}
+
+\bigskip
+\begin{center}
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\textbf{Khía cạnh} & \textbf{Giải thích} \\
+\hline
+\textbf{\ding{172} Sản phẩm làm về cái gì?} & FPTPlay là ứng dụng OTT do FPT Telecom phát hành, cung cấp nội dung: tường thuật thể thao trực tiếp, kênh truyền hình trực tuyến, phim và chương trình giải trí theo yêu cầu. FPTPlay tiếp sóng World Cup 2026 từ VTV, phát tất cả 104 trận. Ngoài ra còn có truyền hình trực tuyến, phim, chương trình TV và tin tức. Ứng dụng có tích hợp AI để phân tích nội dung thể thao. \\
+\hline
+\textbf{\ding{173} Dùng trong hoàn cảnh nào?} & Tương tự VTVPrime: người dùng thức khuya xem trực tiếp thể thao (World Cup 2026, các giải đấu quốc tế) do chênh lệch múi giờ. Ban ngày xem lại highlight, tin tức thể thao. Lúc rảnh rỗi xem phim hoặc chương trình giải trí. Thiết bị dùng được: TV thông minh, laptop, máy tính bảng, điện thoại. \\
+\hline
+\textbf{\ding{174} Quy tắc trong lĩnh vực đó?} & Giống với VTVPrime --- cùng domain OTT thể thao nên có chung 5 yêu cầu: (1) Trận đấu đang diễn ra phải mở được ngay; (2) Nút điều khiển tự ẩn khi xem; (3) Tỉ số, thời gian, tên đội luôn hiển thị; (4) Lịch thi đấu rõ ràng (ngày, giờ, đội); (5) Phân biệt rõ trạng thái Live / Sắp diễn ra / Đã kết thúc. \\
+\hline
+\end{tabularx}
+\end{center}
+
+% --- 3.2 Đối tượng người dùng ---
+% Phân khúc người dùng FPTPlay
+\subsection{Đối tượng người dùng}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\textbf{Nhóm} & \textbf{Mô tả} \\
+\hline
+\textbf{Người yêu thích thể thao} & Khán giả trung thành, thường xuyên theo dõi các giải đấu độc quyền trên FPTPlay như UEFA Champions League, V-League. Họ quan tâm sâu sắc đến chất lượng đường truyền trực tiếp ổn định, độ phân giải cao (4K/FullHD) và tốc độ cập nhật kết quả. \\
+\hline
+\textbf{Khán giả phổ thông} & Nhóm người dùng gia đình hoặc khán giả phong trào, chỉ truy cập vào các dịp sự kiện lớn như World Cup 2026 hay ASIAD 2026. Họ coi trọng sự đơn giản, dễ tìm kiếm kênh tiếp sóng và các gói cước gia đình giá rẻ. \\
+\hline
+\end{tabularx}
+\end{center}
+
+\medskip\noindent\textit{Nhận xét:} [Tương tự VTVPrime --- đa dạng đối tượng, độ tuổi, kinh nghiệm sử dụng]
+
+% --- 3.3 Core Use Cases ---
+% UC1: Xem live | UC2: Lựa chọn môn thể thao | UC3: Thanh toán gói cước
+\subsection{Core Use Cases}
+
+% ---- UC1 ----
+\subsubsection{UC1: Xem trực tiếp một trận đấu}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\textbf{Khía cạnh} & \textbf{Mô tả} \\
+\hline
+\textbf{Ở đâu?} & Tại nhà hoặc bất cứ đâu có Internet \\
+\hline
+\textbf{Khi nào?} & Trước hoặc ngay khi trận đấu bắt đầu \\
+\hline
+\textbf{Tư thế người dùng} & Ngồi/nằm trên ghế, sofa --- xem trong thời gian dài \\
+\hline
+\textbf{Thiết bị} & Laptop, điện thoại, máy tính bảng \\
+\hline
+\end{tabularx}
+\end{center}
+
+\medskip\noindent\textbf{Các bước tương tác:}
+\begin{enumerate}[leftmargin=2em]
+  \item Truy cập FPTPlay $\rightarrow$ đăng nhập (nếu cần).
+  \item Banner trận đấu trực tiếp hiển thị $\rightarrow$ chọn ``Xem ngay''.
+  \item Sử dụng điều khiển: dừng, âm lượng, phóng to, chất lượng.
+\end{enumerate}
+
+\medskip\noindent\textit{Ưu điểm cụ thể (dựa trên HCI):} Hệ thống tự động tối ưu độ phân giải dựa trên tốc độ mạng thực tế (Visibility of System Status), giúp trận đấu không bị ngắt quãng, giảm thiểu sự thất vọng của người dùng khi luồng stream bị nghẽn đột ngột.
+
+\medskip\noindent\textit{Nhược điểm cụ thể (dựa trên HCI):} Khung chat trực tuyến (Live Chat) mặc định hiển thị che khuất một phần góc phải màn hình ở chế độ xem dọc trên điện thoại. Nút ``X'' tắt khung chat quá nhỏ, vi phạm định luật Fitts, khiến người dùng dễ bấm nhầm vào nội dung chat.
+
+% ---- UC2 ----
+\subsubsection{UC2: Lựa chọn môn thể thao để xem}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\textbf{Khía cạnh} & \textbf{Mô tả} \\
+\hline
+\textbf{Ở đâu?} & Bất cứ đâu có Internet \\
+\hline
+\textbf{Khi nào?} & Bất cứ khi nào muốn tìm nội dung thể thao \\
+\hline
+\textbf{Tư thế người dùng} & Ngồi/nằm --- thao tác duyệt tìm, thời gian ngắn \\
+\hline
+\textbf{Thiết bị} & Laptop, điện thoại \\
+\hline
+\end{tabularx}
+\end{center}
+
+\medskip\noindent\textbf{Các bước tương tác:}
+\begin{enumerate}[leftmargin=2em]
+  \item Truy cập FPTPlay.
+  \item Trên thanh công cụ $\rightarrow$ ấn ``Xem thêm'' (mũi tên bên phải).
+  \item Chọn môn thể thao ưa thích.
+  \item Duyệt danh sách trận đấu $\rightarrow$ chọn xem.
+\end{enumerate}
+
+\medskip\noindent\textit{Ưu điểm cụ thể (dựa trên HCI):} Các danh mục môn thể thao được minh họa bằng các biểu tượng đặc trưng (Recognition over Recall) như quả bóng đá, quả bóng rổ, giúp người dùng nhận diện thể loại mong muốn ngay lập tức mà không cần đọc chữ.
+
+\medskip\noindent\textit{Nhược điểm cụ thể (dựa trên HCI):} Danh sách môn thể thao khi mở rộng xếp theo dạng thanh cuộn ngang vô tận trên mobile, gây áp lực lên cơ tay (Motor Load) và khiến người dùng khó định vị được các môn nằm ở phía cuối danh sách.
+
+% ---- UC3 ----
+\subsubsection{UC3: Lựa chọn và thanh toán gói cước}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\textbf{Khía cạnh} & \textbf{Mô tả} \\
+\hline
+\textbf{Ở đâu?} & Bất cứ đâu có Internet \\
+\hline
+\textbf{Khi nào?} & Khi cần đăng ký/gia hạn gói thể thao \\
+\hline
+\textbf{Tư thế người dùng} & Đa dạng --- thao tác ngắn \\
+\hline
+\textbf{Thiết bị} & Điện thoại (chủ yếu) hoặc laptop \\
+\hline
+\end{tabularx}
+\end{center}
+
+\medskip\noindent\textbf{Các bước tương tác:}
+\begin{enumerate}[leftmargin=2em]
+  \item Truy cập FPTPlay $\rightarrow$ chọn ``Mua gói'' trên thanh công cụ.
+  \item Xem danh sách gói cước $\rightarrow$ chọn gói phù hợp.
+  \item Chuyển đến trang thanh toán $\rightarrow$ thực hiện thanh toán.
+\end{enumerate}
+
+\medskip\noindent\textit{Ưu điểm cụ thể (dựa trên HCI):} Tích hợp các cổng thanh toán điện tử phổ biến (MoMo, VNPAY) qua mã QR Code giúp rút ngắn hành trình nhập liệu, tăng tốc độ xử lý tác vụ (Efficiency of Use).
+
+\medskip\noindent\textit{Nhược điểm cụ thể (dựa trên HCI):} Giao diện thanh toán thiếu bước tóm tắt đơn hàng rõ ràng trước khi bấm nút xác nhận thanh toán cuối cùng (Error Prevention), dễ dẫn đến việc người dùng mua nhầm gói cước dài hạn mà không hề hay biết.
+
+% --- 3.4 Phân tích ưu điểm dựa trên HCI ---
+% 7 nguyên tắc HCI: Recognition, Learnability, Consistency, Capabilities,
+% Visibility, Affordances, Mental Model
+\subsection{Phân tích ưu điểm dựa trên HCI}
+
+\subsubsection{Recognition \& Recall}
+\textbf{Hiện trạng:} Hệ thống sử dụng các icon chuẩn quốc tế cho các tab chức năng chính (Trang chủ, Truyền hình, Thể thao, Phim truyện).\\
+\textbf{Phân tích HCI:} Nhấn mạnh cơ chế nhận diện hình ảnh thay vì bắt trí nhớ ngắn hạn làm việc. Người dùng chỉ cần lướt mắt qua là biết vị trí phân mục.\\
+\textbf{Ví dụ cụ thể:} Icon chiếc cúp vàng đại diện cho giải đấu World Cup 2026 được ghim cố định ở góc trên giao diện, giúp khán giả click vào ngay mà không cần tìm kiếm thủ công.
+
+\subsubsection{Learnability \& Memorability}
+\textbf{Hiện trạng:} Giao diện sắp xếp nội dung dạng lưới thẻ (Grid Cards) trượt ngang, phân vùng nội dung từ trên xuống dưới.\\
+\textbf{Phân tích HCI:} Tận dụng tính nhất quán bên ngoài (External Consistency) với các tiêu chuẩn công nghiệp như Netflix hay YouTube, giúp người dùng mới thành thạo ngay trong lần sử dụng đầu tiên.\\
+\textbf{Ví dụ cụ thể:} Một người lớn tuổi quen xem phim trên Netflix khi chuyển sang FPTPlay vẫn biết cách vuốt ngang để tìm tập phim tiếp theo nhờ cấu trúc layout tương đồng.
+
+\subsubsection{Consistency}
+\textbf{Hiện trạng:} Sắc cam thương hiệu được áp dụng đồng bộ cho tất cả các nút hành động chính (CTA) và trạng thái đang được chọn.\\
+\textbf{Phân tích HCI:} Thiết lập tính nhất quán nội bộ (Internal Consistency), giảm thiểu tải nhận thức khi điều hướng qua các màn hình khác nhau.\\
+\textbf{Ví dụ cụ thể:} Nút ``Mua gói'' ở trang chủ, nút ``Thanh toán'' ở trang giỏ hàng và các nút ``Xác nhận'' đều dùng chung một mã màu cam và font chữ bo góc đồng nhất.
+
+\subsubsection{Capabilities (Fitts's Law)}
+\textbf{Hiện trạng:} Banner các trận đấu Live tiêu điểm của World Cup 2026 được thiết kế với kích thước lớn, chiếm trọn 1/3 phía trên màn hình trang chủ.\\
+\textbf{Phân tích HCI:} Áp dụng định luật Fitts: Mục tiêu có kích thước càng lớn ($s$ lớn) thì thời gian tiếp cận và click ($t$) càng ngắn, giúp tăng tỷ lệ nhấp chuột.\\
+\textbf{Ví dụ cụ thể:} Khi trận đấu giữa Brazil và Pháp đang diễn ra, người dùng vừa mở app lên là có thể dễ dàng chạm ngón tay vào vùng banner khổng lồ để vào xem trực tiếp ngay lập tức.
+
+\subsubsection{Visibility}
+\textbf{Hiện trạng:} Các thẻ trận đấu đang phát trực tiếp luôn được gắn nhãn nhấp nháy chữ ``LIVE'' màu đỏ rực ở góc trái.\\
+\textbf{Phân tích HCI:} Đảm bảo nguyên lý Visibility of System Status. Trạng thái thời gian thực của hệ thống được phơi bày rõ ràng trực quan.\\
+\textbf{Ví dụ cụ thể:} Giữa một danh sách các trận đấu lưu trữ (replay), người dùng phân biệt được ngay trận nào đang đá trực tiếp dựa vào thẻ nhãn màu đỏ nổi bật.
+
+\subsubsection{Affordances}
+\textbf{Hiện trạng:} Các thanh trượt tiến trình (Progress Bar) video có các chấm tròn nổi lên tại điểm mốc thời gian.\\
+\textbf{Phân tích HCI:} Gợi ý công năng (Affordance) vật lý rõ ràng: chấm tròn sinh ra là để nắm kéo. Người dùng hiểu ngay hành vi cần làm là kéo thả để tua video.\\
+\textbf{Ví dụ cụ thể:} Người dùng không cần đọc hướng dẫn vẫn tự biết dùng ngón tay giữ chấm tròn trên thanh timeline để tua nhanh qua phần quảng cáo đầu trận đấu.
+
+\subsubsection{Mental Model}
+\textbf{Hiện trạng:} Danh mục ``Truyền hình'' mô phỏng danh sách kênh theo số thứ tự (VTV1, VTV2, VTV3,\dots) chạy dọc kèm lịch phát sóng theo giờ.\\
+\textbf{Phân tích HCI:} Thiết kế trùng khớp với mô hình tâm trí (Mental Model) của người dùng về chiếc TV truyền thống, giúp họ không phải thay đổi thói quen cũ.\\
+\textbf{Ví dụ cụ thể:} Người dùng thế hệ trước dễ dàng tìm thấy kênh VTV3 để xem đá bóng bằng cách cuộn tìm số 3 đúng như cách họ bấm remote điều khiển TV ở nhà.
+
+% --- 3.5 Phân tích nhược điểm dựa trên HCI ---
+% 3 nhược điểm chính: Capabilities, Visibility (che khuất), Nhược điểm khác
+\subsection{Phân tích nhược điểm dựa trên HCI}
+
+\subsubsection{Capabilities --- Không tối ưu cho vùng chạm tay (Reachability)}
+\textbf{Hiện trạng:} Nút tìm kiếm (kính lúp) và nút lịch sử xem được đặt ở góc trên cùng bên phải của giao diện di động.\\
+\textbf{Phân tích HCI:} Vi phạm nguyên tắc Reachability trên thiết bị di động. Với xu hướng màn hình ngày càng lớn, vùng trên cùng là ``vùng chết'' đối với thao tác một tay.\\
+\textbf{Ví dụ cụ thể:} Người dùng cầm điện thoại bằng một tay khi đang đứng trên xe buýt rất khó với ngón cái lên góc trên cùng bên phải để gõ tìm trận đấu World Cup, dễ gây rơi máy.\\
+\textbf{Đề xuất hướng khắc phục:} Chuyển thanh tìm kiếm xuống thanh điều hướng dưới cùng (Bottom Navigation Bar) để tối ưu hóa tầm với của ngón tay cái.
+
+\subsubsection{Visibility --- Nội dung quan trọng bị che khuất}
+\textbf{Hiện trạng:} Khi xem video ở chế độ màn hình ngang trên điện thoại, các thông báo đẩy (Pop-up thông báo, quảng cáo gói cước) xuất hiện tràn ra giữa màn hình, che khuất bảng tỉ số trận đấu.\\
+\textbf{Phân tích HCI:} Vi phạm nghiêm trọng sự tường minh về trạng thái (Visibility). Hệ thống ưu tiên hiển thị quảng cáo hơn nội dung cốt lõi mà người dùng đang theo dõi.\\
+\textbf{Ví dụ cụ thể:} Đúng lúc có tình huống nguy hiểm trong vòng cấm, một pop-up quảng cáo ``Gia hạn gói VIP'' hiện lên che mất góc trái màn hình --- nơi hiển thị thời gian trận đấu, gây ức chế cực độ.\\
+\textbf{Đề xuất hướng khắc phục:} Định dạng lại thông báo đẩy thành các dòng text nhỏ chạy dưới đáy màn hình hoặc chỉ xuất hiện ở khu vực không có dữ liệu trận đấu.
+
+\subsubsection{Cognitive Load --- Ma trận gói cước gây quá tải nhận thức}
+\textbf{Hiện trạng:} Trang thông tin mua gói hiển thị một loạt các gói cước như gói iZi, gói Sport, gói VIP xếp chồng chéo với hàng tá dòng mô tả tính năng chữ nhỏ.\\
+\textbf{Phân tích HCI:} Ép buộc người dùng phải sử dụng trí nhớ ngắn hạn (Recall) để so sánh quyền lợi giữa các gói thay vì nhìn thấy trực quan (Recognition), làm chậm quá trình ra quyết định.\\
+\textbf{Ví dụ cụ thể:} Người dùng muốn biết gói Sport có xem được phim châu Á như gói VIP không, họ phải click vào từng gói, đọc kỹ rồi tự ghi nhớ và so sánh trong đầu.\\
+\textbf{Đề xuất hướng khắc phục:} Xây dựng một bảng ma trận so sánh (Comparison Matrix) với các dấu tích xanh trực quan liệt kê rõ tính năng của từng gói cước cạnh nhau trên một màn hình duy nhất.
+
+% --- 3.6 Các kiểu người dùng & bối cảnh phát sinh khó khăn ---
+% Tương tự 2.6 nhưng áp dụng cho FPTPlay
+% 6 tình huống: Mới/Quen, Mobile/Desktop, Internet chậm,
+% Không rành công nghệ, Ánh sáng mạnh, So sánh gói cước
+\subsection{Các kiểu người dùng \& bối cảnh phát sinh khó khăn}
+
+\textit{Yêu cầu:} Xem xét các kiểu người dùng khác nhau và các bối cảnh có thể gây khó khăn/cản trở với giao diện hiện tại.
+
+\subsubsection{3.6.1~Người dùng mới (First-time user) vs Người dùng quen thuộc (Power user)}
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{|l|X|X|}
+\hline
+\textbf{Khía cạnh} & \textbf{Người dùng mới} & \textbf{Người dùng quen thuộc} \\
+\hline
+\textbf{Đặc điểm} & Chưa dùng FPTPlay hoặc các nền tảng OTT trước đây & Đã dùng lâu, biết rõ cấu trúc và tính năng \\
+\hline
+\textbf{Khó khăn dự kiến} & [Mô tả --- ví dụ: không biết phải ấn ``Xem thêm'' để duyệt môn thể thao] & [Mô tả --- ví dụ: phải qua nhiều bước để vào đúng môn thể thao yêu thích] \\
+\hline
+\textbf{Bối cảnh cụ thể} & [Tình huống thực tế] & [Tình huống thực tế] \\
+\hline
+\textbf{Phân tích HCI} & [Learnability, Mental model --- người mới có hiểu ngay cách duyệt không?] & [Efficiency --- số bước thao tác có tối thiểu chưa?] \\
+\hline
+\end{tabularx}
+\end{center}
+
+\subsubsection{3.6.2~Người dùng xem trên thiết bị di động (Mobile) vs Desktop}
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{|l|X|X|}
+\hline
+\textbf{Khía cạnh} & \textbf{Mobile} & \textbf{Desktop} \\
+\hline
+\textbf{Bối cảnh} & Xem khi đi lại, nằm trên giường, trong giờ nghỉ & Xem tại bàn, phòng khách với màn hình lớn \\
+\hline
+\textbf{Khó khăn dự kiến} & [Mô tả --- ví dụ: phần ``Xem thêm'' ở góc trên cùng, khó với tay khi dùng một tay] & [Mô tả --- ví dụ: các môn thể thao trải dài, phải scroll nhiều] \\
+\hline
+\textbf{Phân tích HCI} & [Reachability --- nút ở xa tầm với ngón tay cái. Fitts's Law] & [Fitts's Law --- distance lớn, phải di chuyển chuột nhiều] \\
+\hline
+\end{tabularx}
+\end{center}
+
+\subsubsection{3.6.3~Người dùng ở khu vực có kết nối Internet chậm / không ổn định}
+\begin{itemize}[leftmargin=2em]
+  \item \textbf{Bối cảnh:} Vùng nông thôn, khi di chuyển (xe lửa, xe khách).
+  \item \textbf{Khó khăn dự kiến:} [Mô tả --- ví dụ: danh sách gói cước không load kịp, ảnh poster bị vỡ]
+  \item \textbf{Phân tích HCI:} [Feedback --- không có indicator nào cho biết đang loading. Error prevention --- dễ bấm nhầm gói cước do giao diện nhảy]
+  \item \textbf{Bối cảnh cụ thể:} [Tình huống thực tế]
+\end{itemize}
+
+\subsubsection{3.6.4~Người dùng không rành về công nghệ / thanh toán trực tuyến}
+\begin{itemize}[leftmargin=2em]
+  \item \textbf{Bối cảnh:} Người lớn tuổi, người ít sử dụng Internet, người lo ngại về bảo mật thanh toán.
+  \item \textbf{Khó khăn dự kiến:} [Mô tả --- ví dụ: quy trình thanh toán nhiều bước không rõ ràng, sợ bấm nhầm, thiếu hướng dẫn]
+  \item \textbf{Phân tích HCI:} [Mental model --- người dùng không có mental model về thanh toán online $\rightarrow$ lo lắng. Error prevention --- thiếu bước xác nhận trước khi thanh toán]
+  \item \textbf{Bối cảnh cụ thể:} [Tình huống thực tế]
+\end{itemize}
+
+\subsubsection{3.6.5~Người dùng sử dụng trong môi trường ánh sáng mạnh (ngoài trời)}
+\begin{itemize}[leftmargin=2em]
+  \item \textbf{Bối cảnh:} Xem thông tin thể thao ngoài trời, quán cà phê ngoài trời.
+  \item \textbf{Khó khăn dự kiến:} [Mô tả --- ví dụ: chữ trên banner bị chói, khó đọc tên trận đấu]
+  \item \textbf{Phân tích HCI:} [Visibility --- thông tin mất khả năng hiển thị. Contrast không đủ cao]
+  \item \textbf{Bối cảnh cụ thể:} [Tình huống thực tế]
+\end{itemize}
+
+\subsubsection{3.6.6~Người dùng muốn so sánh gói cước nhanh}
+\begin{itemize}[leftmargin=2em]
+  \item \textbf{Bối cảnh:} Trước khi quyết định mua gói thể thao, người dùng muốn so sánh các gói.
+  \item \textbf{Khó khăn dự kiến:} [Mô tả --- ví dụ: phải click vào từng gói để xem chi tiết, không có bảng so sánh cạnh nhau]
+  \item \textbf{Phân tích HCI:} [Recognition --- không thể nhìn thấy tất cả thông tin cùng lúc, phải dùng recall để nhớ gói trước khi xem gói sau. Efficiency giảm]
+  \item \textbf{Bối cảnh cụ thể:} [Tình huống thực tế]
+\end{itemize}
+
+\bigskip
+
+% ======================================================
+%          4. TỔNG HỢP & NHẬN XÉT
+% ======================================================
+% Mục cuối cùng: so sánh và tổng kết 2 sản phẩm
+\section{Tổng hợp \& Nhận xét}
+
+% --- 4.1 So sánh nhanh ---
+% Bảng đối chiếu 8 tiêu chí HCI giữa VTVPrime và FPTPlay
+\subsection{So sánh nhanh giữa hai sản phẩm}
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{|l|X|X|}
+\hline
+\textbf{Tiêu chí HCI} & \textbf{VTVPrime} & \textbf{FPTPlay} \\
+\hline
+Recognition \& Recall & [Nhận xét] & [Nhận xét] \\
+\hline
+Learnability & [Nhận xét] & [Nhận xét] \\
+\hline
+Consistency & [Nhận xét] & [Nhận xét] \\
+\hline
+Capabilities (Fitts) & [Nhận xét] & [Nhận xét] \\
+\hline
+Error Prevention & [Nhận xét] & [Nhận xét] \\
+\hline
+Feedback & [Nhận xét] & [Nhận xét] \\
+\hline
+Reachability & [Nhận xét] & [Nhận xét] \\
+\hline
+Inclusive Design & [Nhận xét] & [Nhận xét] \\
+\hline
+\end{tabularx}
+\end{center}
+
+% --- 4.2 Kết luận ---
+% Tổng kết điểm mạnh/yếu, gợi mở cho phần Potential Solutions
+\subsection{Kết luận}
+
+[Tổng kết ngắn gọn: những điểm mạnh/yếu chính của cả 2 sản phẩm, gợi mở cho phần Potential Solutions]
+
+\bigskip
+
+% ======================================================
+%          TÀI LIỆU THAM KHẢO
+% ======================================================
+% Liệt kê các nguồn đã sử dụng trong bài nghiên cứu
+\section{Tài liệu tham khảo}
+
+[Các nguồn tham khảo nếu có]
