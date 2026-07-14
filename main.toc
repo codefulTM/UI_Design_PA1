@@ -73,6 +73,8 @@
 \contentsline {section}{\numberline {4}Tổng hợp \& Nhận xét}{39}{section.4}%
 \contentsline {subsection}{\numberline {4.1}So sánh nhanh giữa hai sản phẩm}{39}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Kết luận}{40}{subsection.4.2}%
+\contentsline {section}{Appendices}{41}{section*.1}%
+\contentsline {section}{Appendices}{41}{section*.2}%
 \contentsline {section}{\numberline {A}Các nguyên tắc HCI}{41}{appendix.A}%
 \contentsline {subsection}{\numberline {A.1}Recognition \& Recall (Nhận diện \& Nhớ lại)}{41}{subsection.A.1}%
 \contentsline {subsection}{\numberline {A.2}Learnability (Khả năng học)}{41}{subsection.A.2}%

@@ -30,6 +30,7 @@
 \usepackage{titlesec}   % Tùy chỉnh định dạng tiêu đề section
 \usepackage{fancyhdr}   % Header/footer tùy chỉnh (trang tiêu, trang cuối)
 \usepackage{amssymb}    % Ký hiệu toán học mở rộng (dùng cho Fitts's Law)
+\usepackage[page,toc]{appendix} % Hỗ trợ appendix với environment appendices
 \usepackage{pifont}     % Ký hiệu tròn số (\ding{172}=①, \ding{173}=②, \ding{174}=③)
 \usepackage{pgfplots}   % Vẽ biểu đồ (charts)
 \pgfplotsset{compat=1.18} % Phiên bản pgfplots
@@ -79,9 +80,6 @@
 % --- Định dạng tiêu đề phần (trước appendix) ---
 \titleformat{\section}{\Large\bfseries}{Part \Roman{section}.}{1em}{}
 \titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{1em}{}
-
-% --- Định dạng tiêu đề appendix (sau khi dùng \appendix) ---
-\titleformat{\section}{\Large\bfseries}{Appendix \Alph{section}: }{1em}{}
 
 % --- Cài đặt paragraph ---
 \setlength{\parindent}{0pt}
@@ -167,5 +165,15 @@
 % ======================================================
 \bibliographystyle{plain}
 \bibliography{references}
+
+% ======================================================
+%          PHỤ LỤC
+% ======================================================
+\newpage
+\appendix
+\appendixpage
+\addappheadtotoc
+\section{Các nguyên tắc HCI}
+\input{sections/product-research/hci-principles.tex}
 
 \end{document}

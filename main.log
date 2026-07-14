@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.13)  14 JUL 2026 22:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.13)  14 JUL 2026 23:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -464,7 +464,12 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\pifont.sty
+)) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/latex/appendix\appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count308
+\c@@ppsavesec=\count309
+\c@@ppsaveapp=\count310
+) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\pifont.sty
 Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
 LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
  (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\upzd.fd
@@ -505,14 +510,14 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@yd=\dimen259
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count308
-\c@pgf@countb=\count309
-\c@pgf@countc=\count310
-\c@pgf@countd=\count311
+\c@pgf@counta=\count311
+\c@pgf@countb=\count312
+\c@pgf@countc=\count313
+\c@pgf@countd=\count314
 \t@pgf@toka=\toks31
 \t@pgf@tokb=\toks32
 \t@pgf@tokc=\toks33
-\pgf@sys@id@count=\count312
+\pgf@sys@id@count=\count315
  (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
@@ -523,21 +528,21 @@ File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
 File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
 ))) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfsyssoftpath@smallbuffer@items=\count313
-\pgfsyssoftpath@bigbuffer@items=\count314
+\pgfsyssoftpath@smallbuffer@items=\count316
+\pgfsyssoftpath@bigbuffer@items=\count317
 ) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
 Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
  (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
 \pgfmath@dimen=\dimen260
-\pgfmath@count=\count315
+\pgfmath@count=\count318
 \pgfmath@box=\box58
 \pgfmath@toks=\toks34
 \pgfmath@stack@operand=\toks35
 \pgfmath@stack@operation=\toks36
 ) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count316
+\c@pgfmathroundto@lastzeros=\count319
 )) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@picminx=\dimen261
@@ -567,7 +572,7 @@ File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box59
 \pgf@hbox=\box60
 \pgf@layerbox@main=\box61
-\pgf@picture@serial@count=\count317
+\pgf@picture@serial@count=\count320
 ) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgflinewidth=\dimen279
@@ -588,8 +593,8 @@ File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@max=\dimen284
-\pgf@sys@shading@range@num=\count318
-\pgf@shadingcount=\count319
+\pgf@sys@shading@range@num=\count321
+\pgf@shadingcount=\count322
 ) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
@@ -624,7 +629,7 @@ Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
  (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@plot@mark@count=\count320
+\pgf@plot@mark@count=\count323
 \pgfplotmarksize=\dimen289
 )
 \tikz@lastx=\dimen290
@@ -639,52 +644,52 @@ File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikz@figbox@bg=\box65
 \tikz@tempbox=\box66
 \tikz@tempbox@bg=\box67
-\tikztreelevel=\count321
-\tikznumberofchildren=\count322
-\tikznumberofcurrentchild=\count323
-\tikz@fig@count=\count324
- (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfmatrixcurrentrow=\count325
-\pgfmatrixcurrentcolumn=\count326
-\pgf@matrix@numberofcolumns=\count327
-)
-\tikz@expandcount=\count328
+\tikztreelevel=\count324
+\tikznumberofchildren=\count325
+\tikznumberofcurrentchild=\count326
+\tikz@fig@count=\count327
 
-(C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
+(C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count328
+\pgfmatrixcurrentcolumn=\count329
+\pgf@matrix@numberofcolumns=\count330
+)
+\tikz@expandcount=\count331
+ (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.code.tex (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscore.code.tex
 \t@pgfplots@toka=\toks39
 \t@pgfplots@tokb=\toks40
 \t@pgfplots@tokc=\toks41
 \pgfplots@tmpa=\dimen298
-\c@pgfplots@coordindex=\count329
-\c@pgfplots@scanlineindex=\count330
+\c@pgfplots@coordindex=\count332
+\c@pgfplots@scanlineindex=\count333
  (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex)) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.tex (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)
 Package pgfplots: loading complementary utilities for your pgf version...
 \t@pgf@toka=\toks42
 \t@pgf@tokb=\toks43
 \t@pgf@tokc=\toks44
 (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.code.tex (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructure.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructureext.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count331
+\c@pgfplotsarray@tmp=\count334
 ) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count332
+\c@pgfplotstable@counta=\count335
 \t@pgfplotstable@a=\toks45
 ) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.code.tex (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex)) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count333
+\c@pgfplotslibrarysurf@no=\count336
  (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolormap.code.tex (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolor.code.tex)) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsstackedplots.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsplothandlers.code.tex (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex))) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.scaling.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.errorbars.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.markers.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsticks.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.paths.code.tex) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
 \pgfdecoratedcompleteddistance=\dimen299
 \pgfdecoratedremainingdistance=\dimen300
 \pgfdecoratedinputsegmentcompleteddistance=\dimen301
 \pgfdecoratedinputsegmentremainingdistance=\dimen302
 \pgf@decorate@distancetomove=\dimen303
-\pgf@decorate@repeatstate=\count334
+\pgf@decorate@repeatstate=\count337
 \pgfdecorationsegmentamplitude=\dimen304
 \pgfdecorationsegmentlength=\dimen305
 )
 \tikz@lib@dec@box=\box68
 ) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorphing.code.tex)) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathreplacing.code.tex)) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count335
+\pgfplots@numplots=\count338
 \pgfplots@xmin@reg=\dimen306
 \pgfplots@xmax@reg=\dimen307
 \pgfplots@ymin@reg=\dimen308
@@ -713,9 +718,9 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@upperbox=\box70
 \tcb@lowerbox=\box71
 \tcb@phantombox=\box72
-\c@tcbbreakpart=\count336
-\c@tcblayer=\count337
-\c@tcolorbox@number=\count338
+\c@tcbbreakpart=\count339
+\c@tcblayer=\count340
+\c@tcolorbox@number=\count341
 \l__tcobox_tmpa_box=\box73
 \l__tcobox_tmpa_dim=\dimen312
 \tcb@temp=\box74
@@ -723,10 +728,10 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@temp=\box76
 \tcb@temp=\box77
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 57.
+Package hyperref Info: Option `colorlinks' set `true' on input line 58.
  (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count339
+\l__color_backend_stack_int=\count342
 ) (main.aux
 LaTeX Font Info:    Trying to load font information for T5+cmr on input line 8.
  (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5cmr.fd
@@ -737,38 +742,38 @@ Package babel Info: 'vietnamese' activates 'vietnamese' shorthands.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
  (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count340
+\scratchcounter=\count343
 \scratchdimen=\dimen313
 \scratchbox=\box78
-\nofMPsegments=\count341
-\nofMParguments=\count342
+\nofMPsegments=\count344
+\nofMParguments=\count345
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count343
+\MPscratchCnt=\count346
 \MPscratchDim=\dimen314
-\MPnumerator=\count344
-\makeMPintoPDFobject=\count345
+\MPnumerator=\count347
+\makeMPintoPDFobject=\count348
 \everyMPtoPDFconversion=\toks50
 ) (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -776,7 +781,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 93.
+Package hyperref Info: Link coloring ON on input line 91.
  (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -819,10 +824,10 @@ Package hyperref Info: Link coloring ON on input line 93.
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 Package babel Info: Main language set to 'vietnamese'.
-<Logo-Dai-hoc-Khoa-hoc-Tu-nhien.png, id=358, 501.875pt x 501.875pt>
+<Logo-Dai-hoc-Khoa-hoc-Tu-nhien.png, id=366, 501.875pt x 501.875pt>
 File: Logo-Dai-hoc-Khoa-hoc-Tu-nhien.png Graphic file (type png)
 <use Logo-Dai-hoc-Khoa-hoc-Tu-nhien.png>
-Package pdftex.def Info: Logo-Dai-hoc-Khoa-hoc-Tu-nhien.png  used on input line 115.
+Package pdftex.def Info: Logo-Dai-hoc-Khoa-hoc-Tu-nhien.png  used on input line 113.
 (pdftex.def)             Requested size: 75.278pt x 75.278pt.
 [1
 
@@ -871,7 +876,7 @@ Underfull \hbox (badness 2197) in paragraph at lines 118--118
  []
 
 [6] [7] [8] (sections/product-research/vtvprime-pros-and-cons.tex [9]
-<./sections/product-research/vtvprime-product-research-imgs/image1.drawio.png, id=524, 1204.5pt x 653.44125pt>
+<./sections/product-research/vtvprime-product-research-imgs/image1.drawio.png, id=534, 1204.5pt x 653.44125pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image1.drawio.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image1.drawio.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image1.drawio.png  used on input line 14.
@@ -881,7 +886,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 14--15
  [] 
  []
 
-<./sections/product-research/vtvprime-product-research-imgs/image2.drawio.png, id=525, 1204.5pt x 653.44125pt>
+<./sections/product-research/vtvprime-product-research-imgs/image2.drawio.png, id=535, 1204.5pt x 653.44125pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image2.drawio.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image2.drawio.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image2.drawio.png  used on input line 28.
@@ -892,7 +897,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 28--29
  []
 
 [10 <./sections/product-research/vtvprime-product-research-imgs/image1.drawio.png>]
-<./sections/product-research/vtvprime-product-research-imgs/image3.drawio.png, id=531, 997.7275pt x 818.05624pt>
+<./sections/product-research/vtvprime-product-research-imgs/image3.drawio.png, id=541, 997.7275pt x 818.05624pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image3.drawio.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image3.drawio.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image3.drawio.png  used on input line 42.
@@ -903,7 +908,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 42--43
  []
 
 [11 <./sections/product-research/vtvprime-product-research-imgs/image2.drawio.png>]
-<./sections/product-research/vtvprime-product-research-imgs/image4.png, id=537, 1770.615pt x 391.4625pt>
+<./sections/product-research/vtvprime-product-research-imgs/image4.png, id=547, 1770.615pt x 391.4625pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image4.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image4.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image4.png  used on input line 56.
@@ -914,7 +919,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 56--57
  []
 
 [12 <./sections/product-research/vtvprime-product-research-imgs/image3.drawio.png>]
-<./sections/product-research/vtvprime-product-research-imgs/image6.png, id=544, 1105.12875pt x 178.86826pt>
+<./sections/product-research/vtvprime-product-research-imgs/image6.png, id=554, 1105.12875pt x 178.86826pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image6.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image6.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image6.png  used on input line 70.
@@ -925,7 +930,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 70--71
  []
 
 [13 <./sections/product-research/vtvprime-product-research-imgs/image4.png (PNG copy)> <./sections/product-research/vtvprime-product-research-imgs/image6.png>]
-<./sections/product-research/vtvprime-product-research-imgs/image7.png, id=550, 2007.5pt x 2007.5pt>
+<./sections/product-research/vtvprime-product-research-imgs/image7.png, id=560, 2007.5pt x 2007.5pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image7.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image7.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image7.png  used on input line 84.
@@ -935,7 +940,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 84--85
  [] 
  []
 
-<./sections/product-research/vtvprime-product-research-imgs/image8.png, id=551, 1021.416pt x 453.49425pt>
+<./sections/product-research/vtvprime-product-research-imgs/image8.png, id=561, 1021.416pt x 453.49425pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image8.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image8.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image8.png  used on input line 91.
@@ -946,7 +951,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 91--92
  []
 
 [14 <./sections/product-research/vtvprime-product-research-imgs/image7.png (PNG copy)>]
-<./sections/product-research/vtvprime-product-research-imgs/image9.png, id=556, 1897.0875pt x 698.61pt>
+<./sections/product-research/vtvprime-product-research-imgs/image9.png, id=566, 1897.0875pt x 698.61pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image9.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image9.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image9.png  used on input line 98.
@@ -956,7 +961,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 98--99
  [] 
  []
 
-<./sections/product-research/vtvprime-product-research-imgs/image10.png, id=557, 1804.7425pt x 288.07625pt>
+<./sections/product-research/vtvprime-product-research-imgs/image10.png, id=567, 1804.7425pt x 288.07625pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image10.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image10.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image10.png  used on input line 112.
@@ -967,7 +972,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 112--113
  []
 
 [15 <./sections/product-research/vtvprime-product-research-imgs/image8.png> <./sections/product-research/vtvprime-product-research-imgs/image9.png (PNG copy)>]
-<./sections/product-research/vtvprime-product-research-imgs/image11.drawio.png, id=563, 1066.98625pt x 660.4675pt>
+<./sections/product-research/vtvprime-product-research-imgs/image11.drawio.png, id=573, 1066.98625pt x 660.4675pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image11.drawio.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image11.drawio.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image11.drawio.png  used on input line 119.
@@ -977,7 +982,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 119--120
  [] 
  []
 
-<./sections/product-research/vtvprime-product-research-imgs/image12.png, id=564, 1783.66376pt x 278.03876pt>
+<./sections/product-research/vtvprime-product-research-imgs/image12.png, id=574, 1783.66376pt x 278.03876pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image12.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image12.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image12.png  used on input line 126.
@@ -988,7 +993,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 126--127
  []
 
 [16 <./sections/product-research/vtvprime-product-research-imgs/image10.png (PNG copy)> <./sections/product-research/vtvprime-product-research-imgs/image11.drawio.png> <./sections/product-research/vtvprime-product-research-imgs/image12.png (PNG copy)>]
-<./sections/product-research/vtvprime-product-research-imgs/image15.drawio.png, id=570, 1205.50375pt x 247.92625pt>
+<./sections/product-research/vtvprime-product-research-imgs/image15.drawio.png, id=580, 1205.50375pt x 247.92625pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image15.drawio.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image15.drawio.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image15.drawio.png  used on input line 150.
@@ -999,7 +1004,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 150--151
  []
 
 [17]
-<./sections/product-research/vtvprime-product-research-imgs/image16.drawio.png, id=575, 1204.5pt x 489.83pt>
+<./sections/product-research/vtvprime-product-research-imgs/image16.drawio.png, id=585, 1204.5pt x 489.83pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image16.drawio.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image16.drawio.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image16.drawio.png  used on input line 157.
@@ -1010,7 +1015,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 157--158
  []
 
 [18 <./sections/product-research/vtvprime-product-research-imgs/image15.drawio.png> <./sections/product-research/vtvprime-product-research-imgs/image16.drawio.png>]
-<./sections/product-research/vtvprime-product-research-imgs/image17.drawio.png, id=583, 1204.5pt x 189.70876pt>
+<./sections/product-research/vtvprime-product-research-imgs/image17.drawio.png, id=593, 1204.5pt x 189.70876pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image17.drawio.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image17.drawio.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image17.drawio.png  used on input line 173.
@@ -1020,7 +1025,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 173--174
  [] 
  []
 
-<./sections/product-research/vtvprime-product-research-imgs/image18.drawio.png, id=584, 1204.5pt x 654.445pt>
+<./sections/product-research/vtvprime-product-research-imgs/image18.drawio.png, id=594, 1204.5pt x 654.445pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image18.drawio.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image18.drawio.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image18.drawio.png  used on input line 188.
@@ -1031,7 +1036,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 188--189
  []
 
 [19 <./sections/product-research/vtvprime-product-research-imgs/image17.drawio.png>]
-<./sections/product-research/vtvprime-product-research-imgs/image19.drawio.png, id=591, 1204.5pt x 197.73875pt>
+<./sections/product-research/vtvprime-product-research-imgs/image19.drawio.png, id=601, 1204.5pt x 197.73875pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image19.drawio.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image19.drawio.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image19.drawio.png  used on input line 206.
@@ -1042,7 +1047,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 206--207
  []
 
 [20 <./sections/product-research/vtvprime-product-research-imgs/image18.drawio.png> <./sections/product-research/vtvprime-product-research-imgs/image19.drawio.png>]
-<./sections/product-research/vtvprime-product-research-imgs/image20.png, id=598, 1820.8025pt x 501.875pt>
+<./sections/product-research/vtvprime-product-research-imgs/image20.png, id=608, 1820.8025pt x 501.875pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image20.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image20.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image20.png  used on input line 212.
@@ -1058,7 +1063,7 @@ Overfull \hbox (3.90991pt too wide) in paragraph at lines 223--224
  []
 
 [21 <./sections/product-research/vtvprime-product-research-imgs/image20.png (PNG copy)>]
-<./sections/product-research/vtvprime-product-research-imgs/image5.drawio.png, id=603, 1205.50375pt x 414.54875pt>
+<./sections/product-research/vtvprime-product-research-imgs/image5.drawio.png, id=613, 1205.50375pt x 414.54875pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image5.drawio.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image5.drawio.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image5.drawio.png  used on input line 239.
@@ -1069,7 +1074,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 239--240
  []
 
 [22 <./sections/product-research/vtvprime-product-research-imgs/image5.drawio.png>]
-<./sections/product-research/vtvprime-product-research-imgs/image13.png, id=609, 1821.80624pt x 788.9475pt>
+<./sections/product-research/vtvprime-product-research-imgs/image13.png, id=619, 1821.80624pt x 788.9475pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image13.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image13.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image13.png  used on input line 253.
@@ -1079,7 +1084,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 253--254
  [] 
  []
 
-<./sections/product-research/vtvprime-product-research-imgs/image14.drawio.png, id=610, 1204.5pt x 656.4525pt>
+<./sections/product-research/vtvprime-product-research-imgs/image14.drawio.png, id=620, 1204.5pt x 656.4525pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image14.drawio.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image14.drawio.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image14.drawio.png  used on input line 270.
@@ -1090,7 +1095,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 270--271
  []
 
 [23 <./sections/product-research/vtvprime-product-research-imgs/image13.png (PNG copy)>]
-<./sections/product-research/vtvprime-product-research-imgs/image21.png, id=615, 686.565pt x 917.4275pt>
+<./sections/product-research/vtvprime-product-research-imgs/image21.png, id=625, 686.565pt x 917.4275pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image21.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image21.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image21.png  used on input line 284.
@@ -1101,7 +1106,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 284--285
  []
 
 [24 <./sections/product-research/vtvprime-product-research-imgs/image14.drawio.png>] [25 <./sections/product-research/vtvprime-product-research-imgs/image21.png (PNG copy)>]
-<./sections/product-research/vtvprime-product-research-imgs/image22.png, id=626, 644.4075pt x 830.10126pt>
+<./sections/product-research/vtvprime-product-research-imgs/image22.png, id=636, 644.4075pt x 830.10126pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image22.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image22.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image22.png  used on input line 291.
@@ -1112,7 +1117,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 291--292
  []
 
 [26] [27 <./sections/product-research/vtvprime-product-research-imgs/image22.png (PNG copy)>]
-<./sections/product-research/vtvprime-product-research-imgs/image23.png, id=635, 1043.9pt x 479.7925pt>
+<./sections/product-research/vtvprime-product-research-imgs/image23.png, id=645, 1043.9pt x 479.7925pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image23.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image23.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image23.png  used on input line 305.
@@ -1123,7 +1128,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 305--306
  []
 
 [28 <./sections/product-research/vtvprime-product-research-imgs/image23.png>]
-<./sections/product-research/vtvprime-product-research-imgs/image24.png, id=641, 1049.9225pt x 971.63pt>
+<./sections/product-research/vtvprime-product-research-imgs/image24.png, id=651, 1049.9225pt x 971.63pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image24.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image24.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image24.png  used on input line 319.
@@ -1133,7 +1138,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 319--320
  [] 
  []
 
-<./sections/product-research/vtvprime-product-research-imgs/image25.png, id=642, 1050.92625pt x 973.6375pt>
+<./sections/product-research/vtvprime-product-research-imgs/image25.png, id=652, 1050.92625pt x 973.6375pt>
 File: ./sections/product-research/vtvprime-product-research-imgs/image25.png Graphic file (type png)
 <use ./sections/product-research/vtvprime-product-research-imgs/image25.png>
 Package pdftex.def Info: ./sections/product-research/vtvprime-product-research-imgs/image25.png  used on input line 322.
@@ -1148,26 +1153,26 @@ Underfull \hbox (badness 2126) in paragraph at lines 647--647
 []|\T5/cmr/m/n/10.95 Kh¡: Nót ^^_i·u khiºn ^^_õ lîn
  []
 
-[39] [40] (sections/product-research/hci-principles.tex [41] [42])) (main.bbl) [43] (main.aux)
+[39]) (main.bbl) [40] (sections/product-research/hci-principles.tex [41] [42]) [43] (main.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CC2E5FE02080F5355879725597B2CC45;29096.
+(rerunfilecheck)             Checksum: C868AF9DF93A4BEC76B1EE8A912457EB;29286.
  ) 
 Here is how much of TeX's memory you used:
- 36026 strings out of 467510
- 855061 string characters out of 5409280
- 1338310 words of memory out of 5000000
- 64570 multiletter control sequences out of 15000+600000
- 644650 words of font info for 78 fonts, out of 8000000 for 9000
+ 36139 strings out of 467510
+ 856920 string characters out of 5409280
+ 1339771 words of memory out of 5000000
+ 64678 multiletter control sequences out of 15000+600000
+ 646605 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,108p,1666b,2264s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ASUS\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnbx10.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnbx12.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr10.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr12.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnti12.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vntt12.pfb>
-Output written on main.pdf (44 pages, 20697415 bytes).
+Output written on main.pdf (44 pages, 20698592 bytes).
 PDF statistics:
- 815 PDF objects out of 1000 (max. 8388607)
- 146 named destinations out of 1000 (max. 500000)
- 847 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 825 PDF objects out of 1000 (max. 8388607)
+ 148 named destinations out of 1000 (max. 500000)
+ 863 words of extra memory for PDF output out of 10000 (max. 10000000)
 
