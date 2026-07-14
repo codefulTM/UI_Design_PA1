@@ -1,0 +1,43 @@
+# ─────────────────────────────────────────────
+# GitHub Actions Workflow — Biên dịch LaTeX sang PDF & Push vào Repo
+# ─────────────────────────────────────────────
+name: Build LaTeX Document
+
+on: [push]
+
+# Cấp quyền cho GitHub Actions được quyền ghi (Write) vào repo để push file PDF
+permissions:
+  contents: write
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Bước 1: Checkout mã nguồn
+      - name: Set up Git repository
+        uses: actions/checkout@v4
+
+      # Bước 2: Biên dịch LaTeX sang PDF
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+
+      # Bước 3: Tự động commit và push file main.pdf vào repo
+      - name: Commit and Push PDF
+        run: |
+          # 1. Cấu hình thông tin tài khoản bot để thực hiện commit
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@://github.com"
+          
+          # 2. Thêm file PDF vào danh sách theo dõi
+          git add main.pdf
+          
+          # 3. Kiểm tra xem file PDF có thay đổi gì không, nếu có thì mới commit
+          if git diff --staged --quiet; then
+            echo "Không có thay đổi nào trong file PDF."
+          else
+            git commit -m "Automated build: Cập nhật file PDF đồ án [skip ci]"
+            git push
+          fi
