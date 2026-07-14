@@ -5,8 +5,22 @@
 % Mục này giới thiệu bối cảnh và lý do chọn đề tài
 \section{Giới thiệu}
 
-Năm 2026 là năm diễn ra \textbf{World Cup 2026} và \textbf{ASIAD 2026}. Nhu cầu xem thể thao trực tuyến tăng cao. Nhóm chọn khảo sát 2 nền tảng xem thể thao trực tuyến phổ biến tại Việt Nam: \textbf{VTVPrime} và \textbf{FPTPlay}.
-\bigskip
+Trong bối cảnh sự kiện thể thao quốc tế quy mô lớn như World Cup 2026 và ASIAD 2026 sắp diễn ra, nhu cầu xem thể thao trực tuyến tại Việt Nam đang gia tăng mạnh mẽ. Nhiều nền tảng OTT (Over-The-Top) đã và đang phát triển để đáp ứng nhu cầu này, trong đó VTVPrime và FPTPlay là hai dịch vụ phổ biến nhất hiện nay. Báo cáo này tập trung phân tích hai nền tảng này từ góc độ HCI (Human-Computer Interaction) nhằm đánh giá trải nghiệm người dùng, xác định các vấn đề thiết kế hiện có, và đề xuất hướng cải thiện dựa trên các nguyên tắc HCI cơ bản.
+
+\subsection{Lý do chọn sản phẩm}
+
+\textbf{VTVPrime} là nền tảng streaming OTT của Tổng Công ty Truyền hình Cáp Việt Nam (VTVcab), doanh nghiệp trực thuộc Đài Truyền hình Việt Nam (VTV). Được thành lập từ năm 1995 với tên gọi ban đầu là VCTV, VTVcab đã phát triển mạnh mẽ từ hệ thống truyền hình cáp truyền thống sang các nền tảng số hiện đại. VTVprime là nền tảng OTT đầu tiên và duy nhất tại Việt Nam có giấy phép mạng xã hội (tính đến năm 2025), cho phép người dùng không chỉ xem nội dung mà còn tương tác qua việc tạo tài khoản, bình luận, thảo luận cộng đồng, thả cảm xúc và xếp hạng chương trình. Với vị thế là nhà cung cấp nội dung chính thống, VTVprime là một trong các nền tảng phát sóng chính của hệ sinh thái VTV, bao gồm cả các sự kiện thể thao lớn mà VTV sở hữu bản quyền như World Cup 2026, ASIAD, UEFA Euro, Premier League và các giải đấu bóng đá trong nước.
+
+\textbf{FPTPlay} là thương hiệu truyền hình và nội dung số thuộc sở hữu của Công ty Cổ phần Viễn thông FPT (FPT Telecom), trực thuộc Tập đoàn FPT. Phát hành lần đầu vào ngày 11 tháng 9 năm 2013, FPT Play đã phát triển thành một trong những dịch vụ OTT hàng đầu tại Việt Nam. Theo báo cáo của Group M, FPT Play chiếm thị phần lớn nhất trên thị trường OTT tại Việt Nam với 39\% thị phần, đứng thứ 2 trong top các ứng dụng được xem nhiều nhất trên TV thông minh chỉ sau YouTube. Hiện tại, FPT Play có hơn 36 triệu lượt tải về và 25 triệu người dùng, cung cấp gần 200 kênh truyền hình trong và ngoài nước cùng kho nội dung đa dạng từ phim truyện, chương trình truyền hình, tin tức, thiếu nhi đến thể thao và gameshow. FPT Play cũng sở hữu bản quyền Vòng loại thứ 3 World Cup – Khu vực châu Á, các giải đấu cấp CLB thuộc UEFA từ 2021-2024 và giải bóng đá Ngoại Hạng Anh từ nửa mùa giải 2025/2026 đến năm 2031.
+
+Việc lựa chọn hai nền tảng này dựa trên sự phổ biến và vị thế của chúng trên thị trường streaming thể thao tại Việt Nam. Cả hai nền tảng đều sở hữu bản quyền các sự kiện thể thao lớn và có lượng người dùng đáng kể. Điều này tạo điều kiện thuận lợi cho việc phân tích HCI vì:
+
+\begin{itemize}
+  \item Sở hữu bản quyền sự kiện thể thao lớn giúp thu hút đa dạng phân khúc người dùng, cho phép phân tích HCI trên nhiều loại người dùng khác nhau.
+  \item Sản phẩm phổ biến thường có nhiều phản hồi công khai về trải nghiệm người dùng qua các kênh đánh giá, diễn đàn và mạng xã hội, giúp thu thập thông tin về các vấn đề HCI thực tế.
+\end{itemize}
+
+Phân tích so sánh hai nền tảng phổ biến này sẽ giúp nhóm hiểu rõ hơn về các xu hướng thiết kế HCI trong streaming thể thao, từ đó rút ra các bài học về những phương pháp thiết kế hiệu quả và các vấn đề cần tránh. Phân tích này sẽ là cơ sở quan trọng cho việc đề xuất giải pháp thiết kế trong các giai đoạn tiếp theo của dự án.
 
 % ======================================================
 %          2. SẢN PHẨM 1: VTVPRIME
@@ -30,63 +44,90 @@ Năm 2026 là năm diễn ra \textbf{World Cup 2026} và \textbf{ASIAD 2026}. Nh
 \hline
 \textbf{Tên sản phẩm} & VTVPrime \\
 \hline
-\textbf{Domain} & \textbf{Nền tảng OTT (Over-The-Top) --- Truyền hình \& Giải trí trực tuyến, trọng tâm là thể thao.} \\
+\textbf{Domain} & Nền tảng xem thể thao, phim và chương trình truyền hình trực tuyến \\
 \hline
-\textbf{Nền tảng} & Web (\url{https://vtvprime.vn}), Mobile (iOS/Android) \\
+\textbf{Nền tảng} & Web (\url{https://vtvprime.vn}), Mobile (iOS/Android), TV thông minh \\
 \hline
-\textbf{Nhà phát hành} & Đài Truyền hình Việt Nam (VTV) --- qua VTVcab \\
+\textbf{Nhà phát hành} & Tổng Công ty Truyền hình Cáp Việt Nam (VTVcab), doanh nghiệp trực thuộc Đài Truyền hình Việt Nam (VTV) \\
 \hline
 \end{tabularx}          % Kết thúc bảng tabularx
 \end{center}
 
-\medskip\noindent\textbf{Phân tích Domain theo 3 khía cạnh:}
-
-\bigskip
-\begin{center}
-\begin{tabularx}{\textwidth}{|l|X|}
-\hline
-\textbf{Khía cạnh} & \textbf{Giải thích} \\
-\hline
-\textbf{\ding{172} Sản phẩm làm về cái gì?} & VTVPrime là ứng dụng OTT do VTVcab phát hành, cung cấp nội dung: tường thuật thể thao trực tiếp, kênh truyền hình trực tuyến, phim và chương trình giải trí theo yêu cầu. Trọng tâm là thể thao trực tiếp (Champions League, World Cup 2026, LaLiga, Serie A, bóng chuyền). Ngoài ra còn có phim, chương trình TV và tin tức. Tích hợp hơn 120 kênh truyền hình trong nước và quốc tế. \\
-\hline
-\textbf{\ding{173} Dùng trong hoàn cảnh nào?} & Người dùng thường thức khuya hoặc dậy sớm để xem trực tiếp World Cup 2026 (vì giải đấu tổ chức tại Mỹ --- Canada --- Mexico, chênh lệch múi giờ so với Việt Nam). Ban ngày, họ xem lại highlight hoặc tin tức thể thao trên đường đi làm, trong giờ nghỉ. Lúc rảnh rỗi, họ xem phim hoặc chương trình giải trí. Thiết bị dùng được: TV thông minh, laptop, máy tính bảng, điện thoại. \\
-\hline
-\textbf{\ding{174} Quy tắc trong lĩnh vực đó?} & Mọi ứng dụng xem thể thao trực tuyến đều phải đáp ứng 5 yêu cầu: (1) \textbf{Trận đấu đang diễn ra phải mở được ngay} --- càng ít thao tác càng tốt; (2) \textbf{Nút điều khiển phải tự ẩn khi xem} --- để không che mất hình, chỉ hiện ra khi người dùng chạm vào màn hình; (3) \textbf{Tỉ số, thời gian và tên đội luôn hiển thị} --- ở một góc màn hình trong suốt trận đấu; (4) \textbf{Lịch thi đấu phải rõ ràng} --- ghi chính xác ngày, giờ, đội đấu, vì thể thao chỉ diễn ra theo khung giờ cố định; (5) \textbf{Phân biệt rõ trạng thái trận đấu} --- người dùng cần biết ngay trận nào đang Live, trận nào sắp diễn ra, trận nào đã kết thúc. \\
-\hline
-\end{tabularx}
-\end{center}
-
 % --- 2.2 Đối tượng người dùng ---
-% Phân khúc hóa người dùng theo hành vi và bối cảnh
+% Phân khúc hóa người dùng theo hành vi, bối cảnh và nhân khẩu học
 % 5 phân khúc: A (cứng), B (sự kiện), C (cầu may), D (catch-up), E (phụ trợ)
 \subsection{Đối tượng người dùng}
 
-Dựa trên hành vi và bối cảnh sử dụng, người dùng VTVPrime có thể chia thành 5 phân khúc:
+\subsubsection{Đặc điểm nhân khẩu học và hành vi theo độ tuổi}
 
-% --- Bảng phân khúc người dùng ---
-% |c|l|X|X|: 4 cột (số STT, tên phân khúc, hành vi, tác động UI)
-% \small: cỡ chữ nhỏ hơn để bảng vừa trang
+Theo báo cáo Digital 2026 \ref{ref:datareportal}, Việt Nam hiện có khoảng 85,6 triệu người dùng Internet (chiếm 84,2\% dân số). Với độ tuổi trung bình là 33,4, tập khách hàng của các nền tảng OTT vô cùng đa dạng, dẫn đến những khác biệt rõ rệt về năng lực tiếp nhận công nghệ và kỳ vọng trải nghiệm.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    symbolic x coords={18-24, 25-34, 35-44, 45-54, 55-64, 65+},
+    xtick=data,
+    nodes near coords,
+    nodes near coords align={vertical},
+    ymin=0, ymax=20,
+    ylabel={Tỷ lệ (\%)},
+    xlabel={Độ tuổi},
+    width=0.8\textwidth,
+    height=6cm,
+    bar width=15pt,
+]
+\addplot coordinates {(18-24,9.2) (25-34,14.4) (35-44,16.3) (45-54,12.7) (55-64,10.4) (65+,9.5)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\medskip\noindent Qua phân tích số liệu thực tế, nhóm nghiên cứu xác định 4 nhóm đối tượng trọng tâm với các đặc thù về HCI như sau:
+
+\begin{itemize}
+    \item \textbf{Nhóm Gen Z (18--24 tuổi)}: Đây là thế hệ "bản địa số" (Digital Natives) – những người sinh ra và lớn lên trong kỷ nguyên Internet, coi công nghệ là một phần tất yếu của cuộc sống. Họ ưu tiên tốc độ và tính trực quan, có xu hướng thao tác nhanh và ít kiên nhẫn với các luồng giao diện rườm rà. Đối với nhóm này, phản hồi tức thì (immediate feedback) là yếu tố tiên quyết để duy trì lòng trung thành với ứng dụng.
+    
+    \item \textbf{Nhóm lao động trẻ (25--44 tuổi)}: Chiếm tỷ trọng lớn nhất (30,7\%), đây là nhóm người dùng có tính chọn lọc cao. Họ đề cao sự ổn định, tính thực dụng và các mô hình tương tác quen thuộc (design patterns) để tối ưu hóa thời gian sử dụng giữa lịch trình bận rộn. Họ không có xu hướng chạy theo các ứng dụng mới nhất nếu không thực sự cần thiết, mà ưu tiên những giải pháp đã được chứng minh hiệu quả và đáp ứng đủ nhu cầu hiện tại.
+    
+    \item \textbf{Nhóm trung niên (45--54 tuổi)}: Nhóm này tiếp cận công nghệ một cách thận trọng. Họ ưu tiên các giao diện có cấu trúc rõ ràng, nhất quán và cần những chỉ dẫn cụ thể khi có sự thay đổi về tính năng hoặc luồng xử lý.
+    
+    \item \textbf{Nhóm người lớn tuổi (55 tuổi trở lên)}: Khi tuổi tác tăng, thị lực và khả năng điều khiển thiết bị thường không còn linh hoạt như trước. Do đó, nhóm này dễ gặp khó khăn với các giao diện có chữ nhỏ, biểu tượng phức tạp hoặc thao tác đòi hỏi độ chính xác cao. Họ cần các thiết kế có tương phản rõ, nút bấm lớn, ngôn ngữ đơn giản và luồng thao tác ổn định, không thay đổi đột ngột. Đây là nhóm phản ánh rõ nhất các ràng buộc về năng lực con người trong thiết kế hệ thống.
+\end{itemize}
+
+\subsubsection{Phân khúc người dùng dựa trên mức độ gắn kết và hành vi xem}
+
+Dựa trên các nghiên cứu chuyên sâu về thị trường streaming thể thao (Kantar, Disney Advertising, Parks Associates), nhóm nghiên cứu phân loại người dùng VTVPrime thành các phân khúc dựa trên động cơ và bối cảnh sử dụng:
+
 \bigskip
 \begin{center}
 \small
-\begin{tabularx}{\textwidth}{|c|l|X|X|}
+\begin{tabularx}{\textwidth}{|c|l|p{3.5cm}|X|}
 \hline
-\textbf{\#} & \textbf{Phân khúc} & \textbf{Hành vi \& Bối cảnh} & \textbf{Tác động đến UI} \\
+\textbf{\#} & \textbf{Phân khúc} & \textbf{Động cơ tâm lý} & \textbf{Hành vi \& Bối cảnh} \\
 \hline
-\textbf{A} & \textbf{Dân thể thao ``cứng''} & Xem live hàng tuần, biết rõ lịch giải đấu, theo dõi nhiều môn. Tần suất cao, thời gian xem dài ($\geq$ 90 phút). & Cần dashboard cá nhân hóa, bookmark đội/giải yêu thích, shortcut vào Live. \\
+\textbf{1} & \textbf{Fan cuồng nhiệt} & Coi đội bóng là một phần bản sắc cá nhân, niềm vui và lòng tự trọng gắn liền với kết quả trận đấu. & Xem trực tiếp mọi trận đấu; sẵn sàng chi trả để có trải nghiệm tốt nhất; ưu tiên lịch thi đấu hơn các hoạt động khác. \\
 \hline
-\textbf{B} & \textbf{Khán giả theo sự kiện (event-driven)} & Không xem thể thao thường xuyên, nhưng xem World Cup/ASIAD vì tính chất sự kiện xã hội. Không rành về app, dễ choáng. & Cần onboarding nhanh, ưu tiên nội dung World Cup ngay trang chủ, hạn chế menu phức tạp. \\
+\textbf{2} & \textbf{Người yêu thể thao} & Tìm kiếm sự kết nối xã hội và giải trí lành mạnh; tò mò với nội dung mới. & Xem thường xuyên nhưng không quá cực đoan; cân bằng giữa thể thao và đời sống; thích khám phá các giải đấu mới. \\
 \hline
-\textbf{C} & \textbf{Người xem ``cầu may''} & Mở app không có ý định trước, lướt xem có gì hay thì xem. & Cần gợi ý nổi bật, phân loại rõ ràng, preview nội dung (trailer, mô tả). \\
+\textbf{3} & \textbf{Người xem theo dòng sự kiện} & Muốn hòa nhập vào các chủ đề thảo luận chung (World Cup, ASIAD,\dots) của mọi người; sợ bị "lỗi thời" (FOMO). & Chỉ truy cập khi có sự kiện lớn; kiến thức chuyên môn không cao; cần giao diện cực kỳ đơn giản. \\
 \hline
-\textbf{D} & \textbf{Người xem lại (catch-up)} & Bận không xem live, sau đó tìm highlight hoặc xem lại. & Cần highlight được đẩy lên đầu, tìm kiếm theo đội/giải, lưu tiến trình xem. \\
+\textbf{4} & \textbf{Người xem chuyên sâu} & Không chỉ xem, họ còn muốn hiểu tường tận chiến thuật, kỹ thuật và những con số thống kê đằng sau trận đấu. & Dành nhiều thời gian cho phân tích hậu trường, tìm hiểu dữ liệu và có thể là các môn thể thao ít phổ biến hơn. \\
 \hline
-\textbf{E} & \textbf{Người dùng phụ trợ} & Dùng app chủ yếu xem phim/TV, thỉnh thoảng mới xem thể thao. & Cần tab thể thao riêng, không lẫn với giải trí --- tránh divided attention. \\
+\textbf{5} & \textbf{Người xem đa thiết bị} & Muốn xem mọi lúc, mọi nơi, không bị gián đoạn dù chuyển từ thiết bị này sang thiết bị khác. & Thường bắt đầu xem trên TV ở nhà, sau đó tiếp tục trên điện thoại khi ra ngoài hoặc chuyển sang máy tính khi cần. \\
 \hline
 \end{tabularx}
 \end{center}
 
-\medskip\noindent\textit{Nhận xét:} 5 phân khúc này khác nhau về \textbf{mức độ quen thuộc với app}, \textbf{mục tiêu khi mở app} (goal-directed vs exploratory), và \textbf{bối cảnh sử dụng} (xem live vs catch-up vs lướt). Mỗi phân khúc đặt ra yêu cầu khác nhau cho các thành phần UI: bố cục trang chủ, hệ thống điều hướng, tìm kiếm, tính năng cá nhân hóa và feedback.
+\medskip\noindent\textbf{Đánh giá tổng quát về đặc điểm phân khúc:}
+
+\begin{itemize}
+    \item \textbf{Nhóm chiến lược (Fan cuồng nhiệt \& Người yêu thể thao)}: Đây là hai nhóm chủ lực, chiếm phần lớn thời gian sử dụng của người dùng. Với nhóm Fan cuồng nhiệt, giao diện cần đặt thông tin đội bóng yêu thích, lịch thi đấu và khu vực tương tác cộng đồng ở vị trí dễ thấy nhất, giúp họ tiếp cận nhanh mà không mất công tìm kiếm. Với Người yêu thể thao, giao diện cần hỗ trợ khám phá nội dung mới qua các đề xuất giải đấu và tính năng chia sẻ dễ dàng với bạn bè.
+    
+    \item \textbf{Nhóm cơ hội (Người xem theo dòng sự kiện)}: Nhóm này chỉ xem khi có sự kiện lớn nên thách thức lớn nhất là làm sao để họ không bị lạc trong giao diện. UI/UX cần tối giản, hướng dẫn rõ ràng và đưa trận đấu nổi bật lên đầu trang chủ, đồng thời có gợi ý nhẹ nhàng để họ quay lại sau sự kiện.
+    
+    \item \textbf{Nhóm đặc thù (Người xem chuyên sâu \& Người xem đa thiết bị)}: Đây là hai nhóm có yêu cầu cụ thể về giao diện. Người xem chuyên sâu cần các tab thống kê, phân tích kỹ thuật và nội dung hậu trường được tổ chức logic, dễ truy cập. Người xem đa thiết bị cần trải nghiệm liền mạch khi chuyển đổi giữa các thiết bị, với giao diện tự động thích ứng kích thước màn hình và tiến độ xem được đồng bộ.
+\end{itemize}
+
 
 % --- 2.3 Core Use Cases ---
 % Mô tả 3 trường hợp sử dụng chính của VTVPrime
@@ -95,181 +136,183 @@ Dựa trên hành vi và bối cảnh sử dụng, người dùng VTVPrime có t
 
 % ---- UC1: Xem trực tiếp một trận đấu ----
 % \subsubsection{}: tiêu đề cấp 3 (chi tiết nhất)
-% Mô tả bối cảnh, các bước tương tác, ưu/nhược điểm HCI
+% Mô tả bối cảnh sử dụng
 \subsubsection{UC1: Xem trực tiếp một trận đấu}
 
-\begin{center}
-\begin{tabularx}{\textwidth}{|l|X|}
-\hline
-\textbf{Khía cạnh} & \textbf{Mô tả} \\
-\hline
-\textbf{Ở đâu?} & Tại nhà hoặc bất cứ đâu có Internet (có thể dùng Wi-Fi hoặc 4G/5G) \\
-\hline
-\textbf{Khi nào?} & Trước hoặc ngay khi trận đấu bắt đầu \\
-\hline
-\textbf{Tư thế người dùng} & Ngồi hoặc nằm trên ghế, sofa, giường trước TV/màn hình lớn. Thời gian theo dõi kéo dài (90 phút cho bóng đá). \\
-\hline
-\textbf{Thiết bị} & Laptop, điện thoại thông minh, máy tính bảng \\
-\hline
-\end{tabularx}
-\end{center}
+\textbf{Bối cảnh:} Người dùng muốn xem trực tiếp một trận đấu thể thao đang diễn ra. Trận đấu có lịch phát sóng cố định, người dùng thường truy cập trước thời điểm bắt đầu hoặc trong khi trận đang diễn ra. Các tình huống sử dụng thực tế bao gồm:
 
-\medskip\noindent\textbf{Các bước tương tác:}
-\begin{enumerate}[leftmargin=2em]
-  \item Truy cập VTVPrime trên trình duyệt/app.
-  \item Đăng nhập tài khoản (nếu cần).
-  \item Tại trang chủ, banner trận đấu trực tiếp hiển thị nổi bật $\rightarrow$ chọn ``Xem ngay''.
-  \item Xem trận đấu, sử dụng các điều khiển: tạm dừng, âm lượng, phóng to/thu nhỏ, chọn chất lượng, xem bình luận.
-\end{enumerate}
+\begin{itemize}
+    \item \textbf{Tại nhà}: Ngồi trên sofa trước TV màn hình lớn, vừa ăn tối vừa xem cùng gia đình, hoặc nằm trên giường trước khi ngủ.
+    \item \textbf{Tại văn phòng}: Ngồi tại bàn làm việc trong giờ nghỉ trưa (12h--13h) hoặc sau giờ làm, xem trên laptop hoặc mobile.
+    \item \textbf{Khi di chuyển}: Ngồi trong xe buýt, taxi hoặc xe hơi riêng --- xem trên mobile hoặc tablet.
+\end{itemize}
 
-\medskip\noindent\textit{Ưu điểm cụ thể (dựa trên HCI):} [Ví dụ chi tiết --- concrete, không chung chung]
-
-\medskip\noindent\textit{Nhược điểm cụ thể (dựa trên HCI):} [Ví dụ chi tiết --- concrete, không chung chung]
+Người dùng có thể xem trên nhiều thiết bị khác nhau (TV, laptop, mobile) tùy theo bối cảnh sử dụng.
 
 % ---- UC2 ----
-\subsubsection{UC2: Tìm lại Highlight + video ngắn của trận đấu}
+\subsubsection{UC2: Tìm lại Highlight và video ngắn của trận đấu}
 
-\begin{center}
-\begin{tabularx}{\textwidth}{|l|X|}
-\hline
-\textbf{Khía cạnh} & \textbf{Mô tả} \\
-\hline
-\textbf{Ở đâu?} & Tại nhà, trên phương tiện di chuyển, bất cứ đâu có Internet \\
-\hline
-\textbf{Khi nào?} & Sau khi trận đấu kết thúc (xem lại do bận hoặc xem bỏ dỡ) \\
-\hline
-\textbf{Tư thế người dùng} & Ngồi, nằm hoặc đứng --- linh hoạt hơn UC1 vì thời gian xem ngắn hơn \\
-\hline
-\textbf{Thiết bị} & Laptop, điện thoại thông minh \\
-\hline
-\end{tabularx}
-\end{center}
+\textbf{Bối cảnh:} Người dùng đã bỏ lỡ trận đấu và muốn xem lại các khoảnh khắc nổi bật sau khi trận đấu kết thúc. Các tình huống sử dụng thực tế bao gồm:
 
-\medskip\noindent\textbf{Các bước tương tác:}
-\begin{enumerate}[leftmargin=2em]
-  \item Truy cập VTVPrime $\rightarrow$ chọn ``Tin nhanh''.
-  \item Chọn mục ``World Cup'' hoặc môn thể thao mong muốn.
-  \item Duyệt danh sách Highlight/tin tức $\rightarrow$ chọn video.
-\end{enumerate}
+\begin{itemize}
+    \item \textbf{Sau giờ làm}: Ngồi trên xe buýt về nhà, xem nhanh các highlight trong 5--10 phút.
+    \item \textbf{Ngày hôm sau}: Sáng trước khi đi làm hoặc buổi tối tại nhà, xem lại các khoảnh khắc nổi bật khi có thời gian rảnh.
+    \item \textbf{Tại quán cà phê}: Ngồi với bạn bè, muốn chia sẻ và xem lại các bàn thắng đẹp cùng nhau.
+    \item \textbf{Trên giường trước khi ngủ}: Nằm trên giường, xem highlight trong 10--15 phút trước khi đi ngủ.
+\end{itemize}
 
-\medskip\noindent\textit{Ưu điểm cụ thể (dựa trên HCI):} [Ví dụ chi tiết]
-
-\medskip\noindent\textit{Nhược điểm cụ thể (dựa trên HCI):} [Ví dụ chi tiết]
+Người dùng có thể xem trên nhiều thiết bị khác nhau (mobile, laptop, tablet) trong các bối cảnh đa dạng, thời gian xem thường ngắn hơn so với xem trực tiếp nên tư thế linh hoạt hơn (ngồi, đứng, hoặc nằm).
 
 % ---- UC3 ----
 \subsubsection{UC3: Tìm kiếm thông tin thể thao}
 
-\begin{center}
-\begin{tabularx}{\textwidth}{|l|X|}
-\hline
-\textbf{Khía cạnh} & \textbf{Mô tả} \\
-\hline
-\textbf{Ở đâu?} & Bất cứ đâu có Internet \\
-\hline
-\textbf{Khi nào?} & Bất kỳ lúc nào có nhu cầu tra cứu (trước, trong, sau trận đấu) \\
-\hline
-\textbf{Tư thế người dùng} & Đa dạng: nằm, ngồi, đi --- thao tác nhanh, thời gian ngắn \\
-\hline
-\textbf{Thiết bị} & Điện thoại thông minh (chủ yếu), laptop \\
-\hline
-\end{tabularx}
-\end{center}
+\textbf{Bối cảnh:} Người dùng muốn tìm thông tin về một cầu thủ cụ thể, lịch thi đấu của đội bóng yêu thích, hoặc kết quả của một trận đấu vừa kết thúc. Các tình huống sử dụng thực tế bao gồm:
 
-\medskip\noindent\textbf{Các bước tương tác:}
-\begin{enumerate}[leftmargin=2em]
-  \item Mở VTVPrime $\rightarrow$ chọn biểu tượng kính lúp (tìm kiếm).
-  \item Gõ từ khóa (tên đội bóng, giải đấu, cầu thủ,\ldots).
-  \item Enter $\rightarrow$ danh sách kết quả hiện ra $\rightarrow$ chọn bài viết phù hợp.
-\end{enumerate}
+\begin{itemize}
+    \item \textbf{Trước trận đấu}: Ngồi tại bàn làm việc hoặc trên sofa tại nhà, muốn kiểm tra lịch thi đấu và thông tin đội bóng.
+    \item \textbf{Trong trận đấu}: Khi đang xem trận, muốn nhanh chóng tìm thông tin về cầu thủ vừa ghi bàn hoặc thay đổi.
+    \item \textbf{Sau trận đấu}: Ngồi tại bàn làm việc hoặc trên xe buýt, muốn tìm kết quả và highlight của trận vừa kết thúc.
+    \item \textbf{Bất kỳ lúc nào}: Nằm trên giường trước khi ngủ hoặc ngồi tại quán cà phê --- thao tác tìm kiếm thường nhanh và ngắn.
+\end{itemize}
 
-\medskip\noindent\textit{Ưu điểm cụ thể (dựa trên HCI):} [Ví dụ chi tiết]
+Người dùng có thể thực hiện việc này bất kỳ lúc nào --- trước, trong, hoặc sau trận đấu --- và ở bất cứ đâu có Internet.
 
-\medskip\noindent\textit{Nhược điểm cụ thể (dựa trên HCI):} [Ví dụ chi tiết]
+% ---- UC4 ----
+\subsubsection{UC4: Xem nội dung chuyên sâu về môn thể thao yêu thích}
+
+\textbf{Bối cảnh:} Người dùng (đặc biệt là nhóm Người xem chuyên sâu) muốn xem nội dung dài và chi tiết về môn thể thao yêu thích, dành nhiều thời gian tìm hiểu. Các tình huống sử dụng thực tế bao gồm:
+
+\begin{itemize}
+    \item \textbf{Tại nhà}: Ngồi hoặc nằm trên sofa/ghế, xem trong thời gian dài (60--90 phút) với môi trường yên tĩnh.
+    \item \textbf{Trong không gian riêng}: Phòng làm việc hoặc phòng ngủ, xem một mình để tập trung hoàn toàn vào nội dung.
+    \item \textbf{Trên giường trước khi ngủ}: Nằm trên giường, xem documentary hoặc phân tích kỹ thuật trong 30--45 phút.
+\end{itemize}
+
+Người dùng cần truy cập nhanh đến các nội dung chuyên sâu, thống kê chi tiết, và phân tích kỹ thuật.
+
+% ---- UC5 ----
+\subsubsection{UC5: Chuyển đổi giữa nhiều thiết bị khi xem}
+
+\textbf{Bối cảnh:} Người dùng (đặc biệt là nhóm Người xem đa thiết bị) muốn chuyển đổi giữa các thiết bị trong khi xem (TV, điện thoại, máy tính). Các tình huống sử dụng thực tế bao gồm:
+
+\begin{itemize}
+    \item \textbf{Tại nhà}: Bắt đầu xem trên TV phòng khách, sau đó chuyển sang điện thoại khi di chuyển sang phòng ngủ.
+    \item \textbf{Khi di chuyển}: Bắt đầu xem trên TV ở nhà, tiếp tục xem trên điện thoại khi ra ngoài.
+    \item \textbf{Tại văn phòng}: Xem trên laptop, sau đó chuyển sang điện thoại khi di chuyển ra ngoài.
+\end{itemize}
+
+Người dùng cần tính năng đồng bộ hóa giữa các thiết bị, tiếp tục xem từ đúng thời điểm đã dừng, và giao diện phù hợp với nhiều kích thước màn hình.
+
+% ---- UC6 ----
+\subsubsection{UC6: Xem nội dung tập trung cao không bị phân tâm}
+
+\textbf{Bối cảnh:} Người dùng (đặc biệt là nhóm Người xem tập trung cao) muốn xem nội dung thể thao với trải nghiệm không có sự xao nhãng. Các tình huống sử dụng thực tế bao gồm:
+
+\begin{itemize}
+    \item \textbf{Tại nhà}: Ngồi hoặc nằm trên sofa/ghế, xem trong thời gian dài (30--60 phút) với môi trường yên tĩnh.
+    \item \textbf{Trên giường trước khi ngủ}: Nằm trên giường, xem documentary trong 20--30 phút trước khi đi ngủ.
+    \item \textbf{Trong không gian riêng}: Phòng làm việc hoặc phòng ngủ, xem một mình để tập trung hoàn toàn.
+\end{itemize}
+
+Người dùng cần UI minimal, không có distractions, tính năng bookmark và save progress cho nội dung dài.
+
+% ---- UC7 ----
+\subsubsection{UC7: Tương tác xã hội và chia sẻ nội dung về đội địa phương}
+
+\textbf{Bối cảnh:} Người dùng (đặc biệt là nhóm Người hâm mộ đội địa phương) muốn chia sẻ cảm xúc về đội bóng yêu thích và tham gia thảo luận với cộng đồng. Các tình huống sử dụng thực tế bao gồm:
+
+\begin{itemize}
+    \item \textbf{Sau khi đội thắng}: Ngay sau trận đấu, muốn nhanh chóng chia sẻ khoảnh khắc nổi bật lên mạng xã hội để cùng ăn mừng với bạn bè.
+    \item \textbf{Trong trận đấu}: Muốn xem bình luận trực tiếp và thả cảm xúc vào các khoảnh khắc quan trọng mà không bị che khuất nội dung chính.
+    \item \textbf{Với bạn bè}: Tại quán cà phê hoặc nhà, muốn cùng xem và thảo luận về nội dung trên cùng một màn hình.
+\end{itemize}
+
+Giao diện cần cung cấp các điểm chạm chia sẻ dễ tiếp cận, hiển thị live chat một cách gọn gàng không làm giảm trải nghiệm xem, và tích hợp mượt mà với các nền tảng mạng xã hội.
 
 % --- Phân tích ưu và nhược dựa trên HCI ---
 % Nội dung được import từ vtvprime-pros-and-cons.tex
 \input{./sections/product-research/vtvprime-pros-and-cons.tex}
 
 
-% --- 2.6 Các kiểu người dùng & bối cảnh phát sinh khó khăn ---
-% Phân tích 6 tình huống:
-% 2.6.1: Người dùng mới vs Power user
-% 2.6.2: Mobile vs Desktop
-% 2.6.3: Kết nối Internet chậm
-% 2.6.4: Người dùng nước ngoài
-% 2.6.5: Môi trường ánh sáng mạnh
-% 2.6.6: Multi-task (xem nhiều trận cùng lúc)
+% --- 2.5 Các kiểu người dùng & bối cảnh phát sinh khó khăn ---
+% Phân tích từ các vấn đề HCI đã tìm ra để xác định người dùng gặp khó khăn
 \subsection{Các kiểu người dùng \& bối cảnh phát sinh khó khăn}
 
-\textit{Yêu cầu:} Xem xét các kiểu người dùng khác nhau và các bối cảnh có thể gây khó khăn/cản trở với giao diện hiện tại.
+Dựa trên phân tích ưu/nhược điểm giao diện ở phần trên, chúng ta có thể xác định những nhóm người dùng nào sẽ gặp khó khăn với từng vấn đề cụ thể. Phân tích này liên kết chặt chẽ với 4 nhóm độ tuổi và 5 phân khúc hành vi đã xác định ở phần trước.
 
-\subsubsection{2.6.1~Người dùng mới (First-time user) vs Người dùng quen thuộc (Power user)}
+\subsubsection{Vấn đề thiếu thông tin trên thumbnail}
 
-\begin{center}
-\small
-\begin{tabularx}{\textwidth}{|l|X|X|}
-\hline
-\textbf{Khía cạnh} & \textbf{Người dùng mới} & \textbf{Người dùng quen thuộc} \\
-\hline
-\textbf{Đặc điểm} & Chưa từng dùng VTVPrime hoặc các nền tảng OTT trước đây & Đã dùng lâu năm, quen thuộc với mọi chức năng \\
-\hline
-\textbf{Khó khăn dự kiến} & [Mô tả --- ví dụ: không biết chức năng ``Tin nhanh'' để tìm highlight, phải mò mẫm] & [Mô tả --- ví dụ: phải qua nhiều bước để truy cập tính năng hay dùng] \\
-\hline
-\textbf{Bối cảnh cụ thể} & [Tình huống thực tế] & [Tình huống thực tế] \\
-\hline
-\textbf{Phân tích HCI} & [Ví dụ: Learnability --- giao diện có trực quan để người mới tự học không?] & [Ví dụ: Efficiency --- power user có thể thao tác nhanh không, hay bị chậm bởi UI?] \\
-\hline
-\end{tabularx}
-\end{center}
+Nhiều carousel trên VTVPrime không hiển thị tên nội dung hoặc mô tả ngắn bên dưới thumbnail, chỉ có thời lượng. Vấn đề này ảnh hưởng đặc biệt đến:
 
-\subsubsection{2.6.2~Người dùng xem trên thiết bị di động (Mobile) vs Desktop}
+\textbf{Người xem theo dòng sự kiện (Phân khúc 3):} Nhóm này chỉ truy cập khi có sự kiện lớn như World Cup hoặc ASIAD, không thường xuyên sử dụng nền tảng. Khi không thấy tên nội dung trên thumbnail, họ không thể nhận diện nhanh và cảm thấy giao diện khó dùng --- dễ chuyển sang nền tảng khác.
 
-\begin{center}
-\small
-\begin{tabularx}{\textwidth}{|l|X|X|}
-\hline
-\textbf{Khía cạnh} & \textbf{Mobile} & \textbf{Desktop} \\
-\hline
-\textbf{Bối cảnh} & Xem khi đang di chuyển (trên xe bus, tàu điện), nằm trên giường, chờ đợi & Xem tại bàn làm việc, phòng khách --- màn hình lớn, kết nối ổn định \\
-\hline
-\textbf{Khó khăn dự kiến} & [Mô tả --- ví dụ: nút điều khiển quá nhỏ trên màn hình điện thoại, khó thao tác khi đi lại] & [Mô tả --- ví dụ: bố cục giãn cách xa, phải di chuyển chuột nhiều] \\
-\hline
-\textbf{Phân tích HCI} & [Fitts's Law --- size nhỏ $\rightarrow$ thời gian tương tác lâu. Reachability --- vùng chạm xa tầm tay] & [Fitts's Law --- distance xa $\rightarrow$ lâu hơn] \\
-\hline
-\end{tabularx}
-\end{center}
+\textbf{Nhóm trung niên (45--54 tuổi):} Nhóm này tiếp cận công nghệ thận trọng và cần cấu trúc rõ ràng. Khi thumbnail thiếu thông tin, họ mất thời gian click vào từng video để hiểu nội dung, làm giảm trải nghiệm sử dụng.
 
-\subsubsection{2.6.3~Người dùng ở khu vực có kết nối Internet chậm / không ổn định}
-\begin{itemize}[leftmargin=2em]
-  \item \textbf{Bối cảnh:} Ở vùng nông thôn, vùng sâu vùng xa, hoặc khi di chuyển (xe lửa, tàu).
-  \item \textbf{Khó khăn dự kiến:} [Mô tả --- ví dụ: video bị buffer kéo dài, ảnh/video không load, người dùng không biết là do Internet hay do app]
-  \item \textbf{Phân tích HCI:} [Feedback --- hệ thống không thông báo trạng thái loading/lỗi kết nối $\rightarrow$ người dùng confused]
-  \item \textbf{Bối cảnh cụ thể:} [Tình huống thực tế]
-\end{itemize}
+\textbf{Người xem chuyên sâu (Phân khúc 4):} Nhóm này muốn tìm hiểu tường tận chiến thuật và thống kê. Khi thumbnail không hiển thị thông tin chi tiết, họ không thể nhanh chóng xác định nội dung phù hợp với nhu cầu phân tích của mình.
 
-\subsubsection{2.6.4~Người dùng nước ngoài / người không rành tiếng Việt}
-\begin{itemize}[leftmargin=2em]
-  \item \textbf{Bối cảnh:} Người nước ngoài sinh sống tại Việt Nam muốn theo dõi World Cup 2026.
-  \item \textbf{Khó khăn dự kiến:} Tra cứu bằng tên đội bóng tiếng Anh (ví dụ: ``Portugal'') $\rightarrow$ không có đề xuất. Giao diện hoàn toàn bằng tiếng Việt.
-  \item \textbf{Phân tích HCI:} Recognition bị giảm --- người dùng không nhận ra từ khóa tìm kiếm do ngôn ngữ không khớp.
-  \item \textbf{Bối cảnh cụ thể:} [Tình huống thực tế]
-\end{itemize}
+\subsubsection{Vấn đề mũi tên carousel quá nhỏ và đặt sai vị trí}
 
-\subsubsection{2.6.5~Người dùng sử dụng trong môi trường ánh sáng mạnh (ngoài trời, ban ngày)}
-\begin{itemize}[leftmargin=2em]
-  \item \textbf{Bối cảnh:} Xem trận đấu ngoài trời (quán cà phê vỉa hè, công viên, màn hình ngoài trời).
-  \item \textbf{Khó khăn dự kiến:} [Mô tả --- ví dụ: độ tương phản thấp, chữ/nút quá nhỏ không đọc được, banner bị chói]
-  \item \textbf{Phân tích HCI:} [Visibility --- thông tin không còn nhìn thấy được trong điều kiện ánh sáng mạnh. Affordance mất tác dụng]
-  \item \textbf{Bối cảnh cụ thể:} [Tình huống thực tế]
-\end{itemize}
+Mũi tên carousel nhỏ, nằm bên trong carousel trên nền tối, không tận dụng screen edge effect. Vấn đề này ảnh hưởng đặc biệt đến:
 
-\subsubsection{2.6.6~Người dùng có nhu cầu xem cùng lúc nhiều trận đấu (Multi-task)}
-\begin{itemize}[leftmargin=2em]
-  \item \textbf{Bối cảnh:} Các giải đấu lớn (World Cup, ASIAD) diễn ra cùng giờ. Người dùng muốn theo dõi nhiều trận cùng lúc.
-  \item \textbf{Khó khăn dự kiến:} [Mô tả --- ví dụ: không có tính năng multi-view/picture-in-picture, phải chuyển qua lại giữa các tab]
-  \item \textbf{Phân tích HCI:} [Divided attention --- phải chuyển đổi liên tục gây cognitive load. Efficiency giảm]
-  \item \textbf{Bối cảnh cụ thể:} [Tình huống thực tế]
-\end{itemize}
+\textbf{Nhóm Gen Z (18--24 tuổi):} Đây là thế hệ bản địa số, ưu tiên tốc độ và thao tác nhanh. Mũi tên nhỏ và đặt sai vị trí làm giảm efficiency --- họ phải thao tác chính xác vào vùng nhỏ thay vì có gesture tự nhiên, gây khó hiểu.
+
+\textbf{Người xem đa thiết bị (Phân khúc 5):} Nhóm này thường xuyên chuyển đổi giữa các thiết bị, đặc biệt là thiết bị di động. Mũi tên quá nhỏ để chạm chính xác bằng ngón tay trên màn hình di động, làm giảm trải nghiệm liền mạch khi xem trên nhiều thiết bị.
+
+\textbf{Nhóm người lớn tuổi (55+ tuổi):} Khi thị lực và khả năng vận động giảm, nhóm này gặp khó khăn với các mục tiêu nhỏ trên màn hình. Mũi tên carousel quá nhỏ và trên nền tối khiến họ khó thao tác.
+
+\subsubsection{Vấn đề thiếu feedback cho infinite scroll}
+
+Khi cuộn đến cuối trang, không có thông báo ``đã hết nội dung''. Vấn đề này ảnh hưởng đặc biệt đến:
+
+\textbf{Nhóm Gen Z (18--24 tuổi):} Họ ưu tiên phản hồi tức thì (immediate feedback). Khi không có thông báo, họ không biết trạng thái hệ thống, gây bối rối và giảm trải nghiệm sử dụng.
+
+\textbf{Nhóm lao động trẻ (25--44 tuổi):} Nhóm này có lịch trình bận rộn và đề cao hiệu suất. Khi phải chờ đợi vô ích để ``đoán'' trạng thái hệ thống, họ mất thời gian quý báu và dễ bỏ cuộc.
+
+\textbf{Người xem theo dòng sự kiện (Phân khúc 3):} Nhóm này chưa quen với giao diện. Khi không có feedback, họ có thể nghĩ ứng dụng bị lỗi và thoát ra, làm mất cơ hội giữ chân nhóm này sau sự kiện.
+
+\subsubsection{Vấn đề nút ``Xem tất cả'' không nhất quán}
+
+Một số carousel có nút ``Xem tất cả'', số khác không --- phá vỡ internal consistency. Vấn đề này ảnh hưởng đặc biệt đến:
+
+\textbf{Nhóm trung niên (45--54 tuổi):} Nhóm này ưu tiên cấu trúc rõ ràng và nhất quán. Khi pattern không đồng nhất, họ mất thời gian thích nghi và cảm thấy giao diện khó hiểu.
+
+\textbf{Người xem chuyên sâu (Phân khúc 4):} Nhóm này muốn xem nhanh toàn bộ nội dung để phân tích. Khi nút ``Xem tất cả'' không tồn tại, họ phải lướt thủ công qua toàn bộ carousel --- tốn thời gian và dễ bỏ cuộc nếu carousel quá dài.
+
+\textbf{Nhóm lao động trẻ (25--44 tuổi):} Nhóm này đề cao các patterns quen thuộc để tối ưu hóa thời gian. Khi pattern bị phá vỡ, họ mất thời gian tìm kiếm cách xem toàn bộ nội dung, làm giảm hiệu suất.
+
+\subsubsection{Vấn đề thiếu alt text ảnh}
+
+Nhiều ảnh bị để trống alt text hoặc có alt text vô dụng. Vấn đề này ảnh hưởng đặc biệt đến:
+
+\textbf{Nhóm người lớn tuổi (55+ tuổi):} Khi thị lực giảm, nhóm này phụ thuộc vào screen reader để nhận diện nội dung. Khi alt text bị bỏ trống, họ không thể biết nội dung của thumbnail --- rất bất tiện.
+
+\subsubsection{Vấn đề định dạng card phim bộ không nhất quán}
+
+Cùng là phim bộ nhưng có hai định dạng card khác nhau (định dạng ngang với các lớp chồng lên nhau và định dạng dọc). Vấn đề này ảnh hưởng đặc biệt đến:
+
+\textbf{Nhóm lao động trẻ (25--44 tuổi):} Nhóm này đề cao các patterns quen thuộc. Khi pattern bị phá vỡ, họ phải dừng lại nhận diện lại format, mất thời gian thích nghi và giảm hiệu suất.
+
+\textbf{Nhóm trung niên (45--54 tuổi):} Nhóm này cần cấu trúc rõ ràng và nhất quán. Khi thấy hai định dạng khác nhau cho cùng một loại nội dung, họ cảm thấy giao diện không nhất quán và khó hiểu.
+
+\textbf{Người xem theo dòng sự kiện (Phân khúc 3):} Nhóm này chưa hình thành mental model rõ ràng. Khi định dạng không nhất quán, họ bỡ ngỡ và khó điều hướng, làm giảm trải nghiệm sử dụng.
+
+\subsubsection{Vấn đề lịch phát sóng không phân biệt trạng thái}
+
+Tất cả mục trong lịch phát sóng đều có dạng giống nút bấm, không phân biệt giữa đã phát, đang phát, chưa phát. Vấn đề này ảnh hưởng đặc biệt đến:
+
+\textbf{Người xem theo dòng sự kiện (Phân khúc 3):} Nhóm này chưa quen với quy tắc của lịch phát sóng. Khi thấy tất cả mục đều có dạng nút bấm, họ click vào bất kỳ mục nào và dễ gặp lỗi, làm giảm trải nghiệm sử dụng.
+
+\textbf{Nhóm người lớn tuổi (55+ tuổi):} Nhóm này cần chỉ dẫn cụ thể và rõ ràng. Khi giao diện không phân biệt trạng thái, họ dễ nhầm lẫn và gặp lỗi, tăng cognitive load.
+
+\subsubsection{Vấn đề nút hamburger và nút đóng sidebar trên tablet}
+
+Nút hamburger ở góc trái, nút đóng ở góc phải --- khoảng cách di chuyển lớn. Vấn đề này ảnh hưởng đặc biệt đến:
+
+\textbf{Người xem đa thiết bị (Phân khúc 5):} Nhóm này thường xuyên chuyển đổi giữa các thiết bị, bao gồm tablet. Khi mở sidebar, họ phải với tay từ góc trái sang góc phải để đóng --- mất thời gian và bất tiện, đặc biệt với tablet màn hình lớn.
+
+\textbf{Nhóm người lớn tuổi (55+ tuổi):} Khi khả năng vận động giảm, khoảng cách di chuyển lớn gây khó khăn trong thao tác, tăng motor load đáng kể.
+
+\textbf{Nhóm lao động trẻ (25--44 tuổi):} Nhóm này đề cao efficiency. Khoảng cách di chuyển lớn làm giảm tốc độ thao tác, không phù hợp với nhu cầu tối ưu hóa thời gian của nhóm này.
 
 \bigskip
 % ======================================================
@@ -618,7 +661,17 @@ Inclusive Design & [Nhận xét] & [Nhận xét] \\
 % Liệt kê các nguồn đã sử dụng trong bài nghiên cứu
 \section{Tài liệu tham khảo}
 
-[Các nguồn tham khảo nếu có]
+\begin{enumerate}
+    \item DataReportal. (2026). Digital 2026: Vietnam. https://datareportal.com/reports/digital-2026-vietnam \label{ref:datareportal}
+    \item VietnamFinance. (2025). Báo cáo ``Nhu cầu Giải trí số Việt Nam 2024--2025''. https://vietnamfinance.vn/bao-cao-nhu-cau-giai-tri-so-viet-nam-2024-2025-d128168.html \label{ref:vietnamfinance}
+    \item Adwave. (2025). Sports Streaming Statistics: Where Fans Are Watching. https://adwave.com/resources/sports-fans-streaming-statistics \label{ref:adwave}
+    \item Antenna. (2025). Sports Streaming Demographics. https://www.antenna.live/insights/sports-streaming-demographics \label{ref:antenna}
+    \item InterDigital \& Parks Associates. (2025). Streaming Live Sports: Where Opportunity Meets Complexity. https://www.interdigital.com/white\_papers/streaming-live-sports-where-opportunity-meets-complexity \label{ref:interdigital}
+    \item Performance Research. (2025). Nine in 10 sports fans are streaming sports. https://www.sportsbusinessjournal.com/Articles/2025/07/03/study-nine-in-10-sports-fans-are-streaming-sports/ \label{ref:performanceresearch}
+    \item Kantar. (2026). Understanding modern sports fans: Why fanatics lead the game. https://www.kantar.com/inspiration/research-services/understanding-modern-sports-fans-pf \label{ref:kantar}
+    \item Applicaster. (2026). 2026 Quick Guide: How to Engage Every Type of Digital Sports Fan. https://www.applicaster.com/resources/engaged-every-sports-fan \label{ref:applicaster}
+    \item N3XT Sports. (2022). The importance of fan segmentation: how to turn data into engagement. https://www.n3xtsports.com/the-importance-of-fan-segmentation/ \label{ref:n3xtsports}
+\end{enumerate}
 
 % ======================================================
 %          PHỤ LỤC
