@@ -1,0 +1,89 @@
+\babel@toc {vietnamese}{}\relax 
+\contentsline {section}{\numberline {1}Product research}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Lý do chọn sản phẩm}{4}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Sản phẩm 1: VTVPrime}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Tên sản phẩm \& Domain}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Đối tượng người dùng}{5}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Đặc điểm nhân khẩu học và hành vi theo độ tuổi}{5}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Phân khúc người dùng dựa trên mức độ gắn kết và hành vi xem}{6}{subsubsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.3}Core Use Cases}{7}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}UC1: Xem trực tiếp một trận đấu}{7}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}UC2: Tìm lại Highlight và video ngắn của trận đấu}{7}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}UC3: Tìm kiếm thông tin thể thao}{8}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}UC4: Xem nội dung chuyên sâu về môn thể thao yêu thích}{8}{subsubsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.5}UC5: Chuyển đổi giữa nhiều thiết bị khi xem}{9}{subsubsection.2.3.5}%
+\contentsline {subsubsection}{\numberline {2.3.6}UC6: Xem nội dung tập trung cao không bị phân tâm}{9}{subsubsection.2.3.6}%
+\contentsline {subsubsection}{\numberline {2.3.7}UC7: Tương tác xã hội và chia sẻ nội dung về đội địa phương}{9}{subsubsection.2.3.7}%
+\contentsline {subsection}{\numberline {2.4}Ưu điểm}{10}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Ưu điểm 1: Các card được phân thành các carousel có đề mục rõ ràng.}{10}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Ưu điểm 2: Lịch phát sóng có hiển thị và sắp xếp theo timeline:}{10}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}Ưu điểm 3: Pattern giống nhau giữa các carousel}{11}{subsubsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.4.4}Ưu điểm 4: Các trạng thái ``Đang phát'', ``Sắp phát sóng'' được thể hiện rõ ràng}{12}{subsubsection.2.4.4}%
+\contentsline {subsubsection}{\numberline {2.4.5}Ưu điểm 5: Nhiều thành phần trong giao diện trang web có sử dụng các ``hint'' để người dùng biết cách tương tác với trang web sao cho phù hợp.}{13}{subsubsection.2.4.5}%
+\contentsline {subsubsection}{\numberline {2.4.6}Ưu điểm 6: VTVPrime sử dụng các banner cỡ lớn cho các nội dung quan trọng}{13}{subsubsection.2.4.6}%
+\contentsline {subsubsection}{\numberline {2.4.7}Ưu điểm 7: Sử dụng metaphor ``túi đựng tài liệu'' cho các phim bộ}{15}{subsubsection.2.4.7}%
+\contentsline {subsubsection}{\numberline {2.4.8}Ưu điểm 8: Cơ chế cuộn vô tận (infinite scroll) khuyến khích khám phá nội dung}{16}{subsubsection.2.4.8}%
+\contentsline {subsection}{\numberline {2.5}Nhược điểm}{17}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Nhược điểm 1: Không có tên nội dung hay mô tả ngắn cho nhiều thumbnail}{17}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Nhược điểm 2: Mũi tên carousel quá nhỏ và đặt sai vị trí --- vi phạm Fitts's Law}{18}{subsubsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.3}Nhược điểm 3: Thiếu feedback cho infinite scrolling}{19}{subsubsection.2.5.3}%
+\contentsline {subsubsection}{\numberline {2.5.4}Nhược điểm 4: Nút ``Xem tất cả'' không nhất quán giữa các section}{20}{subsubsection.2.5.4}%
+\contentsline {subsubsection}{\numberline {2.5.5}Nhược điểm 5: Nhiều ảnh bị để trống alt text --- vi phạm Accessibility}{21}{subsubsection.2.5.5}%
+\contentsline {subsubsection}{\numberline {2.5.6}Nhược điểm 6: Nút ``Xem tất cả'' quá nhỏ và nằm xa vùng tương tác của người dùng}{21}{subsubsection.2.5.6}%
+\contentsline {subsubsection}{\numberline {2.5.7}Nhược điểm 7: Định dạng card phim bộ không nhất quán giữa các carousel}{22}{subsubsection.2.5.7}%
+\contentsline {subsubsection}{\numberline {2.5.8}Nhược điểm 8: Nút ``Mua gói'' đặt sai vị trí và thiếu feedback sau khi mua}{23}{subsubsection.2.5.8}%
+\contentsline {subsubsection}{\numberline {2.5.9}Nhược điểm 9: Giao diện trang mua gói gây nhầm lẫn giữa các gói cước}{24}{subsubsection.2.5.9}%
+\contentsline {subsubsection}{\numberline {2.5.10}Nhược điểm 10: Lịch phát sóng có ký tự ``\textless {}'' vô dụng và các mục đều có dạng nút bấm gây lỗi}{27}{subsubsection.2.5.10}%
+\contentsline {subsubsection}{\numberline {2.5.11}Nhược điểm 11: Nút hamburger và nút đóng sidebar trên tablet đặt sai vị trí}{28}{subsubsection.2.5.11}%
+\contentsline {subsection}{\numberline {2.6}Các kiểu người dùng \& bối cảnh phát sinh khó khăn}{30}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}Vấn đề thiếu thông tin trên thumbnail}{30}{subsubsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.2}Vấn đề mũi tên carousel quá nhỏ và đặt sai vị trí}{31}{subsubsection.2.6.2}%
+\contentsline {subsubsection}{\numberline {2.6.3}Vấn đề thiếu feedback cho infinite scroll}{31}{subsubsection.2.6.3}%
+\contentsline {subsubsection}{\numberline {2.6.4}Vấn đề nút ``Xem tất cả'' không nhất quán}{31}{subsubsection.2.6.4}%
+\contentsline {subsubsection}{\numberline {2.6.5}Vấn đề thiếu alt text ảnh}{32}{subsubsection.2.6.5}%
+\contentsline {subsubsection}{\numberline {2.6.6}Vấn đề định dạng card phim bộ không nhất quán}{32}{subsubsection.2.6.6}%
+\contentsline {subsubsection}{\numberline {2.6.7}Vấn đề lịch phát sóng không phân biệt trạng thái}{32}{subsubsection.2.6.7}%
+\contentsline {subsubsection}{\numberline {2.6.8}Vấn đề nút hamburger và nút đóng sidebar trên tablet}{32}{subsubsection.2.6.8}%
+\contentsline {section}{\numberline {3}Sản phẩm 2: FPTPlay}{33}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Tên sản phẩm \& Domain}{33}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Đối tượng người dùng}{33}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Core Use Cases}{34}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}UC1: Xem trực tiếp một trận đấu}{34}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}UC2: Lựa chọn môn thể thao để xem}{34}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}UC3: Lựa chọn và thanh toán gói cước}{35}{subsubsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.4}Phân tích ưu điểm dựa trên HCI}{35}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Recognition \& Recall}{35}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Learnability \& Memorability}{35}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Consistency}{35}{subsubsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.4}Capabilities (Fitts's Law)}{36}{subsubsection.3.4.4}%
+\contentsline {subsubsection}{\numberline {3.4.5}Visibility}{36}{subsubsection.3.4.5}%
+\contentsline {subsubsection}{\numberline {3.4.6}Affordances}{36}{subsubsection.3.4.6}%
+\contentsline {subsubsection}{\numberline {3.4.7}Mental Model}{36}{subsubsection.3.4.7}%
+\contentsline {subsection}{\numberline {3.5}Phân tích nhược điểm dựa trên HCI}{36}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Capabilities --- Không tối ưu cho vùng chạm tay (Reachability)}{36}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}Visibility --- Nội dung quan trọng bị che khuất}{37}{subsubsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.3}Cognitive Load --- Ma trận gói cước gây quá tải nhận thức}{37}{subsubsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.6}Các kiểu người dùng \& bối cảnh phát sinh khó khăn}{37}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}Người dùng mới (First-time user) vs Người dùng quen thuộc (Power user)}{38}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}Người dùng xem trên thiết bị di động (Mobile) vs Desktop}{38}{subsubsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.3}Người dùng ở khu vực có kết nối Internet chậm / không ổn định}{38}{subsubsection.3.6.3}%
+\contentsline {subsubsection}{\numberline {3.6.4}Người dùng không rành về công nghệ / thanh toán trực tuyến}{38}{subsubsection.3.6.4}%
+\contentsline {subsubsection}{\numberline {3.6.5}Người dùng sử dụng trong môi trường ánh sáng mạnh (ngoài trời)}{39}{subsubsection.3.6.5}%
+\contentsline {subsubsection}{\numberline {3.6.6}Người dùng muốn so sánh gói cước nhanh}{39}{subsubsection.3.6.6}%
+\contentsline {section}{\numberline {4}Tổng hợp \& Nhận xét}{39}{section.4}%
+\contentsline {subsection}{\numberline {4.1}So sánh nhanh giữa hai sản phẩm}{39}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Kết luận}{40}{subsection.4.2}%
+\contentsline {section}{\numberline {A}Các nguyên tắc HCI}{41}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Recognition \& Recall (Nhận diện \& Nhớ lại)}{41}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Learnability (Khả năng học)}{41}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Memorability (Khả năng ghi nhớ)}{41}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.4}Efficiency / Fitts's Law (Hiệu quả)}{41}{subsection.A.4}%
+\contentsline {subsection}{\numberline {A.5}Error Prevention (Phòng ngừa lỗi)}{41}{subsection.A.5}%
+\contentsline {subsection}{\numberline {A.6}Accessibility / Inclusive Design (Khả năng tiếp cận \& Thiết kế toàn diện)}{41}{subsection.A.6}%
+\contentsline {subsection}{\numberline {A.7}Attention \& Cognitive Load (Sự chú ý \& Tải nhận thức)}{42}{subsection.A.7}%
+\contentsline {subsection}{\numberline {A.8}Reachability \& Motor Load (Tầm với \& Tải vận động)}{42}{subsection.A.8}%
+\contentsline {subsection}{\numberline {A.9}Mental Model \& Metaphor (Mô hình tinh thần \& Ẩn dụ)}{42}{subsection.A.9}%
+\contentsline {subsection}{\numberline {A.10}Consistency (Tính nhất quán)}{42}{subsection.A.10}%
+\contentsline {subsection}{\numberline {A.11}Affordances \& Natural Mapping (Tính gợi ý \& Ánh xạ tự nhiên)}{43}{subsection.A.11}%
+\contentsline {subsection}{\numberline {A.12}Visibility (Tính hiển thị)}{43}{subsection.A.12}%
+\contentsline {subsection}{\numberline {A.13}Feedback (Phản hồi)}{43}{subsection.A.13}%

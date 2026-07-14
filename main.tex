@@ -33,6 +33,8 @@
 \usepackage{pifont}     % Ký hiệu tròn số (\ding{172}=①, \ding{173}=②, \ding{174}=③)
 \usepackage{pgfplots}   % Vẽ biểu đồ (charts)
 \pgfplotsset{compat=1.18} % Phiên bản pgfplots
+\usepackage{tikz}       % Vẽ đồ họa (cho trang bìa)
+\usepackage{tcolorbox}   % Hộp màu (cho trang bìa)
 
 % --- Thiết lập lề trang ---
 % Lề 2.5cm các cạnh: chuẩn cho báo cáo học thuật A4
@@ -40,7 +42,7 @@
 \geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
 
 % --- Fix fancyhdr: headheight phải đủ lớn cho header ---
-\setlength{\headheight}{13.6pt}  % Mặc định 12pt quá nhỏ, fancyhdr yêu cầu ≥ 13.6pt
+\setlength{\headheight}{15pt}  % Mặc định 12pt quá nhỏ, fancyhdr yêu cầu ≥ 14.93912pt
 
 % --- Cài đặt hyperlink ---
 % colorlinks=true: bật màu cho liên kết (thay vì khung viền)
@@ -49,8 +51,8 @@
 % citecolor: màu trích dẫn tài liệu tham khảo
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue!70!black,   % Xanh đậm 70% + đen 30%
-    urlcolor=blue!70!black,   % Đồng bộ với linkcolor
+    linkcolor=blue,   % Xanh đậm
+    urlcolor=blue,   % Đồng bộ với linkcolor
     citecolor=black            % Trích dẫn màu đen (trang trọng)
 }
 
@@ -58,53 +60,100 @@
 % fancyhdr: tạo header/footer tùy chỉnh cho tất cả trang
 \pagestyle{fancy}         % Kích hoạt chế độ fancy page style
 \fancyhf{}                % Xóa tất cả header/footer mặc định
-\fancyhead[L]{\small CSC13112 – User Interface Design}   % Header trái: tên môn + mã PA
-\fancyhead[R]{\small Project Assignment 1} % Header phải: tên bài nghiên cứu
-\fancyfoot[C]{\thepage}                        % Footer giữa: số trang
+\fancyfoot[C]{\thepage}   % Số trang ở chính giữa footer
+% Header
+\fancyhead[L]{23127068 - Huỳnh Lê Khôi} % Trái
+\fancyhead[C]{} % Giữa
+\fancyhead[R]{23CLC} % Phải
 \renewcommand{\headrulewidth}{0.4pt}           % Đường kẻ ngang dưới header (0.4pt mảnh)
 
 % ===================== TITLE (TIÊU ĐỀ) =====================
 % \title: tiêu đề chính của tài liệu
 \title{\textbf{Project Assignment 1}}
 
+% --- Định dạng tiêu đề section ---
+\titleformat{\section}
+{\normalfont\large\bfseries}
+{\thesection}{1em}{}
+
+% --- Định dạng tiêu đề phần (trước appendix) ---
+\titleformat{\section}{\Large\bfseries}{Part \Roman{section}.}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{1em}{}
+
+% --- Định dạng tiêu đề appendix (sau khi dùng \appendix) ---
+\titleformat{\section}{\Large\bfseries}{Appendix \Alph{section}: }{1em}{}
+
+% --- Cài đặt paragraph ---
+\setlength{\parindent}{0pt}
+\renewcommand{\contentsname}{Table of contents}
+
 % ======================================================
 % BẮT ĐẦU NỘI DUNG TÀI LIỆU
 % ======================================================
 \begin{document}        % Bắt đầu nội dung tài liệu
 
-\maketitle              % Hiển thị title đã khai báo ở trên
-\thispagestyle{fancy}   % Trang đầu dùng fancy style (có header/footer)
+% ------------ TRANG BÌA -------------
+\begin{titlepage}
+\begin{tikzpicture}[remember picture,overlay,inner sep=0,outer sep=0]
+     \draw[blue!70!black,line width=4pt] ([xshift=-1.5cm,yshift=-2cm]current page.north east) coordinate (A)--([xshift=1.5cm,yshift=-2cm]current page.north west) coordinate(B)--([xshift=1.5cm,yshift=2cm]current page.south west) coordinate (C)--([xshift=-1.5cm,yshift=2cm]current page.south east) coordinate(D)--cycle;
+
+     \draw ([yshift=0.5cm,xshift=-0.5cm]A)-- ([yshift=0.5cm,xshift=0.5cm]B)--
+     ([yshift=-0.5cm,xshift=0.5cm]B) --([yshift=-0.5cm,xshift=-0.5cm]B)--([yshift=0.5cm,xshift=-0.5cm]C)--([yshift=0.5cm,xshift=0.5cm]C)--([yshift=-0.5cm,xshift=0.5cm]C)-- ([yshift=-0.5cm,xshift=-0.5cm]D)--([yshift=0.5cm,xshift=-0.5cm]D)--([yshift=0.5cm,xshift=0.5cm]D)--([yshift=-0.3cm,xshift=0.5cm]A)--([yshift=-0.3cm,xshift=-0.5cm]A)--([yshift=0.5cm,xshift=-0.5cm]A);
+
+
+     \draw ([yshift=-0.3cm,xshift=0.3cm]A)-- ([yshift=-0.3cm,xshift=-0.3cm]B)--
+     ([yshift=0.3cm,xshift=-0.3cm]B) --([yshift=0.3cm,xshift=0.3cm]B)--([yshift=-0.3cm,xshift=0.3cm]C)--([yshift=-0.3cm,xshift=-0.3cm]C)--([yshift=0.3cm,xshift=-0.3cm]C)-- ([yshift=0.3cm,xshift=0.3cm]D)--([yshift=0.3cm,xshift=0.3cm]D)--([yshift=-0.3cm,xshift=-0.3cm]D)--([yshift=0.3cm,xshift=-0.3cm]A)--([yshift=0.3cm,xshift=0.3cm]A)--([yshift=-0.3cm,xshift=0.3cm]A);
+
+\end{tikzpicture}
+\vspace*{1cm}
+\begin{center}
+    \makebox[\textwidth][c]{\large\bfseries ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH}\\[4pt]
+    \makebox[\textwidth][c]{\large\bfseries TRƯỜNG ĐẠI HỌC KHOA HỌC TỰ NHIÊN - VNUHCM}\\[4pt]
+    \makebox[\textwidth][c]{\large\bfseries KHOA CÔNG NGHỆ THÔNG TIN}\\[1cm]
+    
+
+    \includegraphics[scale=0.15]{Logo-Dai-hoc-Khoa-hoc-Tu-nhien.png}\\[0.8cm]
+    % Môn học
+    {\large\bfseries THIẾT KẾ GIAO DIỆN}
+
+    \vspace{6pt}
+
+    {\large Lớp: \textbf{23KTPM2}}
+    
+    \vspace{10pt}
+    
+    % Tiêu đề đồ án (một dòng, màu, to, căn giữa)
+    \makebox[\textwidth][c]{\large\bfseries \color{black!70!black}POTENTIAL SOLUTIONS IDENTIFICATION - PA1}
+    
+    \vspace{1.5cm}
+
+    % Giáo viên box
+    \begin{tcolorbox}[colback=blue!5!white, colframe=blue!50!black, width=0.9\textwidth, boxrule=0.8pt, arc=3pt, left=8pt, right=8pt]
+        \textbf{Thầy: Lê Khánh Duy}\\
+        \textbf{Thầy: Nguyễn Huy Khánh}\\
+        \textbf{Thầy: Phạm Nguyễn Sơn Tùng}
+    \end{tcolorbox}
+    \vspace{1cm}
+
+    % Sinh viên box
+    \begin{tcolorbox}[colback=gray!10!white, colframe=gray!60!black, width=0.9\textwidth, boxrule=0.8pt, arc=3pt, left=8pt, right=8pt]
+        \textbf{Sinh viên thực hiện:} \\
+        Huỳnh Lê Khôi -- MSSV: 23127068 \\ 
+        Bùi Đức Đạt -- MSSV: 23127337 \\
+        Phan Thị Hương Xuân -- MSSV: 23127147 \\
+        Nguyễn Tuấn Minh -- MSSV: 22127271
+        
+    \end{tcolorbox}
+
+    \vfill
+    {\large\textbf{HO CHI MINH CITY, 2026}}
+\end{center}
+\end{titlepage}
+
+
 \tableofcontents        % Tự động tạo mục lục từ các \section, \subsection
 \newpage                % Ngắt trang - mục lục ở trang riêng
 
-% ======================================================
-%         0. THÔNG TIN NHÓM
-% ======================================================
-\section{Thông tin nhóm}
-
-\textbf{Nhóm:} Nhóm 9
-
-% --- Bảng danh sách thành viên ---
-% tabular: bảng cơ bản |l|l| = 2 cột trái, có viền
-% \hline: đường kẻ ngang
-% \textbf{}: in đậm
-\bigskip               % Tạo khoảng trắng lớn trước bảng
-\begin{center}         % Căn giữa bảng
-\begin{tabular}{|l|l|} % 2 cột trái, có viền '|' hai bên
-\hline                 % Đường kẻ ngang trên cùng
-\textbf{Thành viên} & \textbf{MSSV} \\  % Hàng tiêu đề
-\hline
-Phan Thị Hương Xuân & 23127147 \\   % Điền tên và MSSV thành viên
-\hline
-Bùi Đức Đạt & 23127337 \\
-\hline
-Huỳnh Lê Khôi & 23127068 \\
-\hline
-Nguyễn Tuấn Minh & 22127271 \\
-\hline
-\end{tabular}          % Kết thúc bảng
-\end{center}           % Kết thúc căn giữa
-\bigskip
 
 % ======================================================
 %          IMPORT NỘI DUNG PRODUCT RESEARCH
@@ -112,5 +161,11 @@ Nguyễn Tuấn Minh & 22127271 \\
 % Nội dung chi tiết được tách ra file sections/product-research/product-research.tex
 % Bao gồm: Giới thiệu, Phân tích VTVPrime, FPTPlay, Tổng hợp
 \input{sections/product-research/product-research.tex}
+
+% ======================================================
+%          BIBLIOGRAPHY
+% ======================================================
+\bibliographystyle{plain}
+\bibliography{references}
 
 \end{document}
