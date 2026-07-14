@@ -186,99 +186,10 @@ Dựa trên hành vi và bối cảnh sử dụng, người dùng VTVPrime có t
 
 \medskip\noindent\textit{Nhược điểm cụ thể (dựa trên HCI):} [Ví dụ chi tiết]
 
-% --- 2.4 Phân tích ưu điểm dựa trên HCI ---
-% Mỗi \subsubsection tương ứng 1 nguyên tắc HCI:
-% Recognition & Recall, Learnability, Memorability, Capabilities (Fitts),
-% Error Prevention, Visibility, Affordances, Consistency, Mental Model
-\subsection{Phân tích ưu điểm dựa trên HCI}
+% --- Phân tích ưu và nhược dựa trên HCI ---
+% Nội dung được import từ vtvprime-pros-and-cons.tex
+\input{./vtvprime-pros-and-cons.tex}
 
-\subsubsection{Recognition \& Recall}
-\textbf{Hiện trạng:} [Mô tả cụ thể giao diện đang làm tốt điều gì]\\
-\textbf{Phân tích HCI:} [Giải thích theo lý thuyết recognition vs recall --- người dùng nhận ra ngay chức năng, không cần nhớ]\\
-\textbf{Ví dụ cụ thể:} [Tình huống thực tế --- ví dụ: banner trận đấu lớn $\rightarrow$ người dùng nhìn là biết đang có trận live $\rightarrow$ click ``Xem ngay'' --- đây là recognition]
-
-\subsubsection{Learnability}
-\textbf{Hiện trạng:} Giao diện giống các nền tảng lớn (YouTube, Netflix).\\
-\textbf{Phân tích HCI:} External consistency --- người dùng đã quen với các platform khác $\rightarrow$ dễ học, không cần đào tạo lại.\\
-\textbf{Ví dụ cụ thể:} [Mô tả một người dùng lần đầu dùng VTVPrime, đã từng xem YouTube $\rightarrow$ biết ngay cách dùng]
-
-\subsubsection{Memorability}
-\textbf{Hiện trạng:} [Mô tả]\\
-\textbf{Phân tích HCI:} [Giải thích]\\
-\textbf{Ví dụ cụ thể:} [Tình huống]
-
-\subsubsection{Capabilities (Fitts's Law)}
-\textbf{Hiện trạng:} Banner trận đấu có kích thước lớn, chiếm phần lớn màn hình.\\
-\textbf{Phân tích HCI:} Theo Fitts's Law ($t = a + b \log_2(d/s + 1)$), banner lớn ($s$ lớn) $\rightarrow$ thời gian di chuyển và click chuột giảm $\rightarrow$ giảm workload cho người dùng.\\
-\textbf{Ví dụ cụ thể:} [Mô tả kích thước banner, khoảng cách từ vị trí người dùng hay click tới banner $\rightarrow$ phân tích thời gian phản hồi]
-
-\subsubsection{Error Prevention}
-\textbf{Hiện trạng:} [Mô tả]\\
-\textbf{Phân tích HCI:} [Giải thích]\\
-\textbf{Ví dụ cụ thể:} [Tình huống]
-
-\subsubsection{Visibility}
-\textbf{Hiện trạng:} [Mô tả --- trạng thái hệ thống có hiển thị rõ không? Ví dụ: trận đấu đang Live có được đánh dấu rõ trên giao diện không?]\\
-\textbf{Phân tích HCI:} Theo nguyên tắc Visibility, hệ thống cần thể hiện trạng thái và khả năng tương tác để người dùng biết --- nếu thiếu, người dùng phải suy đoán.\\
-\textbf{Ví dụ cụ thể:} [Tình huống]
-
-\subsubsection{Affordances}
-\textbf{Hiện trạng:} [Mô tả --- các phần tử UI có gợi ý cách tương tác không? Ví dụ: banner trận đấu có cho thấy có thể click được không?]\\
-\textbf{Phân tích HCI:} Affordance là thuộc tính thiết kế giúp người dùng biết cách dùng mà không cần hướng dẫn --- nút nổi lên cho thấy có thể nhấn, thanh trượt cho thấy có thể kéo.\\
-\textbf{Ví dụ cụ thể:} [Tình huống]
-
-\subsubsection{Consistency}
-\textbf{Hiện trạng:} [Mô tả --- icon, thuật ngữ, bố cục có đồng nhất giữa các màn hình không?]\\
-\textbf{Phân tích HCI:} Internal consistency giúp giảm cognitive load --- người dùng không phải học lại cách dùng khi chuyển màn hình. External consistency (giống Netflix, YouTube) giúp tận dụng kinh nghiệm có sẵn.\\
-\textbf{Ví dụ cụ thể:} [Tình huống]
-
-\subsubsection{Mental Model}
-\textbf{Hiện trạng:} [Mô tả --- cách bố trí nội dung có khớp với kỳ vọng từ các OTT khác không? Ví dụ: người dùng kỳ vọng live match ở banner chính, highlight ở tab riêng?]\\
-\textbf{Phân tích HCI:} Người dùng xây dựng mental model từ kinh nghiệm quá khứ --- nếu giao diện đi ngược mental model, họ sẽ mắc lỗi hoặc mất thời gian học lại.\\
-\textbf{Ví dụ cụ thể:} [Tình huống]
-
-% --- 2.5 Phân tích nhược điểm dựa trên HCI ---
-% Liệt kê các vấn đề HCI cụ thể:
-% Error (lỗi thiết kế), Inconsistency, Efficiency, Capabilities,
-% Divided Attention, Feedback
-% Mỗi mục: Hiện trạng -> Phân tích HCI -> Ví dụ -> Đề xuất khắc phục
-\subsection{Phân tích nhược điểm dựa trên HCI}
-
-\subsubsection{Error --- Lỗi do thiết kế}
-\textbf{Hiện trạng:} [Mô tả lỗi cụ thể --- ví dụ: nút/vùng chạm quá gần nhau dẫn đến click nhầm]\\
-\textbf{Phân tích HCI:} [Liên hệ Fitts's Law, error prevention]\\
-\textbf{Ví dụ cụ thể:} [Mô tả tình huống người dùng gặp lỗi]\\
-\textbf{Đề xuất hướng khắc phục:} [Ý tưởng sơ bộ]
-
-\subsubsection{Inconsistency --- Thiếu nhất quán}
-\textbf{Hiện trạng:} Các mục ``Đề xuất'', ``Nổi bật'', ``Thể thao'', ``Phim mới'' trên trang chủ đều có format giống hệt nhau: tiêu đề trắng + danh sách thumbnail. Không có sự khác biệt trực quan để phân biệt ý nghĩa từng mục --- người dùng phải đọc từng tiêu đề mới biết đang ở đâu.\\
-\textbf{Phân tích HCI:} Internal consistency bị vi phạm --- các thành phần khác nhau về chức năng cần được thiết kế khác nhau để phản ánh đúng vai trò. Khi mọi thứ trông giống nhau, người dùng không thể ưu tiên xử lý thông tin, phải scan toàn bộ $\rightarrow$ tăng cognitive load.\\
-\textbf{Ví dụ cụ thể:} Giả sử người dùng muốn tìm trận đá gần đây nhất. Cả mục ``Đề xuất'' (gợi ý cá nhân), ``Nổi bật'' (hot trend), ``Thể thao'' (trận đấu) đều là dãy thumbnail giống nhau $\rightarrow$ phải đọc chữ mới phân biệt được.\\
-\textbf{Đề xuất hướng khắc phục:} Thiết kế section header khác biệt: icon + màu sắc + kích thước chữ riêng cho từng loại mục. Ví dụ: mục ``Thể thao'' dùng icon bóng đá + nền tối, mục ``Phim mới'' dùng icon film + nền sáng.
-
-\subsubsection{Efficiency --- Tốn nhiều thao tác cuộn (Motor Load)}
-\textbf{Hiện trạng:} Trang chủ VTVPrime dùng cơ chế cuộn vô tận (infinite scroll), tự động load thêm nội dung khi kéo đến cuối. Tuy nhiên không có nút ``Go to top'' --- mỗi lần muốn quay lên đầu trang, người dùng phải cuộn thủ công qua hàng loạt mục đã xem. Nếu đang ở cuối trang, thao tác cuộn lên rất tốn thời gian và công sức. Việc phải lướt qua hàng chục mục cùng lúc cũng buộc người dùng phải scan và ghi nhớ vị trí nội dung --- cử động mắt và tay nhiều.\\
-\textbf{Phân tích HCI:} Theo Fitts's Law, khoảng cách ($d$) càng lớn thì thời gian tương tác càng lâu --- cuộn từ cuối lên đầu trang là distance cực đại. Ngoài ra, infinite scroll không có điểm dừng khiến người dùng mất phương hướng, không biết mình đang ở đâu trong không gian nội dung --- vi phạm nguyên tắc Visibility.\\
-\textbf{Ví dụ cụ thể:} Người dùng lướt đến mục thứ 20 (ví dụ ``Học Nhanh --- Nhớ Sâu''), thấy không hứng thú, muốn quay lại mục ``Phim Hoạt Hình Mới'' đã thấy lúc đầu $\rightarrow$ phải cuộn tay hoặc lăn chuột rất nhiều để lên lại. Nếu không nhớ vị trí, họ phải vừa cuộn vừa scan lại từ đầu.\\
-\textbf{Đề xuất hướng khắc phục:} Thêm nút ``Go to top'' dạng floating (xuất hiện khi scroll xuống một ngưỡng nhất định). Hoặc chuyển sang cơ chế phân trang (pagination) để người dùng có điểm đánh dấu và dễ quay lại.
-
-\subsubsection{Capabilities --- Không tối ưu cho người thuận tay trái}
-\textbf{Hiện trạng:} [Mô tả --- nút/khu vực tương tác chính nằm bên phải màn hình, không thuận cho người dùng tay trái]\\
-\textbf{Phân tích HCI:} Reachability --- vùng tương tác chính nằm ngoài vùng với tay thoải mái của người thuận tay trái.\\
-\textbf{Ví dụ cụ thể:} [Mô tả]\\
-\textbf{Đề xuất hướng khắc phục:} [Ý tưởng sơ bộ]
-
-\subsubsection{Divided Attention --- Phân tán sự chú ý}
-\textbf{Hiện trạng:} [Mô tả --- ví dụ: phần ``Chương trình truyền hình'' chen ngang nội dung thể thao]\\
-\textbf{Phân tích HCI:} Divided attention --- người dùng phải xử lý nhiều luồng thông tin không liên quan cùng lúc $\rightarrow$ tăng cognitive load.\\
-\textbf{Ví dụ cụ thể:} [Mô tả]\\
-\textbf{Đề xuất hướng khắc phục:} [Ý tưởng sơ bộ]
-
-\subsubsection{Feedback --- Thiếu phản hồi}
-\textbf{Hiện trạng:} Khi cuộn đến cuối cùng của nội dung trên trang chủ, không có dòng text hay dấu hiệu nào cho biết ``đã hết nội dung'' hoặc ``không còn gì để hiển thị''. Hệ thống chỉ đơn giản là dừng load --- người dùng không biết là do đã hết nội dung thật hay do mạng lag/đang load tiếp.\\
-\textbf{Phân tích HCI:} Theo nguyên tắc Feedback, hệ thống cần phản hồi trạng thái sau mỗi hành động của người dùng. Khi thiếu feedback ở trạng thái cuối trang, người dùng rơi vào tình trạng uncertainty --- không biết nên chờ thêm hay đã hết, dẫn đến hành vi chờ đợi vô ích hoặc tưởng app bị lỗi.\\
-\textbf{Ví dụ cụ thể:} Người dùng cuộn đến cuối trang chủ, trang dừng load. Họ chờ 5--10 giây vì nghĩ mạng chậm, nhưng thực tế không còn gì nữa. Sau vài lần như vậy họ mới hiểu ra, nhưng mỗi lần vẫn phải mất thời gian ``đoán'' trạng thái hệ thống.\\
-\textbf{Đề xuất hướng khắc phục:} Thêm dòng text như ``Đã hiển thị tất cả nội dung'' hoặc một icon ở cuối trang. Hoặc chuyển sang phân trang (pagination) với số trang rõ ràng.
 
 % --- 2.6 Các kiểu người dùng & bối cảnh phát sinh khó khăn ---
 % Phân tích 6 tình huống:
@@ -708,3 +619,11 @@ Inclusive Design & [Nhận xét] & [Nhận xét] \\
 \section{Tài liệu tham khảo}
 
 [Các nguồn tham khảo nếu có]
+
+% ======================================================
+%          PHỤ LỤC
+% ======================================================
+\appendix
+\section{Các nguyên tắc HCI}
+
+\input{./hci-principles.tex}

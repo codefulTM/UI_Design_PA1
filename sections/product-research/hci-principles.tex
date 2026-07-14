@@ -1,0 +1,57 @@
+\subsection{Recognition \& Recall (Nhận diện \& Nhớ lại)}
+
+\textbf{Recognition} là khả năng người dùng nhận diện được thông tin hoặc chức năng cần thiết khi quan sát giao diện --- thông tin được hiển thị sẵn, người dùng chỉ cần nhìn và xác nhận. \textbf{Recall} là khả năng nhớ lại thông tin từ trí nhớ dài hạn mà không có manh mối trực quan hỗ trợ. Trong thiết kế giao diện, recognition được coi là hiệu quả hơn recall vì giảm thiểu nỗ lực nhận thức của người dùng.
+
+\subsection{Learnability (Khả năng học)}
+
+Learnability đo lường thời gian và nỗ lực cần thiết để người dùng mới có thể sử dụng hệ thống đạt hiệu suất cơ bản mà không mắc lỗi. Đây là một trong năm tiêu chí cốt lõi của Usability theo khung đánh giá của Nielsen.
+
+\subsection{Memorability (Khả năng ghi nhớ)}
+
+Memorability là khả năng người dùng có thể tái lập thao tác sử dụng hệ thống sau một khoảng thời gian gián đoạn mà không cần phải học lại từ đầu. Bố cục giao diện tuân theo các khuôn mẫu (pattern) nhất quán và lặp lại sẽ hỗ trợ memorability.
+
+\subsection{Efficiency / Fitts's Law (Hiệu quả)}
+
+Fitts's Law là mô hình toán học mô tả mối quan hệ giữa thời gian di chuyển đến mục tiêu với khoảng cách và kích thước của mục tiêu đó:
+
+\[t = a + b \cdot \log_2\left(\frac{d}{s} + 1\right)\]
+
+Trong đó $d$ là khoảng cách từ vị trí hiện tại đến tâm mục tiêu, $s$ là kích thước (chiều rộng) của mục tiêu, $a$ và $b$ là hằng số phụ thuộc ngữ cảnh. Theo công thức này, mục tiêu càng lớn và càng gần thì thời gian tương tác càng ngắn.
+
+\subsection{Error Prevention (Phòng ngừa lỗi)}
+
+Error Prevention yêu cầu hệ thống được thiết kế để ngăn chặn lỗi trước khi chúng xảy ra, thay vì chỉ cung cấp cơ chế khắc phục sau khi lỗi đã xảy ra. Biện pháp phòng ngừa bao gồm: đặt các hành động nguy hiểm ở vị trí khó vô tình kích hoạt, yêu cầu xác nhận trước khi thực hiện các thao tác không thể hoàn tác, và cung cấp hướng dẫn trực quan để người dùng thực hiện thao tác đúng ngay từ lần đầu.
+
+\subsection{Accessibility / Inclusive Design (Khả năng tiếp cận \& Thiết kế toàn diện)}
+
+Accessibility là nguyên tắc đảm bảo giao diện có thể được sử dụng bởi tất cả đối tượng người dùng, bao gồm cả những người có hạn chế về thị giác, thính giác, vận động hoặc nhận thức. Một ví dụ điển hình về yếu tố giúp cải thiện accessibility là \textbf{contrast ratio} --- tỉ số độ sáng giữa phần tử cần đọc (chữ, icon, hình ảnh) và nền đằng sau nó. Contrast ratio được tính theo công thức W3C dựa trên độ sáng tương đối (relative luminance) của hai lớp màu: lớp foreground (chữ, icon) và lớp background (nền). Thang đo từ 1:1 (foreground và nền trùng màu hoàn toàn, không đọc được) đến 21:1 (đen trắng thuần, tương phản cao nhất). Contrast ratio càng cao thì chữ càng dễ đọc, đặc biệt quan trọng với người dùng khiếm thị nhẹ hoặc người dùng trong điều kiện ánh sáng yếu (ngoài trời nắng, màn hình mờ).
+
+Để đánh giá một giao diện có đạt chuẩn accessibility hay không, các nhà thiết kế dựa vào \textbf{WCAG} (Web Content Accessibility Guidelines) --- bộ tiêu chuẩn quốc tế do W3C phát hành, quy định các yêu cầu tối thiểu mà giao diện web phải đáp ứng để người dùng khuyết tật có thể truy cập và sử dụng được. Trong đó, yêu cầu về contrast ratio là một trong những tiêu chí quan trọng nhất: $\geq$ 4.5:1 cho văn bản thông thường và $\geq$ 3:1 cho văn bản lớn ($\geq$ 18px hoặc $\geq$ 14px bold). Ngoài ra, WCAG còn yêu cầu tất cả phần tử tương tác phải có tên mô tả cho trình đọc màn hình (screen reader), và cấu trúc heading phải tuân theo thứ tự phân cấp. Khoảng 7--8\% nam giới mắc chứng mù màu (color blindness), vì vậy giao diện không nên dựa duy nhất vào màu sắc để truyền tải thông tin.
+
+\subsection{Attention \& Cognitive Load (Sự chú ý \& Tải nhận thức)}
+
+Hệ thống nhận thức của con người xử lý thông tin thông qua ba cơ chế chú ý chính: \textbf{Selective attention} (lọc và tập trung vào một nguồn thông tin giữa nhiều nguồn), \textbf{Focused attention} (tập trung hoàn toàn vào một đối tượng, loại bỏ mọi yếu tố xung quanh), và \textbf{Divided attention} (phân bổ sự chú ý đồng thời cho nhiều nguồn thông tin). Working memory (bộ nhớ ngắn hạn) có dung lượng hạn chế, chỉ lưu giữ được khoảng 7--10 đơn vị thông tin (chunks) tại một thời điểm. Khi giao diện hiển thị quá nhiều thông tin đồng thời, người dùng rơi vào tình trạng cognitive overload (quá tải nhận thức).
+
+\subsection{Reachability \& Motor Load (Tầm với \& Tải vận động)}
+
+Reachability đề cập đến khả năng người dùng có thể chạm tới các phần tử tương tác trên giao diện với nỗ lực vận động tối thiểu. Motor Load là thước đo nỗ lực vận động (di chuyển tay, ngón tay, con trỏ chuột) cần thiết để thực hiện một thao tác.
+
+\subsection{Mental Model \& Metaphor (Mô hình tinh thần \& Ẩn dụ)}
+
+\textbf{Mental model} là cấu trúc nhận thức bên trong tâm trí người dùng về cách một hệ thống hoạt động, được hình thành dựa trên kinh nghiệm và trải nghiệm tương tác trước đó. Khi giao diện phù hợp với mental model, người dùng có thể sử dụng hiệu quả mà không cần học lại; khi đi ngược lại mental model, người dùng sẽ gặp khó khăn và phải thử sai. \textbf{Metaphor} (ẩn dụ thiết kế) là kỹ thuật vay mượn hình ảnh, biểu tượng hoặc cách tương tác từ các đối tượng quen thuộc trong thế giới vật lý để áp dụng lên các đối tượng trong giao diện số.
+
+\subsection{Consistency (Tính nhất quán)}
+
+Consistency gồm hai loại chính: \textbf{Internal consistency} (Nhất quán nội bộ) --- các phần tử cùng chức năng trong một ứng dụng phải hoạt động và được thể hiện giống nhau ở mọi nơi. \textbf{External consistency} (Nhất quán bên ngoài) --- giao diện nên tuân theo các tiêu chuẩn và khuôn mẫu phổ biến mà người dùng đã quen thuộc từ các ứng dụng khác trong cùng lĩnh vực. Consistency giúp người dùng chỉ cần học cách tương tác một lần và có thể áp dụng kiến thức đó ở mọi nơi.
+
+\subsection{Affordances \& Natural Mapping (Tính gợi ý \& Ánh xạ tự nhiên)}
+
+\textbf{Affordance} (theo Don Norman) là thuộc tính của đối tượng thiết kế gợi ý cho người dùng biết cách sử dụng nó --- nút nổi lên trên bề mặt gợi ý thao tác nhấn, thanh trượt gợi ý thao tác kéo. \textbf{Natural Mapping} là mối quan hệ tự nhiên và trực giác giữa cơ chế điều khiển (control) và kết quả tác động (effect) --- mũi tên bên phải tương ứng với việc di chuyển nội dung sang bên phải, cần lái xe quay trái thì phương tiện rẽ trái.
+
+\subsection{Visibility (Tính hiển thị)}
+
+Visibility yêu cầu giao diện phải thể hiện rõ ràng tất cả các chức năng khả dụng và trạng thái hiện tại của hệ thống. Người dùng cần biết được: hệ thống có thể thực hiện những thao tác gì, thao tác nào đang khả dụng tại thời điểm hiện tại, và hệ thống đang ở giai đoạn nào của quy trình xử lý. Thách thức trong thiết kế là cân bằng giữa visibility và simplicity --- hiển thị đủ thông tin nhưng giữ giao diện đơn giản.
+
+\subsection{Feedback (Phản hồi)}
+
+Feedback là nguyên tắc yêu cầu hệ thống phải cung cấp phản hồi trực quan và rõ ràng sau mỗi hành động của người dùng. Khi người dùng thực hiện một thao tác (nhấn nút, cuộn trang, nhập dữ liệu), hệ thống cần xác nhận rằng thao tác đã được nhận diện và hiển thị kết quả hoặc trạng thái tương ứng. Thiếu feedback dẫn đến tình trạng người dùng không biết hệ thống có đang hoạt động hay không, gây cảm giác bất an và giảm niềm tin vào hệ thống.

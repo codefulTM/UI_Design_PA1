@@ -1,0 +1,325 @@
+
+\subsection{Ưu điểm}
+
+\subsubsection{Ưu điểm 1: Các card được phân thành các carousel có đề mục rõ ràng.}
+
+\begin{itemize}
+  \item \textbf{Phân tích}: Thay vì dàn trải toàn bộ các card trên cùng một trang duy nhất, giao diện VTVPrime đã gom nhóm các card vào các carousel, mỗi carousel có một đề mục(heading) mô tả chủ đề chung của các card con. Nhờ đó, thay vì phải cố rắng nhớ(recall) xem các card liên quan đến chủ đề x nằm ở vị trí nào trong trang hoặc card thứ y có chủ đề là gì, thì giờ đây người dùng có thể nhìn tiêu đề của carousel mà các card thuộc về để biết được chủ đề của chúng mà không cần đoán thông qua thumbnail.
+  \item \textbf{Nguyên tắc liên quan}: Recognition \& Recall.
+  \item \textbf{Ví dụ cụ thể}:
+  \begin{quote}
+    Người dùng A muốn tìm các show sitcom xả stress. Họ chỉ cần lướt qua các card trong carousel ``Sitcom Xả Stress'' để tìm kiếm là xong. Không cần phải nhìn qua các card khác trong trang.
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image1.drawio.png}
+  \end{center}
+\end{itemize}
+
+\subsubsection{Ưu điểm 2: Lịch phát sóng có hiển thị và sắp xếp theo timeline:}
+
+\begin{itemize}
+  \item \textbf{Phân tích}: Khi mở một kênh, lịch phát sóng hiển thị kế bên video đang phát và chứa các thông tin như tên chương trình, thời gian bắt đầu và kết thúc của một chương trình.
+  \item \textbf{Nguyên tắc liên quan}: Recognition \& Recall.
+  \item \textbf{Ví dụ cụ thể}:
+  \begin{quote}
+    Người dùng A muốn biết xem kênh họ đang chọn vào lúc 19h00' sẽ phát chương trình nào. Họ chỉ cần liếc mắt qua phải là thấy ngay sắp tới, vào lúc 19h00', sẽ có chương trình thời sự.
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image2.drawio.png}
+  \end{center}
+\end{itemize}
+
+\subsubsection{Ưu điểm 3: Pattern giống nhau giữa các carousel}
+
+\begin{itemize}
+  \item \textbf{Phân tích}: Các carousel đều dùng chung pattern: Mỗi carousel chứa một heading H2, cạnh bên là nút ``Xem tất cả'', theo sau là các card có liên quan với nhau, giúp người dùng dễ dự đoán cách tương tác mà không cần học lại. Đây là internal consistency giúp người dùng nhanh chóng hiểu được cấu trúc tổng thể, từ đó dễ dàng khám phá nội dung mới mà không gặp trở ngại.
+  \item \textbf{Nguyên tắc liên quan}: Consistency, Memorability.
+  \item \textbf{Ví dụ cụ thể}:
+  \begin{quote}
+    Người dùng A đang lướt trang web VTVPrime và thấy mục ``Phim Hay Không Thể Bỏ Lỡ'' có thể cuộn ngang được. Bên trong nó chứa các card đại diện cho các phim mà trang web đề xuất là ``Hay''. Tiếp theo, A lướt xuống và thấy có mục ``Nam Thần Đốn Tim'' có cấu trúc tương tự như mục ``Phim Hay Không Thể Bỏ Lỡ''. Nhờ vậy họ tự khắc suy ra rằng ``Trong mục này có nhiều phim, phim nào cũng có những diễn viên điển trai, tôi có thể scroll sang ngang để xem nhiều hơn!''.
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image3.drawio.png}
+  \end{center}
+\end{itemize}
+
+\subsubsection{Ưu điểm 4: Các trạng thái ``Đang phát'', ``Sắp phát sóng'' được thể hiện rõ ràng}
+
+\begin{itemize}
+  \item \textbf{Phân tích}: Ở trạng thái ``Đang phát'', badge có nền đỏ và trong mô tả của đoạn video sẽ hiển thị thời gian diễn ra video đó. Ở trạng thái ``Sắp phát sóng'' thì badge có nền trắng kèm theo thông tin về thời gian phát sóng, ngày phát sóng. Chính vì vậy mà người xem không phải nhớ nhiều về thời gian họ cần chờ đợi để đón xem video. Lỡ như họ có quên mất và bỏ lỡ phần đầu của một video, thanh tiến trình nhỏ dưới mỗi card cũng sẽ cho biết họ có bỏ lỡ phần hay của video hay không(thường là phần giữa của video, bởi vì khúc đầu thường sẽ giới thiệu nhiều hơn). Nếu bỏ lỡ, họ chỉ việc xem lại sau là được.
+  \item \textbf{Nguyên tắc liên quan}: Visibility.
+  \item \textbf{Ví dụ cụ thể}:
+  \begin{quote}
+    Người dùng A mở VTVprime và thấy chương trình ``Genesis Scottish Open | Ngày 2'' đang được gắn badge ``Đang phát'' màu đỏ. Ngoài trạng thái phát trực tiếp, thanh tiến trình bên dưới thẻ nội dung cho biết chương trình đã diễn ra được một phần. Ban đầu, A cũng tò mò muốn xem, nhưng sau khi thấy thanh tiến trình chạy được hơn phân nửa, A quyết định xem sau thay vì loay hoay click vào video, đợi video load xong rồi mới biết video đang ở phút thứ mấy.
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image4.png}
+  \end{center}
+\end{itemize}
+
+\subsubsection{Ưu điểm 5: Nhiều thành phần trong giao diện trang web có sử dụng các ``hint'' để người dùng biết cách tương tác với trang web sao cho phù hợp.}
+
+\begin{itemize}
+  \item \textbf{Phân tích}: Mỗi card trong trang có hiệu ứng hover nhẹ khi di chuột vào, báo hiệu cho người dùng rằng đây là phần tử có thể click được. Nút ``Xem tất cả \ensuremath{\rangle}'' sử dụng ký hiệu mũi tên (\ensuremath{\rangle}) gợi ý điều hướng sang trang mới. Mũi tên carousel trái/phải gợi ý có thể cuộn ngang để xem thêm nội dung.
+  \item \textbf{Nguyên tắc liên quan}: Affordances \& Natural Mapping.
+  \item \textbf{Ví dụ cụ thể}:
+  \begin{quote}
+    Người dùng A từ bé đã thấy ba mẹ của mình lúc chở mình đi học luôn bật xi nhan trái để rẽ trái và bật xi nhan phải để rẽ phải. Dựa vào kinh nghiệm nhiều năm tham gia giao thông như thế, A nhìn vào trang web và biết ngay rằng chỉ cần click vào nút mũi tên phải thì những nội dung bên phải của A sẽ hiện ra, giống hệt như lúc rẽ phải thì sẽ thấy được những khung cảnh ở con đường bên tay phải vậy.
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{image.png}
+  \end{center}
+\end{itemize}
+
+\subsubsection{Ưu điểm 6: VTVPrime sử dụng các banner cỡ lớn cho các nội dung quan trọng}
+
+\begin{itemize}
+  \item \textbf{Phân tích}: VTVPrime tận dụng metaphor là các banner ở ngoài đường phố để đưa vào trang web của mình, nhấn mạnh những nội dung nổi bật, những nội dung mà họ cho rằng nhiều người dùng sẽ muốn xem. Tính chất chung của banner trong thế giới thật và banner trong trang web là: Chúng đều có kích thước lớn, dễ nhận thấy, hình ảnh thu hút và thông tin súc tích nhưng mang tính kêu gọi sự quan tâm.
+  \item \textbf{Nguyên tắc liên quan}: Mental model \& Metaphor.
+  \item \textbf{Ví dụ cụ thể}:
+  \begin{quote}
+    Đây là một banner đường phố. Thông điệp ``Fashion Never Sleep'' tuy ngắn gọn nhưng mang hàm ý kêu gọi mạnh mẽ ``Bạn có thể ngủ, nhưng ngủ dậy nhớ cập nhật những trend hot về thời trang!''. Cái hay ở đây chính là việc kết hợp giữa khẳng định chắc nịch ``NEVER SLEEP'' và những tông màu gần màu đỏ(mắt người nhạy hơn đối với những màu trong dải màu đỏ), khiến cho người dùng có cảm giác như họ phải vào trang fashion.com ngay bên dưới để đọc thêm ngay.
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image7.png}
+  \end{center}
+
+  \begin{quote}
+    Đây là một banner trong trang VTVPrime. Cả hình ảnh và nội dung chữ viết trên banner này đều kích thích những ham muốn vật chất của con người: Từ hình ảnh điện thoại, xe,\ldots cho đến dòng chữ tô đỏ ``500 triệu đồng'', khiến cho người dùng phải tò mò và click vào dòng chữ ``Xem ngay'' trên banner này.
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image8.png}
+  \end{center}
+
+  \begin{quote}
+    Đây là một banner khác trong trang. Banner này sử dụng hình ảnh của những người nổi tiếng: Lionel Messi(Hoạt động 22 năm, 500M+ followers trên Instagram), Cristiano Ronaldo(Hoạt động 24 năm, 600M+ followers trên Instagram),\ldots để thu hút lượng fan khổng lồ của họ.
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image9.png}
+  \end{center}
+\end{itemize}
+
+\subsubsection{Ưu điểm 7: Sử dụng metaphor ``túi đựng tài liệu'' cho các phim bộ}
+
+\begin{itemize}
+  \item \textbf{Phân tích}: VTVPrime sử dụng các card có dạng nhiều lớp chồng lên nhau như thế một túi đựng tài liệu để nói với người dùng rằng: Trong một card này có nhiều tập phim chứ không phải chỉ là một live video duy nhất. Ngoài ra, số tập cũng được hiển thị ở góc dưới bên phải của mỗi card một cách rõ ràng, không cần phải click vào rồi đếm thủ công từng tập.
+  \item \textbf{Nguyên tắc liên quan}: Mental Model \& Metaphor, Visibility.
+  \item \textbf{Ví dụ cụ thể}:
+  \begin{quote}
+    Đây là các card tượng trưng cho phim bộ.
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image10.png}
+  \end{center}
+
+  \begin{quote}
+    Mỗi card có nhiều lớp chồng lên nhau.
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image11.drawio.png}
+  \end{center}
+
+  \begin{quote}
+    Không như card của video bình thường.
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image12.png}
+  \end{center}
+\end{itemize}
+
+\subsubsection{Ưu điểm 8: Cơ chế cuộn vô tận (infinite scroll) khuyến khích khám phá nội dung}
+
+\begin{itemize}
+  \item \textbf{Phân tích HCI}: Trang chủ VTVPrime sử dụng cơ chế infinite scroll --- nội dung liên tục được load thêm khi người dùng kéo xuống mà không có điểm dừng cố định. Đối với một nền tảng xem phim/truyền hình, đây là thiết kế phù hợp vì người dùng không cần nhớ rõ từng bộ phim hay chương trình đã xuất hiện, nên việc có nhiều chunk trên cùng một trang cũng không quá ảnh hưởng tới họ. Hơn nữa, cơ chế này khiến người dùng dành nhiều thời gian hơn trên trang web, và trong quá trình lướt, những nội dung nổi bật nhất (banner lớn, thumbnail thu hút, tiêu đề ấn tượng) sẽ được não bộ ghi nhớ. Số lượng nội dung gây ấn tượng với người dùng tăng lên đồng nghĩa với việc thời gian người dùng bỏ ra để xem trang web cũng tăng lên. Khi đó, VTVPrime sẽ trở thành một phần không thể thiếu trong cuộc sống của họ, buộc họ phải gia hạn gói cước mỗi khi hết hạn.
+  \item \textbf{Nguyên tắc liên quan}: Attention \& Cognitive Load.
+  \item \textbf{Ví dụ cụ thể}: Người dùng A mở VTVPrime vào tối thứ Bảy, không có ý định xem gì cụ thể --- chỉ muốn ``lướt xem có gì hay''. Nhờ infinite scroll, A cuộn liên tục qua hàng chục carousel: ``Phim Hay Không Thể Bỏ Lỡ'', ``Nam Thần Đốn Tim'', ``Sitcom Xả Stress''\ldots Lướt sâu xuống dưới, A tình cờ thấy carousel ``Phá Đảo Kỳ Thi Tốt Nghiệp THPT'' --- nội dung ôn tập kiến thức THPT mà A không hề biết VTVPrime có --- nếu trang web dùng pagination, A có lẽ đã dừng lại ở ``Trang 1'' và không bao giờ biết đến nội dung này. Cuối phiên, A nhớ rõ 2--3 bộ phim nổi bật nhất mà mình đã thấy, và quyết định xem một trong số đó. Nếu dùng pagination, A sẽ thấy ít nội dung hơn trong cùng thời gian, xác suất ``tình cờ phát hiện'' nội dung mới giảm đáng kể.
+\end{itemize}
+
+\subsection{Nhược điểm}
+
+\subsubsection{Nhược điểm 1: Không có tên nội dung hay mô tả ngắn cho nhiều thumbnail}
+
+\begin{itemize}
+  \item \textbf{Hiện trạng}: Trong nhiều carousel, mỗi card thumbnail chỉ hiển thị thời lượng video mà không có tên nội dung hoặc mô tả ngắn bên dưới. Người dùng phải click vào, sau đó đợi chuyển trang thì mới biết đó là video gì. Trong khi đó, một vài carousel khác lại làm tốt điều này. Đây là sự thiếu tính nhất quán trên trang web, cũng như thiếu sự thể hiện những thông tin cần thiết.
+  \item \textbf{Nguyên tắc liên quan}: Visibility, Consistency.
+  \item \textbf{Ví dụ cụ thể}:
+  \begin{quote}
+    Người dùng A muốn tìm video highlight trận ``Pháp vs Maroc'' đã diễn ra. Trong mục ``Highlights World Cup 2026\texttrademark{}'', tất cả card đều hiển thị ảnh thumbnail nhỏ và thời lượng, nhưng không có tiêu đề. Giả sử A không phải là một người xem World Cup thường xuyên. Khi đó, trừ khi A vô tình nhận diện được khuôn mặt của một cầu thủ bất kì nào đó trong một thumbnail nào đó và biết chính xác cầu thủ đó ở đội nào, A phải click vào từng thumbnail một trong carousel cho đến khi thông tin chi tiết lúc chuyển trang có tiêu đề chứa từ khóa ``Pháp'' và ``Ma Rốc''. So sánh với YouTube: Cũng thể hiện các thumbnail card, nhưng YouTube hiển thị \textbf{title + tên kênh + lượt xem + thời gian đăng tải} bên dưới mỗi thumbnail. Nhờ vậy, người dùng nhận ra ngay nội dung của video là gì, mức độ phổ biến của video như thế nào trước cả khi họ di chuyển con trỏ chuột vào thumbnail của video đó. Ở đây, đội ngũ thiết kế của VTVPrime có sử dụng hình ảnh các lá cờ và tên nước của mỗi đội trong thumbnail. Nhưng lỡ như một ngày nào đó trong tương lai, họ không thiết kế thumbnail theo kiểu đó thì sao?
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image15.drawio.png}
+  \end{center}
+
+  \begin{quote}
+    Sau khi xem xong highlight trận tứ kết giữa Pháp và Ma Rốc, người dùng trở về trang chủ và tiếp tục lướt tiếp trang web. Khi thấy phần thông tin về NSƯT Hoàng Hải, họ sẽ thắc mắc ``Tại sao ở chỗ này, tôi có thể thấy rõ tên của các bộ phim, nhưng ở phần highlight World Cup 2026 ban nãy thì tôi lại không thấy?''. Người dùng sẽ cảm thấy đôi phần không hài lòng khi chất lượng phục vụ họ trên trang web không ổn định.
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image16.drawio.png}
+  \end{center}
+
+  \item \textbf{Đề xuất hướng khắc phục}: Thêm tiêu đề ngắn bên dưới mỗi thumbnail (``Pháp vs Maroc - Highlight'', ``Bàn thắng đẹp nhất ngày'',\ldots).
+\end{itemize}
+
+\subsubsection{Nhược điểm 2: Mũi tên carousel quá nhỏ và đặt sai vị trí --- vi phạm Fitts's Law}
+
+\begin{itemize}
+  \item \textbf{Phân tích}: Một nguyên tắc quan trọng sinh từ Fitts's Law là screen edge effect: khi mục tiêu nằm ở mép màn hình, chiều rộng hiệu dụng của nó trở nên vô tận vì cursor sẽ dừng lại ở rìa screen --- người dùng không cần canh position chính xác, chỉ cần kéo chuột hết cỡ về phía đó là trúng. Đúng lý tưởng, mũi tên carousel nên đặt ở sát mép màn hình (side-edge) với height bằng chiều cao carousel --- tạo thành vùng target khổng lồ, dễ click nhất có thể. Tuy nhiên, VTVPrime đặt mũi tên bên trong carousel, có kích thước nhỏ, trên nền tối cùng tông màu nên vừa không tận dụng lợi thế screen edge, vừa thiếu độ tương phản để nhận diện nhanh. Người dùng phải nhìn kỹ rồi di chuột chính xác mới click được --- tăng thời gian tương tác.
+  \item \textbf{Nguyên tắc liên quan}: Efficiency / Fitts's Law.
+  \item \textbf{Ví dụ cụ thể}:
+  \begin{quote}
+    Người dùng A muốn cuộn carousel ``Nội Dung World Cup 2026\texttrademark{} Mới Nhất'' sang phải để xem thêm nội dung. Mũi tên phải nhỏ, nằm bên trong carousel trên nền tối nên bị hòa lẫn vào background, người dùng phải nhìn kỹ rồi di chuột chính xác vào đúng vùng nhỏ đó mới click được. So sánh lý tưởng: mũi tên đặt ở sát mép phải màn hình, có height bao phủ toàn bộ chiều cao carousel \ensuremath{\rightarrow} người dùng chỉ cần kéo chuột hết cỡ sang phải là click trúng. Khoảng cách di chuyển (d) giảm đáng kể và kích thước mục tiêu (s) tăng lên gấp nhiều lần nên theo Fitts's Law, thời gian tương tác giảm mạnh.
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image17.drawio.png}
+  \end{center}
+  \item \textbf{Đề xuất hướng khắc phục}: Đặt mũi tên carousel ở sát mép màn hình trái/phải với height bằng chiều cao carousel. Tăng kích thước vùng click để tận dụng lợi thế screen edge effect.
+\end{itemize}
+
+\subsubsection{Nhược điểm 3: Thiếu feedback cho infinite scrolling}
+
+\begin{itemize}
+  \item \textbf{Phân tích}: Khi cuộn đến cuối cùng của nội dung trên trang chủ, không có dòng text hay dấu hiệu nào cho biết ``đã hết nội dung'' hoặc ``không còn gì để hiển thị''. Hệ thống chỉ đơn giản là dừng load --- người dùng không biết là do đã hết nội dung thật hay do mạng lag/đang load tiếp. Theo nguyên tắc Feedback, hệ thống cần phản hồi trạng thái sau mỗi hành động của người dùng. Khi thiếu feedback ở trạng thái cuối trang, người dùng rơi vào tình trạng không chắc chắn --- không biết nên chờ thêm hay đã hết, dẫn đến hành vi chờ đợi vô ích hoặc tưởng ứng dụng bị lỗi.
+  \item \textbf{Nguyên tắc liên quan}: Feedback.
+  \item \textbf{Ví dụ cụ thể}:
+  \begin{quote}
+    Người dùng cuộn đến cuối trang chủ, trang dừng load. Họ chờ 5-10 giây vì nghĩ mạng chậm, nhưng thực tế không còn gì nữa. Sau vài lần như vậy họ mới hiểu ra, nhưng mỗi lần vẫn phải mất thời gian ``đoán'' trạng thái hệ thống.
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image18.drawio.png}
+  \end{center}
+  \item \textbf{Đề xuất hướng khắc phục}: Thêm dòng text như ``Đã hiển thị tất cả nội dung''.
+\end{itemize}
+
+\subsubsection{Nhược điểm 4: Nút ``Xem tất cả \ensuremath{\rangle}'' không nhất quán giữa các section}
+
+\begin{itemize}
+  \item \textbf{Phân tích}: Internal consistency yêu cầu các thành phần \textbf{cùng chức năng} phải hoạt động giống nhau ở mọi nơi. Các carousel trong trang có chức năng hiển thị một phần thông tin nhưng chỉ một số carousel có nút bấm ``Xem tất cả \ensuremath{\rangle}'' (cho phép xem toàn bộ thông tin), nhiều carousel khác thì không. Điều này phá vỡ pattern recognition: Người dùng học được pattern ``heading + Xem tất cả \ensuremath{\rangle}'' ở carousel đầu tiên. Họ kỳ vọng carousel sau cũng có, nhưng thật ra là không.
+  \item \textbf{Nguyên tắc liên quan}: Consistency.
+  \item \textbf{Ví dụ cụ thể}:
+  \begin{quote}
+    Người dùng A thấy carousel ``World Cup 2026\texttrademark{}'' có nút ``Xem tất cả \ensuremath{\rangle}'' bên phải, họ click vào và xem được toàn bộ danh sách các video. Tiếp tục lướt xuống, A thấy section ``Muôn Màu World Cup'' cũng là carousel tương tự, kỳ vọng sẽ có ``Xem tất cả \ensuremath{\rangle}'' nhưng không có. A thắc mắc: ``Tại sao section này không có? Vậy mình phải làm sao để xem tất cả các nội dung đây? Chẳng lẽ mình phải lướt hết carousel? Lỡ như carousel này dài quá thì sao? Mình sẽ tốn bao nhiêu thời gian để lướt hết carousel này? Mình có nên lướt tiếp không?\ldots'' \ensuremath{\rightarrow} mất thời gian tìm kiếm và bị bỡ ngỡ.
+  \end{quote}
+  \begin{quote}
+    ``World Cup 2026\texttrademark{}'' có nút ``Xem tất cả''.
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image19.drawio.png}
+  \end{center}
+  \begin{quote}
+    ``Muôn Màu World Cup'' không có nút này.
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image20.png}
+  \end{center}
+\end{itemize}
+
+\subsubsection{Nhược điểm 5: Nhiều ảnh bị để trống alt text --- vi phạm Accessibility}
+
+\begin{itemize}
+  \item \textbf{Phân tích HCI}: Tất cả ảnh trên trang web nên có alt text --- thuộc tính mô tả nội dung ảnh cho phần mềm đọc màn hình (screen reader) của người khiếm thị. Khi ảnh để trống alt text, screen reader sẽ bỏ qua hoàn toàn, người dùng khiếm thị không biết ảnh đó chụp gì. Trên trang chủ VTVPrime, có nhiều ảnh bị để trống alt text hoặc có nhưng vô dụng(Ví dụ: alt=``poster''). Đặc biệt quan trọng với các ảnh thumbnail phim/program vì đây là nội dung chính mà người dùng cần nhận diện để quyết định xem hay không.
+  \item \textbf{Nguyên tắc liên quan}: Accessibility / Inclusive Design.
+  \item \textbf{Ví dụ cụ thể}:
+  \begin{quote}
+    Một người khiếm thị sử dụng phần mềm đọc màn hình truy cập VTVPrime. Khi cuộn qua các carousel, screen reader đọc: ``heading: Phim Hay Không Thể Bỏ Lỡ. image. image. image. heading: Nam Thần Đốn Tim. image. image. image\ldots'' --- người dùng nghe toàn là ``image'' mà không biết ảnh nào chụp phim gì, vì alt text bị bỏ trống. Nếu alt text được điền đúng (vd: alt=``Poster phim Thỏ Peter - 10 tập, thể loại phiêu lưu''), screen reader sẽ đọc: ``image: Poster phim Thỏ Peter - 10 tập, thể loại phiêu lưu'' \ensuremath{\rightarrow} người dùng biết ngay nội dung mà không cần click vào.
+  \end{quote}
+  \item \textbf{Đề xuất hướng khắc phục}: Thêm alt text có nghĩa cho tất cả 16 ảnh đang để trống trên trang chủ. Alt text nên mô tả ngắn gọn nội dung ảnh, ví dụ: alt=``Poster phim Thỏ Peter'', alt=``Highlight trận Pháp vs Maroc - World Cup 2026''. Không dùng alt text chung chung như alt=``image'' hoặc alt=``photo''.
+\end{itemize}
+
+\subsubsection{Nhược điểm 6: Nút ``Xem tất cả'' quá nhỏ và nằm xa vùng tương tác của người dùng}
+
+\begin{itemize}
+  \item \textbf{Phân tích}: Nút ``Xem tất cả'' nhỏ, lại luôn show mỗi lần rê chuột vào một card bất kì. Với trường hợp người dùng đang rê chuột vào các card ở phía cuối, khoảng cách d từ card đến nút ``Xem tất cả'' sẽ lớn hơn. Hơn nữa, khi rê chuột ở vị trí cuối, thường là người dùng đang ở trong tâm thế muốn hiện thêm kết quả, vì vậy tần suất họ muốn click vào nút ``Xem tất cả'' sẽ tăng. Số lần click tăng và thời gian tương tác cũng tăng sẽ gây ra độ trễ tích lũy khổng lồ đối với hành vi của người dùng.
+  \item \textbf{Nguyên tắc liên quan}: Efficiency / Fitts' Law.
+  \item \textbf{Giải pháp đề xuất}: Nhóm nghĩ ra hai giải pháp. Một là đẩy nút ``Xem tất cả'' vào giữa và kéo dài nút ra. Hai là đưa các header vào một khung chứa, có background color và có thể click được. Khi đó, khoảng cách từ mỗi card đến vị trí cần click để xem tất cả kết quả là như nhau và cũng chính là khoảng cách nhỏ nhất.
+  \item \textbf{Ví dụ cụ thể}:
+  \begin{quote}
+    Người dùng A muốn xem tất cả những video liên quan đến WORLD CUP 2026 khi họ đang rê chuột đến video cuối cùng trong carousel. Con chuột của họ đang bị hư, họ phải dùng touchpad trên laptop và ngón tay của họ cũng bị trày xước nhẹ khiến cho việc di chuyển ngón tay trên touchpad cũng hơi khó khăn. Họ thấy nút ``Xem tất cả'' nằm tuốt ở phía bên trái và tuy không thích nhưng vẫn phải chấp nhận việc rê con trỏ chuột đến nút ấy chỉ để phát hiện ra rằng trong danh sách đầy đủ cũng không chứa nội dung nội dung họ quan tâm. Họ cảm thấy khó chịu trong lòng.
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image5.drawio.png}
+  \end{center}
+\end{itemize}
+
+\subsubsection{Nhược điểm 7: Định dạng card phim bộ không nhất quán giữa các carousel}
+
+\begin{itemize}
+  \item \textbf{Phân tích HCI}: Đều là phim bộ nhưng VTVPrime sử dụng hai định dạng card khác nhau: phần lớn carousel dùng card \textbf{nằm ngang} với metaphor ``túi đựng tài liệu'' (nhiều lớp chồng lên nhau), nhưng một số carousel khác lại dùng card \textbf{dọc} mà không có metaphor này. Theo nguyên tắc \textbf{Internal Consistency}, cùng một loại nội dung (phim bộ) nên có cùng một format trình bày để người dùng nhận ra ngay mà không cần suy luận. Khi định dạng thay đổi đột ngột giữa các carousel, mental model của người dùng bị phá vỡ --- họ đã quen với pattern ``phim bộ = card ngang layers'' ở carousel trước, nhưng carousel sau lại dùng card dọc \ensuremath{\rightarrow} phải học lại pattern mới.
+  \item \textbf{Nguyên tắc liên quan}: Consistency (Internal Consistency), Mental Model.
+  \item \textbf{Ví dụ cụ thể}:
+  \begin{quote}
+    Mục ``VTVprime Đề Xuất'' chứa các card phim bộ nằm ngang với nhiều lớp chồng lên nhau (metaphor ``túi đựng tài liệu'') \ensuremath{\rightarrow} người dùng hiểu ``đây là phim bộ''. Nhưng khi cuộn xuống mục ``Phim Hay Không Thể Bỏ Lỡ'' --- cũng là phim bộ --- lại dùng định dạng card dọc, không có layers \ensuremath{\rightarrow} người dùng phải dừng lại nhận diện lại format, mất thời gian thích nghi.
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image13.png}
+  \end{center}
+\end{itemize}
+
+\subsubsection{Nhược điểm 8: Nút ``Mua gói'' đặt sai vị trí và thiếu feedback sau khi mua}
+
+\begin{itemize}
+  \item \textbf{Phân tích}: ``Mua gói'' tuy không phải là một chức năng được sử dụng thường xuyên(người dùng chỉ thanh toán 1 lần cho 1 tuần, 30 ngày,\ldots) nhưng nút bấm này được gom nhóm để nằm sát bên cạnh nút tìm kiếm(một tính năng được dùng thường xuyên). Thậm chí, nút ``Mua gói'' còn to hơn nút tìm kiếm, có màu sắc nổi bật hơn nút tìm kiếm. Ngay cả khi đã mua gói, nút ``Mua gói'' vẫn không biến mất hoặc đổi trạng thái mà vẫn hiển thị ở đó như chưa có gì xảy ra.
+  \item \textbf{Nguyên tắc liên quan}: Attention, Feedback.
+  \item \textbf{Ví dụ cụ thể}:
+  \begin{quote}
+    Sau khi người dùng A đăng ký mua gói ``Prime'' trong giao diện mua gói, hệ thống trả về trang chủ. Tuy nhiên, giao diện hầu như không thay đổi, không có phản hồi gì mới, icon của user vẫn giữ nguyên như thể chưa có chuyện gì xảy ra.
+  \end{quote}
+  \begin{quote}
+    Trước và sau khi mua gói đều không đổi:
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image14.drawio.png}
+  \end{center}
+\end{itemize}
+
+\subsubsection{Nhược điểm 9: Giao diện trang mua gói gây nhầm lẫn giữa các gói cước}
+
+\begin{itemize}
+  \item \textbf{Phân tích}: Có 4 loại gói cước trong trang ``Mua gói'' của VTVPrime: LION vs WLF, World Cup, Prime, Vinaphone. Nhưng giao diện đăng ký gói cước khiến cho người dùng cảm thấy khó hiểu. Cùng phân tích một số ví dụ bên dưới để làm rõ điều này.
+  \item \textbf{Nguyên tắc liên quan}: Visibility, Learnability, Error Prevention.
+  \item \textbf{Ví dụ cụ thể}:
+  \begin{quote}
+    Người dùng A đăng ký mua gói cước Prime thành công với số lượng kênh là 100+ theo như khẳng định trên trang web.
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image21.png}
+  \end{center}
+
+  \begin{quote}
+    Một khoảng thời gian sau, A vì muốn đăng ký cộng dồn thời lượng sử dụng của cùng gói cước Prime nên A lại truy cập vào trang mua gói. Lúc này, mặc định trang web sẽ hiển thị thông tin của gói đầu tiên từ bên trái - gói LION vs WLF. Tuy nhiên, lúc này vấn đề xuất hiện. A thấy giao diện gói LION vs WLF có nút ``\textbf{Nâng cấp} trải nghiệm'' trong khi quyền lợi ít hơn(chỉ có kênh chiếu ``3 trận LION vs WLF + 7 trận LC33 diễn ra ngày 11/7/2026''). A sẽ thắc mắc ``Tại sao số kênh ít hơn gói hiện tại của mình nhưng lại có nút NÂNG CẤP nhỉ? Vậy là gói này sẽ chứa 100+ kênh trong gói hiện tại của mình VÀ những kênh chiếu các trận đấu diễn ra vào ngày 11/7/2026 hay là chỉ chứa các kênh chiếu các trận đấu này thôi? Nếu cũng là gói 100+ kênh thì tại sao giá lại rẻ hơn? Không lẽ gói này đang giảm giá cho đến ngày 11/7? Mình có nên mua ngay để được cộng dồn thời hạn sử dụng với mức giá rẻ hơn hay không? Mà lỡ không như mình nghĩ, mua gói này xong thì gói kia sẽ bị hủy thì sao?\ldots'' Chỉ cần một suy đoán sai lầm, A sẽ bị mất tiền oan. Giao diện này cực kì không minh bạch đối với một giao diện có liên quan đến vấn đề tiền bạc.
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image22.png}
+  \end{center}
+\end{itemize}
+
+\subsubsection{Nhược điểm 10: Lịch phát sóng có ký tự ``\textless{}'' vô dụng và các mục đều có dạng nút bấm gây lỗi}
+
+\begin{itemize}
+  \item \textbf{Phân tích}: (1) \textbf{Ký tự ``\textless{}'' đặt trước tiêu đề ``Lịch phát sóng''} nhưng nó không có chức năng gì khi click vào. Trong giao diện web, ký tự ``\textless{}'' thường được dùng làm nút ``quay lại trang trước'' (back button) --- người dùng đã quen với mental model này. Khi thấy ``\textless{}'' trước ``Lịch phát sóng'', người dùng sẽ kỳ vọng click vào sẽ quay lại trang trước hoặc thu gọn danh sách lịch phát sóng, nhưng thực tế nó không hoạt động \ensuremath{\rightarrow} gây \textbf{false affordance}: gợi ý một chức năng không tồn tại. (2) \textbf{Tất cả mục trong lịch phát sóng đều có dạng giống nút bấm} --- cùng format, cùng cursor pointer khi hover --- chương trình đã phát, đang phát và chưa phát đều trông giống hệt nhau. Theo nguyên tắc \textbf{Error Prevention}, giao diện nên ngăn chặn lỗi trước khi xảy ra --- nhưng ở đây, người dùng dễ dàng click vào chương trình chưa phát (vì nhìn giống nút bấm) và chỉ nhận được thông báo lỗi. Chương trình chưa phát nên có format khác (Ví dụ: mờ hơn, không có cursor pointer,\ldots) để người dùng biết rằng không thể tương tác.
+  \item \textbf{Nguyên tắc liên quan}: Visibility, Error Prevention.
+  \item \textbf{Ví dụ cụ thể}:
+  \begin{quote}
+    Người dùng A mở kênh VTV1 vào lúc 15h55. Họ thấy lịch phát sóng với các mục: ``15:40 - Thương hiệu quốc gia Việt Nam'' (đã phát), ``15:55 - Về quê: Liên kết bền vững\ldots'' (đang phát), ``16:00 - Thời sự'' (chưa phát). Tất cả đều có cursor pointer. A tò mò click vào ``Thời sự'' lúc 16h00 vì nghĩ có thể xem trước nội dung \ensuremath{\rightarrow} hệ thống báo lỗi. Nếu giao diện phân biệt rõ ràng giữa ``có thể click'' và ``chưa thể click'', người dùng sẽ không gặp lỗi này.
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image23.png}
+  \end{center}
+\end{itemize}
+
+\subsubsection{Nhược điểm 11: Nút hamburger và nút đóng sidebar trên tablet đặt sai vị trí}
+
+\begin{itemize}
+  \item \textbf{Phân tích HCI}: Trên giao diện tablet, nút hamburger (\ensuremath{\ensuremath{\u2630}}) nằm ở sát bên trái navbar --- vị trí này hợp lý. Tuy nhiên, khi bấm vào hamburger thì sidebar mở rộng full màn hình, và nút \ensuremath{\times} (đóng) lại nằm ở \textbf{sát bên phải} màn hình \ensuremath{\rightarrow} khoảng cách di chuyển từ nút hamburger (bên trái) đến nút \ensuremath{\times} (bên phải) rất lớn, buộc người dùng phải di chuyển ngón tay một quãng dài trên tablet --- tăng motor load đáng kể. Theo nguyên tắc \textbf{Reachability \& Motor Load}, các phần tử tương tác thường xuyên nên được đặt ở vị trí dễ chạm tới với nỗ lực vận động tối thiểu.
+  \item \textbf{Nguyên tắc liên quan}: Reachability \& Motor Load.
+  \item \textbf{Ví dụ cụ thể}:
+  \begin{quote}
+    Người dùng A đang dùng tablet, muốn truy cập hamburger menu để điều hướng sang trang ``Tin nhanh''. A dùng ngón tay bấm nút hamburger ở góc trên bên trái \ensuremath{\rightarrow} sidebar mở full màn hình. Để đóng sidebar, A phải với tay sang tận góc trên bên phải để bấm nút \ensuremath{\times} \ensuremath{\rightarrow} mất thời gian và bất tiện, đặc biệt với tablet màn hình lớn. Nếu nút \ensuremath{\times} nằm ở vị trí hợp lý hơn (gần nút hamburger hoặc ở mép trái sidebar), thao tác sẽ nhanh hơn rất nhiều.
+  \end{quote}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image24.png}
+  \end{center}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{./vtvprime-product-research-imgs/image25.png}
+  \end{center}
+  \item \textbf{Đề xuất hướng khắc phục}: (1) Thu nhỏ sidebar lại, không mở rộng full màn hình và làm mờ nội dung ở lớp dưới sidebar, có thể bấm ra ngoài để đóng. (2) Đặt nút \ensuremath{\times} ở sát bên trái sidebar (gần vị trí nút hamburger) thay vì bên phải để giảm khoảng cách di chuyển.
+\end{itemize}
